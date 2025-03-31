@@ -68,7 +68,8 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     .hero {
-    background-image: url('assets/images/fondo.jpg');
+.hero {
+    background-image: url('Recursos/Imágenes/fondo.jpg');
 }
     background-size: cover;
     background-position: center;
