@@ -497,6 +497,43 @@
     transform: translateY(-2px);
 }
 
+/* ================= VISUAL BACKGROUND (FIXED) ================= */
+.visual-bg {
+    position: relative;
+    background-image: url("assets/images/fondo1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 120px 0;
+    overflow: hidden;
+}
+
+/* Overlay controlado (NO tapa el fondo) */
+.visual-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(8, 18, 36, 0.55) 0%,
+        rgba(8, 18, 36, 0.65) 100%
+    );
+    z-index: 0;
+}
+
+/* Elevar contenido */
+.visual-bg > section {
+    position: relative;
+    z-index: 1;
+}
+
+/* Texto claro dentro del fondo */
+.visual-bg h2,
+.visual-bg p,
+.visual-bg span {
+    color: #f8fafc;
+}
 
 
 
