@@ -1,102 +1,246 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yassir Technologic</title>
-    <meta name="description" content="Servicios de automatización, análisis de datos y ciberseguridad personalizados. Transformamos y protegemos entornos digitales desde Palma de Mallorca.">
-    <meta name="keywords" content="automatización con Python, análisis de datos, ciberseguridad, desarrollador Python Palma, proyectos digitales, Yassir Technologic">
+
+    <title>Yassir Technologic | Backend Developer & AI Solutions</title>
+
+    <meta name="description" content="Professional portfolio of Jorge Luis Carvajal. Backend development, automation, data analysis and AI solutions.">
     <meta name="author" content="Jorge Luis Carvajal">
-    <link rel="stylesheet" href="style.css?v=2.0">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Menú de navegación -->
-    <header>
-        <img src="assets/images/logo-yassir.png" alt="Logo Yassir Technologic" class="logo">
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre">Sobre mí</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#portafolio">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Hero principal -->
-    <section id="inicio" class="hero">
-        <div class="overlay">
-            <h1>Yassir Technologic</h1>
-            <p>Transformando y protegiendo entornos digitales</p>
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="header-container">
+
+    <!-- LOGO -->
+    <div class="logo-area">
+      <img src="assets/images/logo-yassir.png" alt="Yassir logo" class="logo">
+      <span class="brand-name">Yassir Technologic</span>
+    </div>
+
+    <!-- NAV DESKTOP -->
+    <nav class="nav-desktop">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- LANG -->
+    <div class="lang-switch">
+      <button class="lang-btn active">EN</button>
+      <button class="lang-btn">ES</button>
+    </div>
+
+    <!-- HAMBURGER -->
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+  </div>
+
+  <!-- NAV MOBILE -->
+  <nav class="nav-mobile" id="navMenu">
+    <a href="#home" onclick="toggleMenu()">Home</a>
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#services" onclick="toggleMenu()">Services</a>
+    <a href="#gallery" onclick="toggleMenu()">Gallery</a>
+    <a href="#certificates" onclick="toggleMenu()">Certificates</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+
+    <div class="lang-mobile">
+      <button class="lang-btn active">EN</button>
+      <button class="lang-btn">ES</button>
+    </div>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <h1>Yassir Technologic</h1>
+        <h2>Backend Developer & Applications</h2>
+
+        <p class="hero-desc">
+            I build secure and scalable backend solutions, automation tools and applications using
+            <strong>Python, Node.js and Artificial Intelligence</strong>.
+        </p>
+
+        <p class="highlight">
+            Open to <strong>junior / junior+</strong> backend or application developer opportunities.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#contact" class="btn secondary">Contact</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Sobre mí -->
-    <section id="sobre" class="about">
-        <h2>Sobre mí</h2>
-        <p>Soy Jorge Luis Carvajal, desarrollador en Python, especializado en análisis de datos y ciberseguridad. Estoy abierto a colaborar en proyectos reales, útiles y seguros.</p>
-    </section>
+<!-- ================= ABOUT ================= -->
+<section id="about" class="about-split">
+    <div class="about-container">
 
-    <!-- Servicios -->
-    <section id="servicios" class="services">
-        <h2>Servicios</h2>
-        <div class="service-cards">
-            <div class="card">
-                <h3>Automatización con Python</h3>
-                <p>Scripts personalizados para tareas repetitivas, optimización de procesos y mayor productividad.</p>
-            </div>
-            <div class="card">
-                <h3>Análisis de Datos</h3>
-                <p>Transformación de datos en insights útiles para la toma de decisiones estratégicas.</p>
-            </div>
-            <div class="card">
-                <h3>Ciberseguridad</h3>
-                <p>Protección de sistemas, prevención de ataques y asesoría en seguridad digital personal y empresarial.</p>
-            </div>
+        <div class="about-image">
+            <img src="assets/images/about.jpg" alt="Developer working with code">
         </div>
-    </section>
 
-    <!-- Portafolio -->
-    <section id="portafolio" class="portfolio">
-        <h2>Proyectos</h2>
-        <div class="portfolio-grid">
-            <div class="project-card">
-                <img src="assets/images/proyecto1.jpg" alt="Proyecto 1">
-                <h3>Bot de Automatización</h3>
-                <p>Bot en Python que automatiza el envío de correos con archivos adjuntos.</p>
-            </div>
-            <div class="project-card">
-                <img src="assets/images/proyecto2.jpg" alt="Proyecto 2">
-                <h3>Dashboard de Análisis</h3>
-                <p>Dashboard interactivo con gráficos para visualizar datos financieros en tiempo real.</p>
-            </div>
-            <div class="project-card">
-                <img src="assets/images/proyecto3.jpg" alt="Proyecto 3">
-                <h3>Escáner de Seguridad</h3>
-                <p>Script que detecta vulnerabilidades en una red local usando herramientas de ciberseguridad.</p>
-            </div>
+        <div class="about-text">
+            <h2>About Me</h2>
+
+            <p class="about-lead">
+                I'm <strong>Jorge Luis Carvajal</strong>, a backend-focused developer specialized in
+                Python, automation, data analysis and artificial intelligence.
+            </p>
+
+            <p>
+                I design clean, scalable and real-world solutions focused on performance,
+                security and business value.
+            </p>
         </div>
-    </section>
 
-    <!-- Contacto -->
-    <section id="contacto" class="contact">
-        <h2>Contacto</h2>
-        <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
-            <input type="text" name="nombre" placeholder="Tu nombre" required>
-            <input type="email" name="email" placeholder="Tu correo electrónico" required>
-            <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
-            <button type="submit">Enviar mensaje</button>
+    </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="services-section">
+    <h2 class="section-title">Services</h2>
+    <p class="section-subtitle">
+        Solutions focused on efficiency, scalability and real-world impact.
+    </p>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <div class="service-icon">⚙️</div>
+            <h3>Python Automation</h3>
+            <p>
+                Custom automation scripts to optimize workflows,
+                reduce manual tasks and improve productivity.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">📊</div>
+            <h3>Data Analysis</h3>
+            <p>
+                Data processing, dashboards and clear insights
+                to support data-driven decision making.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🔐</div>
+            <h3>Backend & APIs</h3>
+            <p>
+                Secure REST APIs and scalable backend architectures
+                built with best practices.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section id="gallery" class="gallery-section">
+    <h2 class="section-title">Gallery</h2>
+    <p class="section-subtitle">
+        A visual overview of my work environment and projects.
+    </p>
+
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="assets/images/gallery1.jpg" alt="Code editor">
+            <span>Code Editor</span>
+        </div>
+
+        <div class="gallery-item">
+            <img src="assets/images/gallery2.jpg" alt="Backend dashboard">
+            <span>Backend Dashboard</span>
+        </div>
+
+        <div class="gallery-item">
+            <img src="assets/images/gallery3.jpg" alt="Terminal work">
+            <span>Terminal Work</span>
+        </div>
+
+        <div class="gallery-item">
+            <img src="assets/images/gallery4.jpg" alt="Data visualization">
+            <span>Data Visualization</span>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CERTIFICATES ================= -->
+<section id="certificates" class="certificates-section">
+    <h2 class="section-title">Certificates</h2>
+    <p class="section-subtitle">
+        Education and continuous professional development.
+    </p>
+
+    <div class="cert-grid">
+        <div class="cert-card">
+            <h3>Python Developer</h3>
+            <p>Fundamentals & Data Analysis</p>
+            <span class="cert-year">2024</span>
+        </div>
+
+        <div class="cert-card">
+            <h3>Blockchain Fundamentals</h3>
+            <p>Smart Contracts & Web3</p>
+            <span class="cert-year">2024</span>
+        </div>
+
+        <div class="cert-card">
+            <h3>Cybersecurity Basics</h3>
+            <p>Network & System Security</p>
+            <span class="cert-year">2025</span>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+        <h2>Contact</h2>
+        <p class="contact-subtitle">
+            Have a project or an opportunity? Let's talk.
+        </p>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Your email" required>
+            <textarea placeholder="Your message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
         </form>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Yassir Technologic. Todos los derechos reservados.</p>
-    </footer>
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© 2025 Yassir Technologic · Built by Jorge Luis Carvajal</p>
+</footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
+
 </body>
 </html>
+
+
+
+
+
 
 
 
