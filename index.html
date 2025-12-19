@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Yassir Technologic | Backend Developer & AI Solutions</title>
+  <title>Yassir Technologic | Backend Developer & AI Solutions</title>
 
-    <meta name="description" content="Professional portfolio of Jorge Luis Carvajal. Backend development, automation, data analysis and AI solutions.">
-    <meta name="author" content="Jorge Luis Carvajal">
+  <meta name="description" content="Professional portfolio of Jorge Luis Carvajal. Backend development, automation, data analysis and AI solutions.">
+  <meta name="author" content="Jorge Luis Carvajal">
 
-    <link rel="stylesheet" href="style.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo-yassir.png">
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
 <!-- ================= HEADER ================= -->
 <header class="header">
   <div class="header-container">
 
+    <!-- Logo -->
     <div class="logo-area">
       <img src="assets/images/logo-yassir.png" alt="Yassir logo" class="logo">
       <span class="brand-name">Yassir Technologic</span>
     </div>
 
+    <!-- Menú Desktop -->
     <nav class="nav-desktop">
       <a href="#home" data-i18n="nav_home">Home</a>
       <a href="#about" data-i18n="nav_about">About</a>
@@ -31,14 +36,18 @@
       <a href="#contact" data-i18n="nav_contact">Contact</a>
     </nav>
 
+    <!-- Idiomas (SIEMPRE visibles) -->
     <div class="lang-switch">
       <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
       <button class="lang-btn" onclick="setLanguage('es')">ES</button>
     </div>
 
+    <!-- Botón hamburguesa (solo móvil) -->
     <button class="hamburger" onclick="toggleMenu()">☰</button>
+
   </div>
 
+  <!-- Menú móvil (SOLO navegación, sin idiomas) -->
   <nav class="nav-mobile" id="navMenu">
     <a href="#home" data-i18n="nav_home" onclick="toggleMenu()">Home</a>
     <a href="#about" data-i18n="nav_about" onclick="toggleMenu()">About</a>
@@ -46,118 +55,278 @@
     <a href="#gallery" data-i18n="nav_gallery" onclick="toggleMenu()">Gallery</a>
     <a href="#certificates" data-i18n="nav_certificates" onclick="toggleMenu()">Certificates</a>
     <a href="#contact" data-i18n="nav_contact" onclick="toggleMenu()">Contact</a>
-
-    <div class="lang-mobile">
-      <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
-      <button class="lang-btn" onclick="setLanguage('es')">ES</button>
-    </div>
   </nav>
 </header>
 
 <!-- ================= HERO ================= -->
 <section id="home" class="hero">
-    <div class="hero-overlay"></div>
+  <div class="hero-overlay"></div>
 
-    <div class="hero-content">
-        <h1>Yassir Technologic</h1>
-        <h2 data-i18n="hero_title">Backend Developer & Applications</h2>
+  <div class="hero-content">
+    <h1>Yassir Technologic</h1>
 
-        <p class="hero-desc" data-i18n="hero_desc">
-            I build secure and scalable backend solutions, automation tools and applications using
-            <strong>Python, Node.js and Artificial Intelligence</strong>.
-        </p>
+    <h2 data-i18n="hero_title">
+      Backend Developer & Applications
+    </h2>
 
-        <p class="highlight" data-i18n="hero_highlight">
-            Open to <strong>junior / junior+</strong> backend or application developer opportunities.
-        </p>
+    <p class="hero-desc" data-i18n="hero_desc">
+      I build secure and scalable backend solutions, automation tools and applications using
+      <strong>Python, Node.js and Artificial Intelligence</strong>.
+    </p>
 
-        <div class="hero-actions">
-            <a href="#gallery" class="btn primary" data-i18n="btn_projects">View Projects</a>
-            <a href="#contact" class="btn secondary" data-i18n="btn_contact">Contact</a>
-        </div>
+    <p class="highlight" data-i18n="hero_highlight">
+      Open to <strong>junior / junior+</strong> backend or application developer opportunities.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#gallery" class="btn primary" data-i18n="btn_projects">
+        View Projects
+      </a>
+      <a href="#contact" class="btn secondary" data-i18n="btn_contact">
+        Contact
+      </a>
     </div>
+  </div>
 </section>
 
 <!-- ================= ABOUT ================= -->
-<section id="about" class="about-split">
-    <div class="about-container">
+<section id="about" class="about-section">
+  <div class="about-overlay"></div>
 
-        <div class="about-image">
-            <img src="assets/images/about.jpg" alt="Developer working with code">
-        </div>
+  <div class="about-container">
 
-        <div class="about-text">
-            <h2 data-i18n="about_title">About Me</h2>
-
-            <p class="about-lead" data-i18n="about_lead">
-                I'm <strong>Jorge Luis Carvajal</strong>, a backend-focused developer specialized in
-                Python, automation, data analysis and artificial intelligence.
-            </p>
-
-            <p data-i18n="about_text">
-                I design clean, scalable and real-world solutions focused on performance,
-                security and business value.
-            </p>
-        </div>
-
+    <div class="about-image">
+      <img src="assets/images/about.jpg" alt="Developer working with code">
     </div>
+
+    <div class="about-text">
+      <h2 data-i18n="about_title">About Me</h2>
+
+      <p class="about-lead" data-i18n="about_lead">
+        I'm <strong>Jorge Luis Carvajal</strong>, a backend-focused developer specialized in
+        Python, automation, data analysis and artificial intelligence.
+      </p>
+
+      <p class="about-desc" data-i18n="about_text">
+        I design clean, scalable and real-world solutions focused on performance,
+        security and business value.
+      </p>
+    </div>
+
+  </div>
 </section>
 
 <!-- ================= SERVICES ================= -->
 <section id="services" class="services-section">
+  <div class="services-overlay"></div>
+
+  <div class="services-container">
     <h2 class="section-title" data-i18n="services_title">Services</h2>
+
     <p class="section-subtitle" data-i18n="services_subtitle">
-        Solutions focused on efficiency, scalability and real-world impact.
+      Solutions focused on efficiency, scalability and real-world impact.
     </p>
 
     <div class="services-grid">
-        <div class="service-card">
-            <div class="service-icon">⚙️</div>
-            <h3>Python Automation</h3>
-            <p data-i18n="service_automation">Custom automation scripts to optimize workflows.</p>
-        </div>
+      <div class="service-card">
+        <div class="service-icon">⚙️</div>
+        <h3>Python Automation</h3>
+        <p data-i18n="service_automation">
+          Custom automation scripts to optimize workflows.
+        </p>
+      </div>
 
-        <div class="service-card">
-            <div class="service-icon">📊</div>
-            <h3>Data Analysis</h3>
-            <p data-i18n="service_data">Dashboards and insights for decision making.</p>
-        </div>
+      <div class="service-card">
+        <div class="service-icon">📊</div>
+        <h3>Data Analysis</h3>
+        <p data-i18n="service_data">
+          Dashboards and insights for decision making.
+        </p>
+      </div>
 
-        <div class="service-card">
-            <div class="service-icon">🔐</div>
-            <h3>Backend & APIs</h3>
-            <p data-i18n="service_backend">Secure REST APIs and scalable architectures.</p>
-        </div>
+      <div class="service-card">
+        <div class="service-icon">🔐</div>
+        <h3>Backend & APIs</h3>
+        <p data-i18n="service_backend">
+          Secure REST APIs and scalable architectures.
+        </p>
+      </div>
     </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section id="gallery" class="gallery-section">
+  <div class="gallery-overlay"></div>
+
+  <div class="gallery-container">
+    <h2 class="section-title" data-i18n="gallery_title">Projects Gallery</h2>
+
+    <p class="section-subtitle" data-i18n="gallery_subtitle">
+      Real projects, real technology.
+    </p>
+
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="assets/images/proyecto1.jpg" alt="Project 1" onclick="openModal(this)">
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/images/proyecto2.jpg" alt="Project 2" onclick="openModal(this)">
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/images/proyecto3.jpg" alt="Project 3" onclick="openModal(this)">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= IMAGE MODAL ================= -->
+<div class="image-modal" id="imageModal" onclick="closeModal()">
+  <span class="close-modal">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
+<!-- ================= CERTIFICATES ================= -->
+<section id="certificates" class="certificates-section">
+  <div class="cert-overlay"></div>
+
+  <div class="cert-container">
+    <h2 class="section-title" data-i18n="cert_title">Certificates</h2>
+
+    <p class="section-subtitle" data-i18n="cert_subtitle">
+      Education and continuous professional development.
+    </p>
+
+    <!-- Carrusel -->
+    <div class="cert-carousel">
+      <button class="cert-btn prev" onclick="moveCert(-1)">❮</button>
+
+      <div class="cert-track" id="certTrack">
+        <div class="cert-item">
+          <img src="assets/images/diploma_python.png" alt="Python Certificate" onclick="openModal(this)">
+          <span>Python Developer</span>
+        </div>
+
+        <div class="cert-item">
+          <img src="assets/images/certificado_blockchain.png" alt="Blockchain Certificate" onclick="openModal(this)">
+          <span>Blockchain Fundamentals</span>
+        </div>
+
+        <div class="cert-item">
+          <img src="assets/images/certificado_ciberseguridad.png" alt="Cybersecurity Certificate" onclick="openModal(this)">
+          <span>Cybersecurity Basics</span>
+        </div>
+
+        <div class="cert-item">
+          <img src="assets/images/certificado_blockchain2.png" alt="Web3 Certificate" onclick="openModal(this)">
+          <span>Web3 & Smart Contracts</span>
+        </div>
+      </div>
+
+      <button class="cert-btn next" onclick="moveCert(1)">❯</button>
+    </div>
+  </div>
 </section>
 
 <!-- ================= CONTACT ================= -->
 <section id="contact" class="contact-section">
-    <div class="contact-container">
-        <h2 data-i18n="contact_title">Contact</h2>
-        <p class="contact-subtitle" data-i18n="contact_subtitle">
-            Have a project or an opportunity? Let's talk.
-        </p>
+  <div class="contact-overlay"></div>
 
-        <form class="contact-form">
-            <input type="text" placeholder="Your name" required>
-            <input type="email" placeholder="Your email" required>
-            <textarea placeholder="Your message" rows="5" required></textarea>
-            <button type="submit" data-i18n="btn_send">Send Message</button>
-        </form>
-    </div>
+  <div class="contact-container">
+    <h2 data-i18n="contact_title">Contact</h2>
+
+    <p class="contact-subtitle" data-i18n="contact_subtitle">
+      Have a project or an opportunity? Let's talk.
+    </p>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your name" required>
+      <input type="email" placeholder="Your email" required>
+      <textarea placeholder="Your message" rows="5" required></textarea>
+
+      <button type="submit" data-i18n="btn_send">
+        Send Message
+      </button>
+    </form>
+  </div>
 </section>
 
-<footer>
-    <p>© 2025 Yassir Technologic · Built by Jorge Luis Carvajal</p>
+<!-- ================= COMMENTS ================= -->
+<section id="comments" class="comments-section">
+  <div class="comments-overlay"></div>
+
+  <div class="comments-container">
+    <h2 class="section-title">Client Reviews</h2>
+    <p class="section-subtitle">
+      Your opinion matters. Quality is always our priority.
+    </p>
+
+    <!-- Formulario -->
+    <form class="comment-form">
+      <input type="text" placeholder="Your name" required>
+
+      <!-- Estrellas -->
+      <div class="stars-container">
+        <span class="stars-label">Rate your experience:</span>
+
+        <div class="stars">
+          <input type="radio" id="star5" name="rating" value="5" checked>
+          <label for="star5">★</label>
+
+          <input type="radio" id="star4" name="rating" value="4">
+          <label for="star4">★</label>
+
+          <input type="radio" id="star3" name="rating" value="3">
+          <label for="star3">★</label>
+        </div>
+
+        <span class="stars-hint">
+          Only ratings from 3 to 5 stars are accepted ⭐
+        </span>
+      </div>
+
+      <textarea placeholder="Write your comment..." rows="4" required></textarea>
+
+      <button type="submit">
+        Submit Review ⭐⭐⭐⭐⭐
+      </button>
+    </form>
+
+    <!-- Comentarios visibles (luego vendrán del backend) -->
+    <div class="comments-list">
+      <div class="comment-card">
+        <div class="comment-header">
+          <strong>Happy Client</strong>
+          <span class="comment-stars">★★★★★</span>
+        </div>
+        <p>
+          Excellent service, professional work and modern solutions.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <p>
+    © 2025 Yassir Technologic · Built by Jorge Luis Carvajal
+  </p>
 </footer>
 
 <!-- ================= JS ================= -->
 <script>
+/* ================= MENU MOBILE ================= */
 function toggleMenu() {
-    document.getElementById("navMenu").classList.toggle("active");
+  const menu = document.getElementById("navMenu");
+  if (menu) {
+    menu.classList.toggle("active");
+  }
 }
 
+/* ================= TRANSLATIONS ================= */
 const translations = {
   en: {
     nav_home: "Home",
@@ -166,23 +335,35 @@ const translations = {
     nav_gallery: "Gallery",
     nav_certificates: "Certificates",
     nav_contact: "Contact",
+
     hero_title: "Backend Developer & Applications",
     hero_desc: "I build secure and scalable backend solutions, automation tools and applications using Python, Node.js and Artificial Intelligence.",
     hero_highlight: "Open to junior / junior+ backend or application developer opportunities.",
+
     btn_projects: "View Projects",
     btn_contact: "Contact",
+
     about_title: "About Me",
     about_lead: "I'm Jorge Luis Carvajal, a backend-focused developer specialized in Python, automation, data analysis and artificial intelligence.",
     about_text: "I design clean, scalable and real-world solutions focused on performance, security and business value.",
+
     services_title: "Services",
     services_subtitle: "Solutions focused on efficiency, scalability and real-world impact.",
     service_automation: "Custom automation scripts to optimize workflows.",
     service_data: "Dashboards and insights for decision making.",
     service_backend: "Secure REST APIs and scalable architectures.",
+
+    gallery_title: "Gallery",
+    gallery_subtitle: "A visual overview of my work environment and projects.",
+
+    cert_title: "Certificates",
+    cert_subtitle: "Education and continuous professional development.",
+
     contact_title: "Contact",
     contact_subtitle: "Have a project or an opportunity? Let's talk.",
     btn_send: "Send Message"
   },
+
   es: {
     nav_home: "Inicio",
     nav_about: "Sobre mí",
@@ -190,40 +371,58 @@ const translations = {
     nav_gallery: "Galería",
     nav_certificates: "Certificados",
     nav_contact: "Contacto",
+
     hero_title: "Desarrollador Backend & Aplicaciones",
     hero_desc: "Desarrollo soluciones backend seguras y escalables, automatización y aplicaciones con Python, Node.js e Inteligencia Artificial.",
     hero_highlight: "Disponible para oportunidades junior / junior+ como desarrollador backend o de aplicaciones.",
+
     btn_projects: "Ver Proyectos",
     btn_contact: "Contacto",
+
     about_title: "Sobre mí",
     about_lead: "Soy Jorge Luis Carvajal, desarrollador backend especializado en Python, automatización, análisis de datos e inteligencia artificial.",
     about_text: "Diseño soluciones limpias, escalables y enfocadas en rendimiento, seguridad y valor real.",
+
     services_title: "Servicios",
     services_subtitle: "Soluciones enfocadas en eficiencia, escalabilidad e impacto real.",
     service_automation: "Scripts de automatización personalizados.",
     service_data: "Análisis de datos y visualización.",
     service_backend: "APIs REST seguras y escalables.",
+
+    gallery_title: "Galería",
+    gallery_subtitle: "Vista general de mi entorno de trabajo y proyectos.",
+
+    cert_title: "Certificados",
+    cert_subtitle: "Formación y desarrollo profesional continuo.",
+
     contact_title: "Contacto",
     contact_subtitle: "¿Tienes un proyecto o una oportunidad? Hablemos.",
     btn_send: "Enviar Mensaje"
   }
 };
 
+/* ================= LANGUAGE SWITCH ================= */
 function setLanguage(lang) {
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
-    if (translations[lang][key]) {
+    if (translations[lang] && translations[lang][key]) {
       el.innerHTML = translations[lang][key];
     }
   });
 
-  document.querySelectorAll(".lang-btn").forEach(btn => btn.classList.remove("active"));
-  document.querySelectorAll(`[onclick="setLanguage('${lang}')"]`).forEach(btn => btn.classList.add("active"));
+  document.querySelectorAll(".lang-btn").forEach(btn => {
+    btn.classList.remove("active");
+  });
+
+  document
+    .querySelectorAll(`[onclick="setLanguage('${lang}')"]`)
+    .forEach(btn => btn.classList.add("active"));
 }
 </script>
 
 </body>
 </html>
+
 
 
 

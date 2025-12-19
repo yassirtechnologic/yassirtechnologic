@@ -18,6 +18,21 @@ const observer = new IntersectionObserver(
 
 document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
 
+let certIndex = 0;
+
+function moveCert(direction) {
+  const track = document.getElementById("certTrack");
+  const items = document.querySelectorAll(".cert-item");
+  const itemWidth = items[0].offsetWidth;
+
+  certIndex += direction;
+
+  if (certIndex < 0) certIndex = items.length - 1;
+  if (certIndex >= items.length) certIndex = 0;
+
+  track.style.transform = `translateX(-${certIndex * itemWidth}px)`;
+}
+
 /* ================= LANGUAGE SYSTEM ================= */
 const translations = {
     en: {
