@@ -167,7 +167,7 @@ body {
 .about-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(5, 10, 25, 0.88);
+  background: rgba(10, 15, 30, 0.55);
   z-index: 1;
 }
 
@@ -230,7 +230,7 @@ body {
 .services-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(5, 10, 25, 0.9);
+  background: rgba(10, 15, 30, 0.55);
   z-index: 1;
 }
 
@@ -309,7 +309,7 @@ body {
 .gallery-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(5, 10, 25, 0.9);
+  background: rgba(10, 15, 30, 0.55);
   z-index: 1;
 }
 
@@ -401,7 +401,7 @@ body {
 .cert-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(5, 10, 25, 0.9);
+  background: rgba(10, 15, 30, 0.55);
   z-index: 1;
 }
 
@@ -484,7 +484,7 @@ body {
 .contact-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(5, 10, 25, 0.88);
+  background: rgba(10, 15, 30, 0.55);
   z-index: 1;
 }
 
@@ -576,7 +576,7 @@ body {
 .comments-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(5, 10, 25, 0.9);
+  background: rgba(10, 15, 30, 0.55);
   z-index: 1;
 }
 
