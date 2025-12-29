@@ -155,29 +155,87 @@
   </div>
 </section>
 
-<!-- ================= GALLERY ================= -->
-<section id="gallery" class="gallery-section">
-  <div class="gallery-overlay"></div>
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="projects-section">
+  <div class="projects-overlay"></div>
 
-  <div class="gallery-container">
-    <h2 class="section-title" data-i18n="gallery_title">Projects Gallery</h2>
-
-    <p class="section-subtitle" data-i18n="gallery_subtitle">
-      Real projects, real technology.
+  <div class="projects-container">
+    <h2 class="section-title">Proyectos</h2>
+    <p class="section-subtitle">
+      Proyectos reales enfocados en backend, automatización e inteligencia artificial.
     </p>
 
-    <div class="gallery-grid">
-      <div class="gallery-item">
-        <img src="assets/images/proyecto1.jpg" alt="Project 1" onclick="openModal(this)">
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <h3>Yassir Universal AI Chatbot</h3>
+        <p>
+          Backend de chatbot con inteligencia artificial, integración de APIs
+          y lógica conversacional para múltiples usos.
+        </p>
+        <span class="tech">Node.js · OpenAI · APIs REST</span>
+
+        <div class="project-links">
+          <a href="https://github.com/yassirtechnologic/yassir-universal-ai-chatbot" target="_blank">
+            Código
+          </a>
+        </div>
       </div>
 
-      <div class="gallery-item">
-        <img src="assets/images/proyecto2.jpg" alt="Project 2" onclick="openModal(this)">
+      <div class="project-card">
+  <h3>Eventos York & Katy (Android App)</h3>
+  <p>
+    Aplicación Android profesional para la gestión integral de eventos,
+    con menús, galería, testimonios, panel de administración y contacto con clientes.
+  </p>
+
+  <span class="tech">
+    Android · Kotlin · Java · Firebase · XML · Gradle
+  </span>
+
+  <div class="project-links">
+    <a href="https://github.com/yassirtechnologic/app-eventos-yorkat" target="_blank">
+      Código
+    </a>
+    <a href="https://eventosyorkat.com" target="_blank">
+      Google Play
+    </a>
+  </div>
+</div>
+
+      <div class="project-card">
+        <h3>Web Mantenimiento Balladares</h3>
+        <p>
+          Sitio web profesional desarrollado para un negocio real,
+          publicado y accesible públicamente.
+        </p>
+        <span class="tech">HTML · CSS · GitHub Pages</span>
+
+        <div class="project-links">
+          <a href="https://yassirtechnologic.github.io/mantenimiento-balladares/" target="_blank">
+            Ver web
+          </a>
+          <a href="https://github.com/yassirtechnologic/mantenimiento-balladares" target="_blank">
+            Código
+          </a>
+        </div>
       </div>
 
-      <div class="gallery-item">
-        <img src="assets/images/proyecto3.jpg" alt="Project 3" onclick="openModal(this)">
+      <div class="project-card">
+        <h3>Portfolio Python – Análisis de Datos</h3>
+        <p>
+          Colección de ejercicios y proyectos en Python orientados
+          al análisis y manipulación de datos.
+        </p>
+        <span class="tech">Python · Data Analysis</span>
+
+        <div class="project-links">
+          <a href="https://github.com/yassirtechnologic/Portafolio_Python_AnalisisDatos" target="_blank">
+            Código
+          </a>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -189,43 +247,40 @@
 </div>
 
 <!-- ================= CERTIFICATES ================= -->
+
 <section id="certificates" class="certificates-section">
   <div class="cert-overlay"></div>
 
   <div class="cert-container">
-    <h2 class="section-title" data-i18n="cert_title">Certificates</h2>
-
-    <p class="section-subtitle" data-i18n="cert_subtitle">
-      Education and continuous professional development.
+    <h2 class="section-title">Certificados</h2>
+    <p class="section-subtitle">
+      Formación y desarrollo profesional continuo.
     </p>
 
-    <!-- Carrusel -->
     <div class="cert-carousel">
-      <button class="cert-btn prev" onclick="moveCert(-1)">❮</button>
-
       <div class="cert-track" id="certTrack">
+
         <div class="cert-item">
-          <img src="assets/images/diploma_python.png" alt="Python Certificate" onclick="openModal(this)">
+          <img src="assets/images/diploma_python.png" alt="Python">
           <span>Python Developer</span>
         </div>
 
         <div class="cert-item">
-          <img src="assets/images/certificado_blockchain.png" alt="Blockchain Certificate" onclick="openModal(this)">
+          <img src="assets/images/certificado_blockchain.png" alt="Blockchain">
           <span>Blockchain Fundamentals</span>
         </div>
 
         <div class="cert-item">
-          <img src="assets/images/certificado_ciberseguridad.png" alt="Cybersecurity Certificate" onclick="openModal(this)">
-          <span>Cybersecurity Basics</span>
+          <img src="assets/images/certificado_ciberseguridad.png" alt="Cybersecurity">
+          <span>Cybersecurity</span>
         </div>
 
         <div class="cert-item">
-          <img src="assets/images/certificado_blockchain2.png" alt="Web3 Certificate" onclick="openModal(this)">
+          <img src="assets/images/certificado_blockchain2.png" alt="Web3">
           <span>Web3 & Smart Contracts</span>
         </div>
-      </div>
 
-      <button class="cert-btn next" onclick="moveCert(1)">❯</button>
+      </div>
     </div>
   </div>
 </section>
