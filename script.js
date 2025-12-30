@@ -31,8 +31,10 @@ const translations = {
     heroDesc: "I build secure and scalable backend solutions, automation tools and applications using Python, Node.js and Artificial Intelligence applied to real-world problems.",
     heroFocus: "Open to junior / junior+ backend or application developer opportunities.",
 
-    aboutTitle: "About Me",
-    aboutText: "I'm Jorge Luis Carvajal, a backend-focused developer with experience in Python, automation, data analysis and artificial intelligence.",
+    about_title: "About Me",
+    about_lead: "I'm <strong>Jorge Luis Carvajal</strong>, a backend-focused developer specialized in Python, automation, data analysis and artificial intelligence.",
+    about_text: "I design clean, scalable and real-world solutions focused on performance, security and business value.",
+    about_btn: "View Projects",
 
     servicesTitle: "Services",
 
@@ -51,8 +53,10 @@ const translations = {
     heroDesc: "Desarrollo soluciones backend, automatización y aplicaciones seguras y escalables usando Python, Node.js e Inteligencia Artificial aplicada a problemas reales.",
     heroFocus: "Interesado en oportunidades junior / junior+ como desarrollador backend o de aplicaciones.",
 
-    aboutTitle: "Sobre mí",
-    aboutText: "Soy Jorge Luis Carvajal, desarrollador backend con experiencia en Python, automatización, análisis de datos e inteligencia artificial.",
+    about_title: "Sobre mí",
+    about_lead: "Soy <strong>Jorge Luis Carvajal</strong>, desarrollador backend especializado en Python, automatización, análisis de datos e inteligencia artificial.",
+    about_text: "Diseño soluciones limpias, escalables y reales enfocadas en rendimiento, seguridad y valor para el negocio.",
+    about_btn: "Ver proyectos",
 
     servicesTitle: "Servicios",
 
@@ -62,30 +66,47 @@ const translations = {
 };
 
 function setLanguage(lang) {
+  /* NAV */
   document.querySelector("[data-nav-home]").textContent = translations[lang].navHome;
   document.querySelector("[data-nav-about]").textContent = translations[lang].navAbout;
   document.querySelector("[data-nav-services]").textContent = translations[lang].navServices;
   document.querySelector("[data-nav-projects]").textContent = translations[lang].navProjects;
   document.querySelector("[data-nav-contact]").textContent = translations[lang].navContact;
 
+  /* HERO */
   document.querySelector("[data-hero-title]").textContent = translations[lang].heroTitle;
   document.querySelector("[data-hero-desc]").textContent = translations[lang].heroDesc;
   document.querySelector("[data-hero-focus]").textContent = translations[lang].heroFocus;
 
-  document.querySelector("[data-about-title]").textContent = translations[lang].aboutTitle;
-  document.querySelector("[data-about-text]").textContent = translations[lang].aboutText;
+  /* ABOUT */
+  document.querySelector("[data-i18n='about_title']").textContent =
+    translations[lang].about_title;
 
-  document.querySelector("[data-services-title]").textContent = translations[lang].servicesTitle;
+  document.querySelector("[data-i18n='about_lead']").innerHTML =
+    translations[lang].about_lead;
 
-  document.querySelector("[data-contact-title]").textContent = translations[lang].contactTitle;
-  document.querySelector("[data-contact-text]").textContent = translations[lang].contactText;
+  document.querySelector("[data-i18n='about_text']").textContent =
+    translations[lang].about_text;
+
+  document.querySelector("[data-i18n='about_btn']").textContent =
+    translations[lang].about_btn;
+
+  /* SERVICES */
+  document.querySelector("[data-services-title]").textContent =
+    translations[lang].servicesTitle;
+
+  /* CONTACT */
+  document.querySelector("[data-contact-title]").textContent =
+    translations[lang].contactTitle;
+
+  document.querySelector("[data-contact-text]").textContent =
+    translations[lang].contactText;
 }
 
 /* Idioma por defecto */
 setLanguage("en");
 
-/* ================= CERTIFICATES AUTO CAROUSEL (FIXED) ================= */
-
+/* ================= CERTIFICATES AUTO CAROUSEL ================= */
 document.addEventListener("DOMContentLoaded", () => {
   const track = document.getElementById("certTrack");
   const items = document.querySelectorAll(".cert-item");
@@ -96,15 +117,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   let currentIndex = 0;
+  const total = items.length;
 
   setInterval(() => {
-    const itemWidth = items[0].offsetWidth;
-    currentIndex++;
-
-    if (currentIndex >= items.length) {
-      currentIndex = 0;
-    }
-
-    track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-  }, 5000);
+    currentIndex = (currentIndex + 1) % total;
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }, 4500);
 });
