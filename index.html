@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Yassir Technologic | Backend Developer & AI Solutions</title>
+
+  <meta name="description" content="Professional portfolio of Jorge Luis Carvajal. Backend development, automation, data analysis and AI solutions.">
+  <meta name="author" content="Jorge Luis Carvajal">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo-yassir.png">
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="header-container">
+
+    <!-- Logo -->
+    <div class="logo-area">
+      <img src="assets/images/logo-yassir.png" alt="Yassir logo" class="logo">
+      <span class="brand-name">Yassir Technologic</span>
+    </div>
+
+    <!-- Menú Desktop -->
+    <nav class="nav-desktop">
+      <a href="#home" data-i18n="nav_home">Home</a>
+      <a href="#about" data-i18n="nav_about">About</a>
+      <a href="#services" data-i18n="nav_services">Services</a>
+      <a href="#projects" data-i18n="nav_projects">Projects</a>
+      <a href="#certificates" data-i18n="nav_certificates">Certificates</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+
+    <!-- Idiomas -->
+    <div class="lang-switch">
+      <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+      <button class="lang-btn" onclick="setLanguage('es')">ES</button>
+    </div>
+
+    <!-- Botón hamburguesa -->
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+  </div>
+
+  <!-- Menú móvil -->
+  <nav class="nav-mobile" id="navMenu">
+    <a href="#home" onclick="toggleMenu()">Home</a>
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#services" onclick="toggleMenu()">Services</a>
+    <a href="#projects" onclick="toggleMenu()">Projects</a>
+    <a href="#certificates" onclick="toggleMenu()">Certificates</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="hero-section">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1>Yassir Technologic</h1>
+
+    <h2 data-i18n="hero_title">
+      Backend Developer & Applications
+    </h2>
+
+    <p class="hero-desc" data-i18n="hero_desc">
+      I build secure and scalable backend solutions, automation tools and applications using
+      <strong>Python, Node.js and Artificial Intelligence</strong>.
+    </p>
+
+    <p class="highlight" data-i18n="hero_highlight">
+      Open to <strong>junior / junior+</strong> backend or application developer opportunities.
+    </p>
+
+    <div class="hero-actions">
+      <!-- CORRECCIÓN IMPORTANTE -->
+      <a href="#projects" class="btn primary" data-i18n="btn_projects">
+        View Projects
+      </a>
+
+      <a href="#contact" class="btn secondary" data-i18n="btn_contact">
+        Contact
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about-section">
+  <div class="about-overlay"></div>
+
+  <div class="about-container">
+
+    <!-- Imagen -->
+    <div class="about-image">
+      <img src="assets/images/about.jpg" alt="Backend developer working with code and AI systems">
+    </div>
+
+    <!-- Texto -->
+    <div class="about-text">
+      <h2 data-i18n="about_title">About Me</h2>
+
+      <p class="about-lead" data-i18n="about_lead">
+        I'm <strong>Jorge Luis Carvajal</strong>, a backend-focused developer specialized in
+        Python, automation, data analysis and artificial intelligence.
+      </p>
+
+      <p class="about-desc" data-i18n="about_text">
+        I design clean, scalable and real-world solutions focused on performance,
+        security and business value. My goal is to help businesses automate processes,
+        save time and scale efficiently using modern technologies.
+      </p>
+
+      <a href="#projects" class="about-btn" data-i18n="btn_projects">
+        View Projects
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section id="services" class="services-section">
+  <div class="services-overlay"></div>
+
+  <div class="services-container">
+    <h2 class="section-title" data-i18n="services_title">Services</h2>
+
+    <p class="section-subtitle" data-i18n="services_subtitle">
+      Solutions focused on efficiency, scalability and real-world impact.
+    </p>
+
+    <div class="services-grid">
+
+      <!-- SERVICIO 1 -->
+      <div class="service-card">
+        <div class="service-icon">⚙️</div>
+
+        <h3 data-i18n="service_automation_title">
+          AI & Python Automation
+        </h3>
+
+        <p data-i18n="service_automation">
+          I automate repetitive tasks, workflows and business processes using Python and AI,
+          helping you save time and reduce manual work.
+        </p>
+      </div>
+
+      <!-- SERVICIO 2 -->
+      <div class="service-card">
+        <div class="service-icon">📊</div>
+
+        <h3 data-i18n="service_data_title">
+          Data Analysis & Insights
+        </h3>
+
+        <p data-i18n="service_data">
+          Transform your data into clear dashboards and actionable insights to improve
+          decision making and business performance.
+        </p>
+      </div>
+
+      <!-- SERVICIO 3 -->
+      <div class="service-card">
+        <div class="service-icon">🔐</div>
+
+        <h3 data-i18n="service_backend_title">
+          Backend Systems & APIs
+        </h3>
+
+        <p data-i18n="service_backend">
+          I build secure, scalable backend systems and APIs designed to support
+          modern applications and business growth.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="projects-section">
+  <div class="projects-overlay"></div>
+
+  <div class="projects-container">
+    <h2 class="section-title">Projects</h2>
+
+    <p class="section-subtitle">
+      Real-world projects focused on backend development, automation and artificial intelligence.
+    </p>
+
+    <div class="projects-grid">
+
+      <!-- PROYECTO 1 -->
+      <div class="project-card">
+        <h3>Yassir Universal AI Chatbot</h3>
+
+        <p>
+          ✔ AI-powered chatbot system<br>
+          ✔ Automated user interactions<br>
+          ✔ Reduces response time and manual workload
+        </p>
+
+        <span class="tech">Node.js · OpenAI · APIs REST</span>
+
+        <div class="project-links">
+          <a href="https://github.com/yassirtechnologic/yassir-universal-ai-chatbot" target="_blank">
+            View Code
+          </a>
+        </div>
+      </div>
+
+      <!-- PROYECTO 2 -->
+      <div class="project-card">
+        <h3>Eventos York & Katy (Android App)</h3>
+
+        <p>
+          ✔ Complete event management system<br>
+          ✔ Client interaction and booking features<br>
+          ✔ Real business solution used in production
+        </p>
+
+        <span class="tech">
+          Android · Kotlin · Java · Firebase · XML · Gradle
+        </span>
+
+        <div class="project-links">
+          <a href="https://github.com/yassirtechnologic/app-eventos-yorkat" target="_blank">
+            View Code
+          </a>
+
+          <a href="https://eventosyorkat.com" target="_blank">
+            Live Demo
+          </a>
+        </div>
+      </div>
+
+      <!-- PROYECTO 3 -->
+      <div class="project-card fade-in">
+        <h3>Yassir Technologic – Developer Portfolio</h3>
+
+        <p>
+          ✔ Professional personal portfolio<br>
+          ✔ Multilingual support (EN / ES)<br>
+          ✔ Responsive design and modern UI
+        </p>
+
+        <span class="tech">
+          HTML · CSS · JavaScript · GitHub Pages · Responsive Design
+        </span>
+
+        <div class="project-links">
+          <a href="https://github.com/yassirtechnologic/yassirtechnologic" target="_blank">
+            View Code
+          </a>
+        </div>
+      </div>
+
+      <!-- PROYECTO 4 -->
+      <div class="project-card">
+        <h3>Web Mantenimiento Balladares</h3>
+
+        <p>
+          ✔ Professional website for real client<br>
+          ✔ Improved online presence and visibility<br>
+          ✔ Deployed and accessible online
+        </p>
+
+        <span class="tech">HTML · CSS · GitHub Pages</span>
+
+        <div class="project-links">
+          <a href="https://yassirtechnologic.github.io/mantenimiento-balladares/" target="_blank">
+            Live Website
+          </a>
+
+          <a href="https://github.com/yassirtechnologic/mantenimiento-balladares" target="_blank">
+            View Code
+          </a>
+        </div>
+      </div>
+
+      <!-- PROYECTO 5 -->
+      <div class="project-card fade-in">
+        <h3>Eventos York & Katy Website</h3>
+
+        <p>
+          ✔ Event service promotion website<br>
+          ✔ Image gallery and testimonials<br>
+          ✔ Fully responsive and user-friendly design
+        </p>
+
+        <span class="tech">
+          HTML · CSS · JavaScript · GitHub Pages
+        </span>
+
+        <div class="project-links">
+          <a href="https://github.com/yassirtechnologic/Eventos-yorkat_25" target="_blank" class="btn-project">
+            View Code
+          </a>
+
+          <a href="https://yassirtechnologic.github.io/Eventos-yorkat_25/" target="_blank" class="btn-project">
+            Live Demo
+          </a>
+        </div>
+      </div>
+
+      <!-- PROYECTO 6 -->
+      <div class="project-card">
+        <h3>Python Data Analysis Portfolio</h3>
+
+        <p>
+          ✔ Data analysis projects in Python<br>
+          ✔ Data cleaning and transformation<br>
+          ✔ Practical exercises and real datasets
+        </p>
+
+        <span class="tech">Python · Data Analysis</span>
+
+        <div class="project-links">
+          <a href="https://github.com/yassirtechnologic/Portafolio_Python_AnalisisDatos" target="_blank">
+            View Code
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= IMAGE MODAL ================= -->
+<div class="image-modal" id="imageModal" onclick="closeModal()">
+  <span class="close-modal" aria-label="Close image">&times;</span>
+
+  <img
+    class="modal-content"
+    id="modalImg"
+    alt="Certificate preview"
+  >
+</div>
+
+<!-- ================= CERTIFICATES ================= -->
+<section id="certificates" class="certificates-section">
+  <div class="cert-overlay"></div>
+
+  <div class="cert-container">
+    <h2 class="section-title" data-i18n="cert_title">Certificates</h2>
+
+    <p class="section-subtitle" data-i18n="cert_subtitle">
+      Continuous learning and professional development.
+    </p>
+
+    <div class="cert-carousel">
+      <div class="cert-track" id="certTrack">
+
+        <!-- CERT 1 -->
+        <div class="cert-item">
+          <img
+            src="assets/images/diploma_python.png"
+            alt="Python Developer Certificate"
+            loading="lazy"
+          >
+          <span>Python Developer</span>
+        </div>
+
+        <!-- CERT 2 -->
+        <div class="cert-item">
+          <img
+            src="assets/images/certificado_blockchain.png"
+            alt="Blockchain Fundamentals Certificate"
+            loading="lazy"
+          >
+          <span>Blockchain Fundamentals</span>
+        </div>
+
+        <!-- CERT 3 -->
+        <div class="cert-item">
+          <img
+            src="assets/images/certificado_blockchain1.png"
+            alt="Blockchain 101 Certificate"
+            loading="lazy"
+          >
+          <span>Blockchain 101</span>
+        </div>
+
+        <!-- CERT 4 -->
+        <div class="cert-item">
+          <img
+            src="assets/images/certificado_ciberseguridad.png"
+            alt="Cybersecurity Certificate"
+            loading="lazy"
+          >
+          <span>Cybersecurity</span>
+        </div>
+
+        <!-- CERT 5 -->
+        <div class="cert-item">
+          <img
+            src="assets/images/aws_cloud_practitioner.png"
+            alt="AWS Cloud Practitioner Certificate"
+            loading="lazy"
+          >
+          <span>AWS Cloud Practitioner</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact-section">
+  <div class="contact-overlay"></div>
+
+  <div class="contact-container">
+    <h2 data-i18n="contact_title">Contact</h2>
+
+    <p class="contact-subtitle" data-i18n="contact_subtitle">
+      Have a project or an idea? Let’s build something powerful together.
+    </p>
+
+    <!-- FORMULARIO -->
+    <form class="contact-form">
+      <input type="text" placeholder="Your name" required>
+      <input type="email" placeholder="Your email" required>
+      <textarea placeholder="Tell me about your project..." rows="5" required></textarea>
+
+      <button type="submit" data-i18n="btn_send">
+        Send Message
+      </button>
+    </form>
+
+    <!-- WHATSAPP (CLAVE PARA CLIENTES) -->
+    <div class="contact-extra">
+      <p>Prefer a faster response?</p>
+
+      <a href="https://wa.me/34600000000" target="_blank" class="whatsapp-btn">
+        💬 Chat on WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= COMMENTS ================= -->
+<section id="comments" class="comments-section">
+  <div class="comments-overlay"></div>
+
+  <div class="comments-container">
+    <h2 class="section-title">Client Reviews</h2>
+
+    <p class="section-subtitle">
+      Feedback from real experiences and satisfied clients.
+    </p>
+
+    <!-- FORMULARIO -->
+    <form class="comment-form">
+      <input type="text" placeholder="Your name" required>
+
+      <!-- ESTRELLAS -->
+      <div class="stars-container">
+        <span class="stars-label">Rate your experience:</span>
+
+        <div class="stars">
+          <input type="radio" id="star5" name="rating" value="5" checked>
+          <label for="star5">★</label>
+
+          <input type="radio" id="star4" name="rating" value="4">
+          <label for="star4">★</label>
+
+          <input type="radio" id="star3" name="rating" value="3">
+          <label for="star3">★</label>
+        </div>
+
+        <span class="stars-hint">
+          Only ratings from 3 to 5 stars are accepted ⭐
+        </span>
+      </div>
+
+      <textarea placeholder="Share your experience..." rows="4" required></textarea>
+
+      <button type="submit">
+        Submit Review ⭐⭐⭐⭐⭐
+      </button>
+    </form>
+
+    <!-- REVIEWS -->
+    <div class="comments-list">
+
+      <div class="comment-card">
+        <div class="comment-header">
+          <strong>Happy Client</strong>
+          <span class="comment-stars">★★★★★</span>
+        </div>
+
+        <p>
+          Excellent service, professional work and modern solutions.
+        </p>
+      </div>
+
+      <!-- NUEVO EJEMPLO (más profesional) -->
+      <div class="comment-card">
+        <div class="comment-header">
+          <strong>Business Owner</strong>
+          <span class="comment-stars">★★★★★</span>
+        </div>
+
+        <p>
+          The automation system saved us hours of manual work every week.
+          Highly recommended.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <p>
+    © 2026 Yassir Technologic · Built by Jorge Luis Carvajal
+  </p>
+</footer>
+
+<!-- ================= JS ================= -->
+<script>
+
+/* ================= MENU MOBILE ================= */
+function toggleMenu() {
+  const menu = document.getElementById("navMenu");
+  if (menu) {
+    menu.classList.toggle("active");
+  }
+}
+
+/* ================= TRANSLATIONS ================= */
+const translations = {
+  en: {
+    nav_home: "Home",
+    nav_about: "About",
+    nav_services: "Services",
+    nav_gallery: "Gallery",
+    nav_certificates: "Certificates",
+    nav_contact: "Contact",
+
+    hero_title: "Backend Developer & Applications",
+    hero_desc: "I build secure and scalable backend solutions, automation tools and applications using Python, Node.js and Artificial Intelligence.",
+    hero_highlight: "Open to junior / junior+ backend or application developer opportunities.",
+
+    btn_projects: "View Projects",
+    btn_contact: "Contact",
+
+    about_title: "About Me",
+    about_lead: "I'm Jorge Luis Carvajal, a backend-focused developer specialized in Python, automation, data analysis and artificial intelligence.",
+    about_text: "I design clean, scalable and real-world solutions focused on performance, security and business value.",
+
+    services_title: "Services",
+    services_subtitle: "Solutions focused on efficiency, scalability and real-world impact.",
+
+    service_automation_title: "AI & Python Automation",
+    service_automation: "I automate repetitive tasks and workflows using Python and AI.",
+
+    service_data_title: "Data Analysis & Insights",
+    service_data: "Transform your data into dashboards and actionable insights.",
+
+    service_backend_title: "Backend Systems & APIs",
+    service_backend: "Secure and scalable backend architectures.",
+
+    cert_title: "Certificates",
+    cert_subtitle: "Continuous learning and professional development.",
+
+    contact_title: "Contact",
+    contact_subtitle: "Have a project or an idea? Let’s build something powerful together.",
+    btn_send: "Send Message"
+  },
+
+  es: {
+    nav_home: "Inicio",
+    nav_about: "Sobre mí",
+    nav_services: "Servicios",
+    nav_gallery: "Galería",
+    nav_certificates: "Certificados",
+    nav_contact: "Contacto",
+
+    hero_title: "Desarrollador Backend & Aplicaciones",
+    hero_desc: "Desarrollo soluciones backend seguras y escalables, automatización y aplicaciones con Python, Node.js e Inteligencia Artificial.",
+    hero_highlight: "Disponible para oportunidades junior / junior+ como desarrollador backend o de aplicaciones.",
+
+    btn_projects: "Ver Proyectos",
+    btn_contact: "Contacto",
+
+    about_title: "Sobre mí",
+    about_lead: "Soy Jorge Luis Carvajal, desarrollador backend especializado en Python, automatización, análisis de datos e inteligencia artificial.",
+    about_text: "Diseño soluciones limpias, escalables y enfocadas en rendimiento, seguridad y valor real.",
+
+    services_title: "Servicios",
+    services_subtitle: "Soluciones enfocadas en eficiencia, escalabilidad e impacto real.",
+
+    service_automation_title: "Automatización con IA y Python",
+    service_automation: "Automatizo tareas y procesos repetitivos usando Python e IA.",
+
+    service_data_title: "Análisis de Datos",
+    service_data: "Transformo datos en información clara y útil.",
+
+    service_backend_title: "Sistemas Backend & APIs",
+    service_backend: "Arquitecturas backend seguras y escalables.",
+
+    cert_title: "Certificados",
+    cert_subtitle: "Formación y desarrollo profesional continuo.",
+
+    contact_title: "Contacto",
+    contact_subtitle: "¿Tienes una idea o proyecto? Construyamos algo potente juntos.",
+    btn_send: "Enviar Mensaje"
+  }
+};
+
+/* ================= LANGUAGE SWITCH ================= */
+function setLanguage(lang) {
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+
+    if (translations[lang] && translations[lang][key]) {
+      el.innerHTML = translations[lang][key];
+    }
+  });
+
+  document.querySelectorAll(".lang-btn").forEach(btn => {
+    btn.classList.remove("active");
+  });
+
+  document
+    .querySelectorAll(`[onclick="setLanguage('${lang}')"]`)
+    .forEach(btn => btn.classList.add("active"));
+}
+
+/* ================= CERTIFICATES AUTO CAROUSEL ================= */
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.getElementById("certTrack");
+  const items = document.querySelectorAll(".cert-item");
+
+  if (!track || items.length === 0) {
+    console.warn("Certificates carousel not found");
+    return;
+  }
+
+  let index = 0;
+  const total = items.length;
+
+  setInterval(() => {
+    index = (index + 1) % total;
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }, 4000);
+});
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
