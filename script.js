@@ -36,17 +36,24 @@ const translations = {
     navProjects: "Projects",
     navContact: "Contact",
 
-    heroTitle: "Backend Developer & Applications",
-    heroDesc: "I build secure and scalable backend solutions, automation tools and applications using Python, Node.js and Artificial Intelligence applied to real-world problems.",
-    heroFocus: "Open to junior / junior+ backend or application developer opportunities.",
+    /* HERO NUEVO */
+    hero_main: "I automate processes and build backend systems that help businesses grow",
+    hero_stack: "Python · APIs · Artificial Intelligence",
+    hero_desc: "I help businesses and entrepreneurs save time, reduce errors and scale operations with real solutions",
 
+    btn_projects: "View Projects",
+    btn_contact: "Work with me",
+
+    /* ABOUT */
     about_title: "About Me",
     about_lead: "I'm <strong>Jorge Luis Carvajal</strong>, a backend-focused developer specialized in Python, automation, data analysis and artificial intelligence.",
     about_text: "I design clean, scalable and real-world solutions focused on performance, security and business value.",
     about_btn: "View Projects",
 
+    /* SERVICES */
     servicesTitle: "Services",
 
+    /* CONTACT */
     contactTitle: "Contact",
     contactText: "Have a project or an idea? Let’s build something powerful together."
   },
@@ -58,21 +65,29 @@ const translations = {
     navProjects: "Proyectos",
     navContact: "Contacto",
 
-    heroTitle: "Desarrollador Backend & Aplicaciones",
-    heroDesc: "Desarrollo soluciones backend, automatización y aplicaciones seguras y escalables usando Python, Node.js e Inteligencia Artificial aplicada a problemas reales.",
-    heroFocus: "Interesado en oportunidades junior / junior+ como desarrollador backend o de aplicaciones.",
+    /* HERO NUEVO */
+    hero_main: "Automatizo procesos y desarrollo sistemas backend que hacen crecer negocios",
+    hero_stack: "Python · APIs · Inteligencia Artificial",
+    hero_desc: "Ayudo a empresas y emprendedores a ahorrar tiempo, reducir errores y escalar sus operaciones con soluciones reales",
 
+    btn_projects: "Ver proyectos",
+    btn_contact: "Trabajar conmigo",
+
+    /* ABOUT */
     about_title: "Sobre mí",
     about_lead: "Soy <strong>Jorge Luis Carvajal</strong>, desarrollador backend especializado en Python, automatización, análisis de datos e inteligencia artificial.",
     about_text: "Diseño soluciones limpias, escalables y reales enfocadas en rendimiento, seguridad y valor para el negocio.",
     about_btn: "Ver proyectos",
 
+    /* SERVICES */
     servicesTitle: "Servicios",
 
+    /* CONTACT */
     contactTitle: "Contacto",
     contactText: "¿Tienes una idea o proyecto? Construyamos algo potente juntos."
   }
 };
+
 
 /* ================= LANGUAGE SWITCH ================= */
 function setLanguage(lang) {
@@ -94,10 +109,13 @@ function setLanguage(lang) {
   safeSetText("[data-nav-projects]", translations[lang].navProjects);
   safeSetText("[data-nav-contact]", translations[lang].navContact);
 
-  /* HERO */
-  safeSetText("[data-hero-title]", translations[lang].heroTitle);
-  safeSetText("[data-hero-desc]", translations[lang].heroDesc);
-  safeSetText("[data-hero-focus]", translations[lang].heroFocus);
+  /* HERO NUEVO */
+  safeSetText("[data-i18n='hero_main']", translations[lang].hero_main);
+  safeSetText("[data-i18n='hero_stack']", translations[lang].hero_stack);
+  safeSetText("[data-i18n='hero_desc']", translations[lang].hero_desc);
+
+  safeSetText("[data-i18n='btn_projects']", translations[lang].btn_projects);
+  safeSetText("[data-i18n='btn_contact']", translations[lang].btn_contact);
 
   /* ABOUT */
   safeSetText("[data-i18n='about_title']", translations[lang].about_title);
@@ -113,7 +131,8 @@ function setLanguage(lang) {
   safeSetText("[data-contact-text]", translations[lang].contactText);
 }
 
-/* Idioma por defecto */
+
+/* ================= DEFAULT LANGUAGE ================= */
 document.addEventListener("DOMContentLoaded", () => {
   setLanguage("en");
 });
