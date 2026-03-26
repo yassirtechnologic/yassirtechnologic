@@ -30,18 +30,25 @@ body {
   width: 100%;
   z-index: 1000;
 
-  /* MÁS PRO */
-  background: rgba(10, 15, 30, 0.85);
-  backdrop-filter: blur(12px);
+  /* 🔥 MÁS LIGERO Y ELEGANTE */
+  background: rgba(5, 10, 25, 0.6);
+  backdrop-filter: blur(10px);
 
-  box-shadow: 0 6px 25px rgba(0,0,0,0.5);
+  /* 🔥 LÍNEA SUTIL (PRO) */
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+
+  /* 🔥 SOMBRA MÁS SUAVE */
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+
   transition: all 0.3s ease;
 }
 
+/* CONTENEDOR */
 .header-container {
   max-width: 1200px;
   margin: auto;
-  padding: 14px 20px;
+
+  padding: 12px 20px; /* 🔥 más compacto */
 
   display: flex;
   align-items: center;
@@ -1123,6 +1130,68 @@ body {
   }
 }
 
+.hero-box {
+  background: transparent; /* 🔥 quitamos la caja */
+  backdrop-filter: none;
+
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+
+  text-align: center;
+  max-width: 800px;
+}
+
+.hero-section {
+  position: relative;
+
+  min-height: 120vh;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  padding-top: 120px;
+  padding-bottom: 60px;
+
+  /* 🔥 NUEVO FONDO */
+  background: url("assets/images/fondo2.png") center / cover no-repeat;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.hero-content h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  color: #ff9f1c;
+  margin: 10px 0;
+}
+
+.hero-desc {
+  color: #e5e7eb;
+  max-width: 650px;
+  margin: auto;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    rgba(5,10,25,0.7),
+    rgba(5,10,25,0.9)
+  );
+
+  z-index: 1;
+}
 
 
 
