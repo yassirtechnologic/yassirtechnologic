@@ -1,0 +1,661 @@
+/* ==========================================================
+   YASSIR TECHNOLOGIC
+
+   File:
+   about.css
+
+   Description:
+   Corporate company section styles.
+
+   Responsibility:
+   Defines the visual presentation of the company mission,
+   technology philosophy and operating principles.
+
+   Author:
+   Yassir Technologic
+
+   Version:
+   2.0.0
+========================================================== */
+
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.about {
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            180deg,
+            var(--color-background-primary) 0%,
+            var(--blue-50) 100%
+        );
+}
+
+
+/* ==========================================================
+   DECORATIVE BACKGROUND
+========================================================== */
+
+.about::before {
+    content: "";
+
+    position: absolute;
+
+    top: 5rem;
+    right: -14rem;
+
+    width: 34rem;
+    height: 34rem;
+
+    background:
+        radial-gradient(
+            circle,
+            rgb(37 99 235 / 0.08) 0%,
+            transparent 70%
+        );
+
+    pointer-events: none;
+}
+
+
+/* ==========================================================
+   MAIN LAYOUT
+========================================================== */
+
+.about__layout {
+    position: relative;
+
+    z-index:
+        var(--z-raised);
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 0.95fr);
+
+    align-items: center;
+
+    gap:
+        clamp(3rem, 7vw, 6rem);
+}
+
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.about__content {
+    min-width: 0;
+}
+
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.about__title {
+    max-width: 17ch;
+
+    margin-top:
+        var(--space-4);
+
+    color:
+        var(--color-text-primary);
+
+    font-size:
+        clamp(
+            var(--font-size-3xl),
+            4.5vw,
+            var(--font-size-5xl)
+        );
+
+    font-weight:
+        var(--font-weight-bold);
+
+    line-height:
+        var(--line-height-tight);
+
+    letter-spacing:
+        -0.035em;
+
+    text-wrap:
+        balance;
+}
+
+
+/* ==========================================================
+   LEAD
+========================================================== */
+
+.about__lead {
+    max-width: 60ch;
+
+    margin-top:
+        var(--space-6);
+
+    color:
+        var(--color-text-primary);
+
+    font-size:
+        var(--font-size-lg);
+
+    font-weight:
+        var(--font-weight-medium);
+
+    line-height:
+        var(--line-height-relaxed);
+}
+
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.about__description {
+    max-width: 62ch;
+
+    margin-top:
+        var(--space-4);
+
+    color:
+        var(--color-text-secondary);
+
+    font-size:
+        var(--font-size-md);
+
+    line-height:
+        var(--line-height-relaxed);
+}
+
+
+/* ==========================================================
+   CAPABILITIES
+========================================================== */
+
+.about__capabilities {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap:
+        var(--space-2);
+
+    margin-top:
+        var(--space-6);
+}
+
+
+/* ==========================================================
+   ACTIONS
+========================================================== */
+
+.about__actions {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap:
+        var(--space-3);
+
+    margin-top:
+        var(--space-8);
+}
+
+
+/* ==========================================================
+   VISUAL
+========================================================== */
+
+.about__visual {
+    min-width: 0;
+}
+
+
+/* ==========================================================
+   COMPANY SYSTEM
+========================================================== */
+
+.about-system {
+    overflow: hidden;
+
+    background:
+        rgb(255 255 255 / 0.92);
+
+    border:
+        1px solid var(--color-border-default);
+
+    border-radius:
+        var(--radius-2xl);
+
+    box-shadow:
+        var(--shadow-lg);
+
+    -webkit-backdrop-filter:
+        blur(16px);
+
+    backdrop-filter:
+        blur(16px);
+}
+
+
+/* ==========================================================
+   SYSTEM HEADER
+========================================================== */
+
+.about-system__header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap:
+        var(--space-4);
+
+    padding:
+        var(--space-5)
+        var(--space-6);
+
+    border-bottom:
+        1px solid var(--color-border-subtle);
+}
+
+
+.about-system__brand {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap:
+        var(--space-2);
+
+    color:
+        var(--color-text-primary);
+
+    font-size:
+        var(--font-size-sm);
+}
+
+
+.about-system__status {
+    width: 0.625rem;
+    height: 0.625rem;
+
+    background-color:
+        var(--color-success);
+
+    border-radius:
+        var(--radius-full);
+
+    box-shadow:
+        0 0 0 4px
+        rgb(22 163 74 / 0.10);
+}
+
+
+/* ==========================================================
+   CORE FLOW
+========================================================== */
+
+.about-system__core {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap:
+        var(--space-3);
+
+    padding:
+        var(--space-8)
+        var(--space-6);
+
+    text-align: center;
+}
+
+
+.about-system__core-label {
+    color:
+        var(--color-text-secondary);
+
+    font-size:
+        var(--font-size-sm);
+
+    font-weight:
+        var(--font-weight-medium);
+}
+
+
+.about-system__arrow {
+    color:
+        var(--blue-300);
+
+    font-size:
+        var(--font-size-xl);
+}
+
+
+/* ==========================================================
+   ENGINE
+========================================================== */
+
+.about-system__engine {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    width:
+        min(100%, 18rem);
+
+    min-height: 7rem;
+
+    padding:
+        var(--space-5);
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--blue-600),
+            var(--blue-800)
+        );
+
+    border-radius:
+        var(--radius-xl);
+
+    box-shadow:
+        var(--shadow-md);
+}
+
+
+.about-system__engine span {
+    color:
+        var(--blue-200);
+
+    font-size:
+        var(--font-size-xs);
+
+    font-weight:
+        var(--font-weight-bold);
+
+    letter-spacing:
+        0.12em;
+}
+
+
+.about-system__engine strong {
+    margin-top:
+        var(--space-2);
+
+    color:
+        var(--color-text-inverse);
+
+    font-size:
+        var(--font-size-lg);
+
+    line-height:
+        var(--line-height-heading);
+}
+
+
+/* ==========================================================
+   PRINCIPLES
+========================================================== */
+
+.about-system__principles {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap:
+        var(--space-3);
+
+    padding:
+        0
+        var(--space-6)
+        var(--space-6);
+}
+
+
+.about-system__principle {
+    display: grid;
+
+    grid-template-columns:
+        auto minmax(0, 1fr);
+
+    align-items: start;
+
+    gap:
+        var(--space-3);
+
+    padding:
+        var(--space-4);
+
+    background-color:
+        var(--color-background-secondary);
+
+    border:
+        1px solid var(--color-border-subtle);
+
+    border-radius:
+        var(--radius-lg);
+}
+
+
+.about-system__principle-icon {
+    color:
+        var(--color-text-brand);
+
+    font-size:
+        var(--font-size-xs);
+
+    font-weight:
+        var(--font-weight-bold);
+
+    letter-spacing:
+        0.06em;
+}
+
+
+.about-system__principle strong {
+    color:
+        var(--color-text-primary);
+
+    font-size:
+        var(--font-size-sm);
+
+    font-weight:
+        var(--font-weight-semibold);
+
+    line-height:
+        var(--line-height-heading);
+}
+
+
+.about-system__principle p {
+    margin-top:
+        var(--space-2);
+
+    color:
+        var(--color-text-secondary);
+
+    font-size:
+        var(--font-size-xs);
+
+    line-height:
+        var(--line-height-normal);
+}
+
+
+/* ==========================================================
+   COMPANY STATEMENT
+========================================================== */
+
+.about__statement {
+    position: relative;
+
+    z-index:
+        var(--z-raised);
+
+    display: grid;
+
+    grid-template-columns:
+        auto minmax(0, 1fr);
+
+    align-items: start;
+
+    gap:
+        var(--space-6);
+
+    margin-top:
+        var(--space-12);
+
+    padding:
+        var(--space-8);
+
+    background-color:
+        var(--color-surface-primary);
+
+    border:
+        1px solid var(--color-brand-border);
+
+    border-radius:
+        var(--radius-2xl);
+}
+
+
+.about__statement-label {
+    color:
+        var(--color-text-brand);
+
+    font-size:
+        var(--font-size-xs);
+
+    font-weight:
+        var(--font-weight-semibold);
+
+    letter-spacing:
+        0.08em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.about__statement p {
+    max-width: 65ch;
+
+    color:
+        var(--color-text-primary);
+
+    font-size:
+        var(--font-size-xl);
+
+    font-weight:
+        var(--font-weight-semibold);
+
+    line-height:
+        var(--line-height-heading);
+
+    text-wrap:
+        balance;
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 64rem) {
+
+    .about__layout {
+        grid-template-columns:
+            minmax(0, 1fr);
+    }
+
+
+    .about__content {
+        max-width: 760px;
+    }
+
+
+    .about__visual {
+        max-width: 760px;
+
+        width: 100%;
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 48rem) {
+
+    .about__title {
+        font-size:
+            clamp(2.2rem, 10vw, 3.25rem);
+    }
+
+
+    .about__lead {
+        font-size:
+            var(--font-size-md);
+    }
+
+
+    .about__actions {
+        flex-direction: column;
+    }
+
+
+    .about__actions .button {
+        width: 100%;
+    }
+
+
+    .about-system__header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .about-system__principles {
+        grid-template-columns:
+            minmax(0, 1fr);
+
+        padding-inline:
+            var(--space-4);
+
+        padding-bottom:
+            var(--space-4);
+    }
+
+
+    .about__statement {
+        grid-template-columns:
+            minmax(0, 1fr);
+
+        padding:
+            var(--space-6);
+    }
+
+
+    .about__statement p {
+        font-size:
+            var(--font-size-lg);
+    }
+
+}

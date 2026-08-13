@@ -1,0 +1,384 @@
+/* ==========================================================
+   YASSIR TECHNOLOGIC
+
+   File:
+   contact-form.css
+
+   Description:
+   Contact V2 form interface.
+
+   Responsibility:
+   Styles the contact form, fields, controls, submit action
+   and form feedback presentation.
+
+   Author:
+   Yassir Technologic
+
+   Version:
+   1.0.0
+========================================================== */
+
+
+/* ==========================================================
+   FORM WRAPPER
+========================================================== */
+
+.contact__form-wrapper {
+    position: relative;
+
+    padding:
+        var(--space-8);
+
+    background-color:
+        var(--color-surface-primary);
+
+    border:
+        1px solid var(--color-border-default);
+
+    border-radius:
+        var(--radius-2xl);
+
+    box-shadow:
+        var(--shadow-lg);
+}
+
+
+/* ==========================================================
+   FORM
+========================================================== */
+
+.contact__form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap:
+        var(--space-5);
+}
+
+
+/* ==========================================================
+   FORM HEADER
+========================================================== */
+
+.contact__form-header {
+    padding-bottom:
+        var(--space-5);
+
+    border-bottom:
+        1px solid var(--color-border-subtle);
+}
+
+
+.contact__form-label {
+    display: block;
+
+    margin-bottom:
+        var(--space-2);
+
+    color:
+        var(--color-text-primary);
+
+    font-size:
+        var(--font-size-lg);
+
+    font-weight:
+        var(--font-weight-semibold);
+}
+
+
+.contact__form-header p {
+    max-width: 32rem;
+
+    margin: 0;
+
+    color:
+        var(--color-text-secondary);
+
+    font-size:
+        var(--font-size-sm);
+
+    line-height:
+        var(--line-height-relaxed);
+}
+
+
+/* ==========================================================
+   FIELD
+========================================================== */
+
+.contact__field {
+    display: flex;
+
+    flex-direction: column;
+
+    gap:
+        var(--space-2);
+}
+
+
+/* ==========================================================
+   LABEL
+========================================================== */
+
+.contact__field label {
+    color:
+        var(--color-text-primary);
+
+    font-size:
+        var(--font-size-sm);
+
+    font-weight:
+        var(--font-weight-semibold);
+}
+
+
+/* ==========================================================
+   INPUTS
+========================================================== */
+
+.contact__field input,
+.contact__field select,
+.contact__field textarea {
+    width: 100%;
+
+    padding:
+        0.9rem
+        1rem;
+
+    background-color:
+        var(--neutral-0);
+
+    border:
+        1px solid var(--color-border-default);
+
+    border-radius:
+        var(--radius-md);
+
+    color:
+        var(--color-text-primary);
+
+    font: inherit;
+
+    font-size:
+        var(--font-size-sm);
+
+    line-height:
+        var(--line-height-normal);
+
+    transition:
+        border-color 160ms ease,
+        box-shadow 160ms ease,
+        background-color 160ms ease;
+}
+
+
+/* ==========================================================
+   PLACEHOLDER
+========================================================== */
+
+.contact__field input::placeholder,
+.contact__field textarea::placeholder {
+    color:
+        var(--color-text-muted);
+
+    opacity:
+        0.85;
+}
+
+
+/* ==========================================================
+   HOVER
+========================================================== */
+
+.contact__field input:hover,
+.contact__field select:hover,
+.contact__field textarea:hover {
+    border-color:
+        var(--blue-300);
+}
+
+
+/* ==========================================================
+   FOCUS
+========================================================== */
+
+.contact__field input:focus,
+.contact__field select:focus,
+.contact__field textarea:focus {
+    outline: none;
+
+    border-color:
+        var(--blue-600);
+
+    box-shadow:
+        0 0 0 4px
+        rgb(37 99 235 / 0.10);
+
+    background-color:
+        var(--neutral-0);
+}
+
+
+/* ==========================================================
+   SELECT
+========================================================== */
+
+.contact__field select {
+    min-height: 3.25rem;
+
+    cursor: pointer;
+}
+
+
+/* ==========================================================
+   TEXTAREA
+========================================================== */
+
+.contact__field textarea {
+    min-height: 9rem;
+
+    resize: vertical;
+}
+
+
+/* ==========================================================
+   SUBMIT
+========================================================== */
+
+.contact__submit {
+    width: 100%;
+
+    margin-top:
+        var(--space-2);
+
+    justify-content: center;
+}
+
+
+/* ==========================================================
+   FORM NOTE
+========================================================== */
+
+.contact__form-note {
+    max-width: 34rem;
+
+    margin:
+        0
+        auto;
+
+    color:
+        var(--color-text-muted);
+
+    font-size:
+        var(--font-size-xs);
+
+    line-height:
+        var(--line-height-relaxed);
+
+    text-align: center;
+}
+
+
+/* ==========================================================
+   DISABLED STATE
+
+   Prepared for the future form submission system.
+========================================================== */
+
+.contact__form input:disabled,
+.contact__form select:disabled,
+.contact__form textarea:disabled,
+.contact__form button:disabled {
+    cursor: not-allowed;
+
+    opacity: 0.65;
+}
+
+
+/* ==========================================================
+   AUTOFILL
+========================================================== */
+
+.contact__field input:-webkit-autofill {
+    -webkit-text-fill-color:
+        var(--color-text-primary);
+
+    transition:
+        background-color 9999s ease-out;
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 64rem) {
+
+    .contact__form-wrapper {
+        max-width: 48rem;
+
+        width: 100%;
+
+        margin:
+            0 auto;
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 48rem) {
+
+    .contact__form-wrapper {
+        padding:
+            var(--space-6);
+    }
+
+
+    .contact__form {
+        gap:
+            var(--space-4);
+    }
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 30rem) {
+
+    .contact__form-wrapper {
+        padding:
+            var(--space-5);
+    }
+
+
+    .contact__field input,
+    .contact__field select,
+    .contact__field textarea {
+        font-size:
+            1rem;
+    }
+
+}
+
+
+/* ==========================================================
+   REDUCED MOTION
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .contact__field input,
+    .contact__field select,
+    .contact__field textarea {
+        transition: none;
+    }
+
+}

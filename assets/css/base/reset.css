@@ -1,0 +1,179 @@
+/* ==========================================================
+   YASSIR TECHNOLOGIC
+
+   File:
+   reset.css
+
+   Description:
+   Global CSS reset and browser normalization.
+
+   Responsibility:
+   Provides a predictable, accessible and consistent
+   foundation across modern browsers.
+
+   Author:
+   Yassir Technologic
+
+   Version:
+   1.0.0
+========================================================== */
+
+
+/* ==========================================================
+   BOX MODEL
+========================================================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* ==========================================================
+   DOCUMENT
+========================================================== */
+
+html {
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+
+/* ==========================================================
+   BODY
+========================================================== */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    text-rendering: optimizeLegibility;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* ==========================================================
+   TYPOGRAPHIC ELEMENTS
+
+   Removes inconsistent browser margins.
+   Typography itself is defined in typography.css.
+========================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+
+/* ==========================================================
+   MEDIA
+========================================================== */
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+img,
+picture {
+    height: auto;
+}
+
+
+/* ==========================================================
+   FORM CONTROLS
+
+   Controls inherit the application's typography.
+   Native focus indicators are intentionally preserved.
+========================================================== */
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* ==========================================================
+   LINKS
+========================================================== */
+
+a {
+    color: inherit;
+}
+
+
+/* ==========================================================
+   TABLES
+========================================================== */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* ==========================================================
+   TEXTAREA
+========================================================== */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================
+   HIDDEN CONTENT
+========================================================== */
+
+[hidden] {
+    display: none !important;
+}
+
+/* ==========================================================
+   REDUCED MOTION
+
+   Respects the operating system accessibility preference.
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+}

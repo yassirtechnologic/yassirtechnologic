@@ -1,0 +1,116 @@
+/* ==========================================================
+   YASSIR TECHNOLOGIC
+
+   File:
+   container.css
+
+   Description:
+   Global container system.
+
+   Responsibility:
+   Defines reusable content containers that control
+   horizontal alignment, maximum width and page gutters.
+
+   Author:
+   Yassir Technologic
+
+   Version:
+   1.0.0
+========================================================== */
+
+
+/* ==========================================================
+   DEFAULT CONTAINER
+
+   Main content wrapper used across the website.
+========================================================== */
+
+.container {
+    width: 100%;
+    max-width: var(--container-max-width);
+
+    margin-inline: auto;
+
+    padding-inline: var(--container-padding);
+}
+
+
+/* ==========================================================
+   NARROW CONTAINER
+
+   Used for text-heavy content where a shorter reading
+   width improves readability.
+========================================================== */
+
+.container--narrow {
+    width: 100%;
+    max-width: 800px;
+
+    margin-inline: auto;
+
+    padding-inline: var(--container-padding);
+}
+
+
+/* ==========================================================
+   MEDIUM CONTAINER
+
+   Useful for forms, FAQs and content sections that should
+   remain more compact than the main site container.
+========================================================== */
+
+.container--medium {
+    width: 100%;
+    max-width: 1024px;
+
+    margin-inline: auto;
+
+    padding-inline: var(--container-padding);
+}
+
+
+/* ==========================================================
+   WIDE CONTAINER
+
+   Used selectively for layouts that benefit from
+   additional horizontal space.
+========================================================== */
+
+.container--wide {
+    width: 100%;
+    max-width: 1440px;
+
+    margin-inline: auto;
+
+    padding-inline: var(--container-padding);
+}
+
+
+/* ==========================================================
+   RESPONSIVE GUTTERS
+
+   Increases horizontal breathing room as the viewport grows.
+========================================================== */
+
+@media (min-width: 48rem) {
+
+    .container,
+    .container--narrow,
+    .container--medium,
+    .container--wide {
+        padding-inline: 2rem;
+    }
+
+}
+
+
+@media (min-width: 75rem) {
+
+    .container,
+    .container--narrow,
+    .container--medium,
+    .container--wide {
+        padding-inline: 2.5rem;
+    }
+
+}

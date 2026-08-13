@@ -1,0 +1,189 @@
+/* ==========================================================
+   YASSIR TECHNOLOGIC
+
+   File:
+   typography.css
+
+   Description:
+   Global typography system.
+
+   Responsibility:
+   Defines the base typography, heading hierarchy,
+   text styles and readable content defaults.
+
+   Author:
+   Yassir Technologic
+
+   Version:
+   1.0.0
+========================================================== */
+
+
+/* ==========================================================
+   DOCUMENT TYPOGRAPHY
+========================================================== */
+
+html {
+    font-family: var(--font-family-primary);
+    font-size: 100%;
+}
+
+
+/* ==========================================================
+   BODY
+========================================================== */
+
+body {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-normal);
+
+    color: var(--color-text-primary);
+    background-color: var(--color-background-primary);
+}
+
+
+/* ==========================================================
+   HEADINGS
+
+   Provides a consistent visual hierarchy across
+   all pages and sections.
+========================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-heading);
+    text-wrap: balance;
+}
+
+
+/* ==========================================================
+   HEADING SCALE
+========================================================== */
+
+h1 {
+    font-size: clamp(
+        var(--font-size-4xl),
+        5vw,
+        var(--font-size-6xl)
+    );
+
+    line-height: var(--line-height-tight);
+    letter-spacing: -0.035em;
+}
+
+h2 {
+    font-size: clamp(
+        var(--font-size-3xl),
+        4vw,
+        var(--font-size-5xl)
+    );
+
+    letter-spacing: -0.025em;
+}
+
+h3 {
+    font-size: clamp(
+        var(--font-size-2xl),
+        3vw,
+        var(--font-size-3xl)
+    );
+
+    letter-spacing: -0.015em;
+}
+
+h4 {
+    font-size: var(--font-size-xl);
+}
+
+h5 {
+    font-size: var(--font-size-lg);
+}
+
+h6 {
+    font-size: var(--font-size-md);
+}
+
+
+/* ==========================================================
+   PARAGRAPHS
+========================================================== */
+
+p {
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-normal);
+}
+
+
+/* ==========================================================
+   LINKS
+========================================================== */
+
+a {
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.18em;
+}
+
+
+/* ==========================================================
+   STRONG TEXT
+========================================================== */
+
+strong,
+b {
+    font-weight: var(--font-weight-semibold);
+}
+
+
+/* ==========================================================
+   SMALL TEXT
+========================================================== */
+
+small {
+    font-size: var(--font-size-sm);
+}
+
+
+/* ==========================================================
+   CODE
+========================================================== */
+
+code,
+kbd,
+samp,
+pre {
+    font-family:
+        "SFMono-Regular",
+        Consolas,
+        "Liberation Mono",
+        Menlo,
+        monospace;
+}
+
+
+/* ==========================================================
+   CONTENT WRAPPING
+========================================================== */
+
+p,
+li,
+figcaption {
+    overflow-wrap: break-word;
+}
+
+
+/* ==========================================================
+   TEXT SELECTION
+========================================================== */
+
+::selection {
+    color: var(--color-text-inverse);
+    background-color: var(--color-brand-primary);
+}

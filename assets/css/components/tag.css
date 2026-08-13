@@ -1,0 +1,133 @@
+/* ==========================================================
+   YASSIR TECHNOLOGIC
+
+   File:
+   tag.css
+
+   Description:
+   Global tag component.
+
+   Responsibility:
+   Defines reusable compact labels used to classify
+   technologies, categories and content attributes.
+
+   Author:
+   Yassir Technologic
+
+   Version:
+   1.0.0
+========================================================== */
+
+
+/* ==========================================================
+   BASE TAG
+========================================================== */
+
+.tag {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: var(--space-2);
+
+    width: fit-content;
+
+    padding-inline:
+        var(--space-3);
+
+    padding-block:
+        var(--space-1);
+
+    color:
+        var(--color-text-secondary);
+
+    background-color:
+        var(--color-background-secondary);
+
+    border:
+        1px solid var(--color-border-default);
+
+    border-radius:
+        var(--radius-md);
+
+    font-size:
+        var(--font-size-xs);
+
+    font-weight:
+        var(--font-weight-medium);
+
+    line-height: 1.4;
+
+    white-space: nowrap;
+}
+
+
+/* ==========================================================
+   BRAND VARIANT
+========================================================== */
+
+.tag--brand {
+    color:
+        var(--color-text-brand);
+
+    background-color:
+        var(--color-brand-soft);
+
+    border-color:
+        var(--color-brand-border);
+}
+
+
+/* ==========================================================
+   DARK VARIANT
+========================================================== */
+
+.tag--dark {
+    color:
+        var(--color-text-inverse);
+
+    background-color:
+        var(--color-background-inverse);
+
+    border-color:
+        var(--color-background-inverse);
+}
+
+
+/* ==========================================================
+   COMPACT VARIANT
+========================================================== */
+
+.tag--sm {
+    padding-inline:
+        var(--space-2);
+
+    font-size:
+        var(--font-size-xs);
+}
+
+
+/* ==========================================================
+   ICON
+========================================================== */
+
+.tag__icon {
+    flex-shrink: 0;
+
+    width: 0.875rem;
+    height: 0.875rem;
+}
+
+
+/* ==========================================================
+   TAG GROUP
+========================================================== */
+
+.tag-group {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: var(--space-2);
+}

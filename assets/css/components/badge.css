@@ -1,0 +1,163 @@
+/* ==========================================================
+   YASSIR TECHNOLOGIC
+
+   File:
+   badge.css
+
+   Description:
+   Global badge component.
+
+   Responsibility:
+   Defines small contextual labels used to highlight
+   categories, states and supporting information.
+
+   Author:
+   Yassir Technologic
+
+   Version:
+   1.0.0
+========================================================== */
+
+
+/* ==========================================================
+   BASE BADGE
+========================================================== */
+
+.badge {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: var(--space-2);
+
+    width: fit-content;
+
+    padding-inline: var(--space-3);
+    padding-block: var(--space-1);
+
+    border: 1px solid transparent;
+    border-radius: var(--radius-full);
+
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.4;
+
+    white-space: nowrap;
+}
+
+
+/* ==========================================================
+   BRAND
+========================================================== */
+
+.badge--brand {
+    color:
+        var(--color-text-brand);
+
+    background-color:
+        var(--color-brand-soft);
+
+    border-color:
+        var(--color-brand-border);
+}
+
+
+/* ==========================================================
+   NEUTRAL
+========================================================== */
+
+.badge--neutral {
+    color:
+        var(--color-text-secondary);
+
+    background-color:
+        var(--color-background-secondary);
+
+    border-color:
+        var(--color-border-default);
+}
+
+
+/* ==========================================================
+   SUCCESS
+========================================================== */
+
+.badge--success {
+    color:
+        var(--color-success);
+
+    background-color:
+        color-mix(
+            in srgb,
+            var(--color-success) 10%,
+            transparent
+        );
+
+    border-color:
+        color-mix(
+            in srgb,
+            var(--color-success) 25%,
+            transparent
+        );
+}
+
+
+/* ==========================================================
+   WARNING
+========================================================== */
+
+.badge--warning {
+    color:
+        var(--color-warning);
+
+    background-color:
+        color-mix(
+            in srgb,
+            var(--color-warning) 10%,
+            transparent
+        );
+
+    border-color:
+        color-mix(
+            in srgb,
+            var(--color-warning) 25%,
+            transparent
+        );
+}
+
+
+/* ==========================================================
+   DANGER
+========================================================== */
+
+.badge--danger {
+    color:
+        var(--color-danger);
+
+    background-color:
+        color-mix(
+            in srgb,
+            var(--color-danger) 10%,
+            transparent
+        );
+
+    border-color:
+        color-mix(
+            in srgb,
+            var(--color-danger) 25%,
+            transparent
+        );
+}
+
+
+/* ==========================================================
+   ICON
+========================================================== */
+
+.badge__icon {
+    flex-shrink: 0;
+
+    width: 0.875rem;
+    height: 0.875rem;
+}

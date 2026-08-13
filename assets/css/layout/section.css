@@ -1,0 +1,105 @@
+/* ==========================================================
+   YASSIR TECHNOLOGIC
+
+   File:
+   section.css
+
+   Description:
+   Global section layout system.
+
+   Responsibility:
+   Defines reusable vertical spacing and background
+   behaviors for website sections.
+
+   Author:
+   Yassir Technologic
+
+   Version:
+   1.0.0
+========================================================== */
+
+
+/* ==========================================================
+   BASE SECTION
+========================================================== */
+
+.section {
+    position: relative;
+
+    padding-block:
+        var(--section-spacing-md);
+}
+
+
+/* ==========================================================
+   SECTION SPACING VARIANTS
+========================================================== */
+
+.section--sm {
+    padding-block:
+        var(--section-spacing-sm);
+}
+
+.section--lg {
+    padding-block:
+        var(--section-spacing-lg);
+}
+
+
+/* ==========================================================
+   SECTION BACKGROUNDS
+========================================================== */
+
+.section--primary {
+    background-color:
+        var(--color-background-primary);
+}
+
+.section--secondary {
+    background-color:
+        var(--color-background-secondary);
+}
+
+.section--tertiary {
+    background-color:
+        var(--color-background-tertiary);
+}
+
+.section--inverse {
+    color:
+        var(--color-text-inverse);
+
+    background-color:
+        var(--color-background-inverse);
+}
+
+
+/* ==========================================================
+   SECTION CONTENT
+========================================================== */
+
+.section__content {
+    position: relative;
+
+    z-index:
+        var(--z-raised);
+}
+
+
+/* ==========================================================
+   RESPONSIVE SPACING
+========================================================== */
+
+@media (max-width: 48rem) {
+
+    .section {
+        padding-block:
+            var(--section-spacing-sm);
+    }
+
+    .section--lg {
+        padding-block:
+            var(--section-spacing-md);
+    }
+
+}

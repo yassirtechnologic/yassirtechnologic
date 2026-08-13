@@ -1,0 +1,279 @@
+/* ==========================================================
+   YASSIR TECHNOLOGIC
+
+   File:
+   card.css
+
+   Description:
+   Global card component.
+
+   Responsibility:
+   Defines reusable card structures, visual variants
+   and interaction states across the website.
+
+   Author:
+   Yassir Technologic
+
+   Version:
+   1.0.0
+========================================================== */
+
+
+/* ==========================================================
+   BASE CARD
+========================================================== */
+
+.card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+
+    padding: var(--space-6);
+
+    background-color:
+        var(--color-surface-primary);
+
+    border:
+        1px solid var(--color-border-default);
+
+    border-radius:
+        var(--radius-xl);
+
+    box-shadow:
+        var(--shadow-xs);
+}
+
+
+/* ==========================================================
+   CARD STRUCTURE
+========================================================== */
+
+.card__header {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: var(--space-4);
+
+    margin-bottom:
+        var(--space-4);
+}
+
+
+.card__body {
+    flex: 1;
+}
+
+
+.card__footer {
+    display: flex;
+
+    align-items: center;
+
+    gap: var(--space-3);
+
+    margin-top:
+        var(--space-6);
+}
+
+
+/* ==========================================================
+   CARD TITLE
+========================================================== */
+
+.card__title {
+    color:
+        var(--color-text-primary);
+
+    font-size:
+        var(--font-size-xl);
+
+    font-weight:
+        var(--font-weight-semibold);
+
+    line-height:
+        var(--line-height-heading);
+}
+
+
+/* ==========================================================
+   CARD DESCRIPTION
+========================================================== */
+
+.card__description {
+    margin-top:
+        var(--space-2);
+
+    color:
+        var(--color-text-secondary);
+
+    font-size:
+        var(--font-size-md);
+
+    line-height:
+        var(--line-height-normal);
+}
+
+
+/* ==========================================================
+   CARD ICON
+========================================================== */
+
+.card__icon {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width: 3rem;
+    height: 3rem;
+
+    color:
+        var(--color-brand-primary);
+
+    background-color:
+        var(--color-brand-soft);
+
+    border-radius:
+        var(--radius-lg);
+}
+
+
+.card__icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+/* ==========================================================
+   SOFT VARIANT
+========================================================== */
+
+.card--soft {
+    background-color:
+        var(--color-background-secondary);
+
+    border-color:
+        var(--color-border-subtle);
+
+    box-shadow:
+        none;
+}
+
+
+/* ==========================================================
+   ELEVATED VARIANT
+========================================================== */
+
+.card--elevated {
+    border-color:
+        var(--color-border-subtle);
+
+    box-shadow:
+        var(--shadow-md);
+}
+
+
+/* ==========================================================
+   BRAND VARIANT
+========================================================== */
+
+.card--brand {
+    background-color:
+        var(--color-brand-soft);
+
+    border-color:
+        var(--color-brand-border);
+}
+
+
+/* ==========================================================
+   INTERACTIVE CARD
+
+   Used only when the complete card represents
+   a clickable or actionable element.
+========================================================== */
+
+.card--interactive {
+    transition:
+        border-color var(--transition-normal),
+        box-shadow var(--transition-normal),
+        transform var(--transition-normal);
+}
+
+
+.card--interactive:hover {
+    border-color:
+        var(--color-border-brand);
+
+    box-shadow:
+        var(--shadow-md);
+
+    transform:
+        translateY(-0.25rem);
+}
+
+
+/* ==========================================================
+   KEYBOARD FOCUS
+========================================================== */
+
+.card--interactive:focus-visible {
+    outline:
+        3px solid var(--color-brand-primary);
+
+    outline-offset:
+        3px;
+}
+
+
+/* ==========================================================
+   MEDIA
+========================================================== */
+
+.card__media {
+    overflow: hidden;
+
+    margin:
+        calc(var(--space-6) * -1)
+        calc(var(--space-6) * -1)
+        var(--space-6);
+
+    border-radius:
+        var(--radius-xl)
+        var(--radius-xl)
+        0
+        0;
+}
+
+
+.card__media img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* ==========================================================
+   REDUCED MOTION
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .card--interactive {
+        transition: none;
+    }
+
+
+    .card--interactive:hover {
+        transform: none;
+    }
+
+}

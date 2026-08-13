@@ -1,0 +1,108 @@
+/* ==========================================================
+   YASSIR TECHNOLOGIC
+
+   File:
+   main.css
+
+   Description:
+   Main stylesheet entry point.
+
+   Responsibility:
+   Loads the modular CSS architecture of the
+   Yassir Technologic corporate website.
+
+   Author:
+   Yassir Technologic
+
+   Version:
+   1.0.0
+========================================================== */
+
+
+/* ==========================================================
+   BASE
+
+   Global foundations and design system.
+========================================================== */
+
+@import url("./base/variables.css");
+
+@import url("./base/reset.css");
+
+@import url("./base/typography.css");
+
+@import url("./base/utilities.css");
+
+@import url("./base/animations.css");
+
+
+/* ==========================================================
+   LAYOUT
+
+   Global structural systems.
+========================================================== */
+
+@import url("./layout/container.css");
+
+@import url("./layout/grid.css");
+
+@import url("./layout/section.css");
+
+@import url("./layout/header.css");
+
+@import url("./layout/footer.css");
+
+
+/* ==========================================================
+   COMPONENTS
+
+   Reusable interface components.
+========================================================== */
+
+@import url("./components/button.css");
+
+@import url("./components/badge.css");
+
+@import url("./components/card.css");
+
+@import url("./components/modal.css");
+
+@import url("./components/tag.css");
+
+@import url("./components/section-heading.css");
+
+@import url("./components/chatbot.css");
+
+/* ==========================================================
+   SECTIONS
+========================================================== */
+
+@import url("./sections/hero.css");
+
+@import url("./sections/companies.css");
+
+@import url("./sections/problems.css");
+
+@import url("./sections/about.css");
+
+@import url("./sections/services.css");
+
+@import url("./sections/products.css");
+
+@import url("./sections/process.css");
+
+@import url("./sections/technology.css");
+
+@import url("./sections/projects.css");
+
+@import url("./sections/project-ai.css");
+
+@import url("./sections/contact.css");
+
+@import url("./sections/contact-form.css");
+
+@import url("./sections/testimonials.css");
+
+@import url("./sections/testimonial-form.css");
+
+@import url("./sections/faq.css");

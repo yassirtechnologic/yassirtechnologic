@@ -1,0 +1,332 @@
+/* ==========================================================
+   YASSIR TECHNOLOGIC
+
+   File:
+   modal.css
+
+   Description:
+   Global modal component.
+
+   Responsibility:
+   Defines the visual structure, overlay, dialog layout
+   and interaction states for reusable modal windows.
+
+   Author:
+   Yassir Technologic
+
+   Version:
+   1.0.0
+========================================================== */
+
+/* ==========================================================
+   PAGE LOCK
+========================================================== */
+
+body.modal-open {
+    overflow: hidden;
+}
+
+/* ==========================================================
+   MODAL ROOT
+========================================================== */
+
+.modal {
+    position: fixed;
+
+    inset: 0;
+
+    z-index:
+        var(--z-modal);
+
+    display: grid;
+
+    place-items: center;
+
+    padding:
+        var(--space-6);
+
+    visibility: hidden;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition:
+        opacity var(--transition-normal),
+        visibility var(--transition-normal);
+}
+
+
+/* ==========================================================
+   OPEN STATE
+========================================================== */
+
+.modal.is-open {
+    visibility: visible;
+
+    opacity: 1;
+
+    pointer-events: auto;
+}
+
+
+/* ==========================================================
+   OVERLAY
+========================================================== */
+
+.modal__overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        rgb(2 6 23 / 0.64);
+
+    backdrop-filter:
+        blur(4px);
+}
+
+
+/* ==========================================================
+   DIALOG
+========================================================== */
+
+.modal__dialog {
+    position: relative;
+
+    z-index:
+        var(--z-raised);
+
+    width:
+        min(100%, 640px);
+
+    max-height:
+        min(90vh, 800px);
+
+    overflow-y: auto;
+
+    padding:
+        var(--space-6);
+
+    color:
+        var(--color-text-primary);
+
+    background-color:
+        var(--color-surface-primary);
+
+    border:
+        1px solid var(--color-border-default);
+
+    border-radius:
+        var(--radius-2xl);
+
+    box-shadow:
+        var(--shadow-xl);
+
+    transform:
+        translateY(1rem) scale(0.98);
+
+    transition:
+        transform var(--transition-normal);
+}
+
+
+/* ==========================================================
+   OPEN DIALOG STATE
+========================================================== */
+
+.modal.is-open .modal__dialog {
+    transform:
+        translateY(0) scale(1);
+}
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.modal__header {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap:
+        var(--space-4);
+
+    margin-bottom:
+        var(--space-5);
+}
+
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.modal__title {
+    color:
+        var(--color-text-primary);
+
+    font-size:
+        var(--font-size-2xl);
+
+    font-weight:
+        var(--font-weight-semibold);
+
+    line-height:
+        var(--line-height-heading);
+}
+
+
+/* ==========================================================
+   CLOSE BUTTON
+========================================================== */
+
+.modal__close {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width: 2.5rem;
+    height: 2.5rem;
+
+    color:
+        var(--color-text-secondary);
+
+    background-color:
+        transparent;
+
+    border:
+        1px solid transparent;
+
+    border-radius:
+        var(--radius-full);
+
+    cursor: pointer;
+
+    transition:
+        color var(--transition-fast),
+        background-color var(--transition-fast),
+        border-color var(--transition-fast);
+}
+
+
+.modal__close:hover {
+    color:
+        var(--color-text-primary);
+
+    background-color:
+        var(--color-background-secondary);
+
+    border-color:
+        var(--color-border-default);
+}
+
+
+.modal__close:focus-visible {
+    outline:
+        3px solid var(--color-brand-primary);
+
+    outline-offset:
+        3px;
+}
+
+
+/* ==========================================================
+   BODY
+========================================================== */
+
+.modal__body {
+    color:
+        var(--color-text-secondary);
+}
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.modal__footer {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: flex-end;
+
+    gap:
+        var(--space-3);
+
+    margin-top:
+        var(--space-6);
+}
+
+
+/* ==========================================================
+   MODAL SIZES
+========================================================== */
+
+.modal--sm .modal__dialog {
+    width:
+        min(100%, 480px);
+}
+
+
+.modal--lg .modal__dialog {
+    width:
+        min(100%, 960px);
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 48rem) {
+
+    .modal {
+        padding:
+            var(--space-4);
+    }
+
+
+    .modal__dialog {
+        padding:
+            var(--space-5);
+
+        border-radius:
+            var(--radius-xl);
+    }
+
+
+    .modal__footer {
+        flex-direction: column;
+    }
+
+
+    .modal__footer .button {
+        width: 100%;
+    }
+
+}
+
+
+/* ==========================================================
+   REDUCED MOTION
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .modal,
+    .modal__dialog {
+        transition: none;
+    }
+
+
+    .modal__dialog {
+        transform: none;
+    }
+
+}

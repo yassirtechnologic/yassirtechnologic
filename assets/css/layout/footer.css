@@ -1,0 +1,437 @@
+/* ==========================================================
+   YASSIR TECHNOLOGIC
+
+   File:
+   footer.css
+
+   Description:
+   Global corporate footer.
+
+   Responsibility:
+   Styles the Yassir Technologic footer, navigation groups,
+   brand information and bottom legal area.
+
+   Author:
+   Yassir Technologic
+
+   Version:
+   2.0.0
+========================================================== */
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.site-footer {
+    position: relative;
+
+    overflow: hidden;
+
+    padding:
+        var(--space-12)
+        0
+        var(--space-6);
+
+    color:
+        var(--color-text-inverse);
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--blue-900),
+            var(--blue-950)
+        );
+}
+
+
+/* ==========================================================
+   BACKGROUND DETAIL
+========================================================== */
+
+.site-footer::before {
+    content: "";
+
+    position: absolute;
+
+    top: -12rem;
+    right: -10rem;
+
+    width: 30rem;
+    height: 30rem;
+
+    background:
+        radial-gradient(
+            circle,
+            rgb(59 130 246 / 0.18),
+            transparent 68%
+        );
+
+    pointer-events: none;
+}
+
+
+/* ==========================================================
+   MAIN LAYOUT
+========================================================== */
+
+.site-footer__main {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.6fr)
+        repeat(3, minmax(0, 0.75fr));
+
+    gap:
+        var(--space-10);
+
+    padding-bottom:
+        var(--space-10);
+}
+
+
+/* ==========================================================
+   BRAND
+========================================================== */
+
+.site-footer__brand {
+    max-width: 25rem;
+}
+
+
+.site-footer__logo {
+    display: inline-block;
+
+    margin-bottom:
+        var(--space-5);
+
+    color:
+        var(--color-text-inverse);
+
+    font-size:
+        var(--font-size-xl);
+
+    font-weight:
+        var(--font-weight-bold);
+
+    text-decoration: none;
+}
+
+
+.site-footer__brand p {
+    margin:
+        0
+        0
+        var(--space-5);
+
+    color:
+        var(--blue-100);
+
+    font-size:
+        var(--font-size-sm);
+
+    line-height:
+        var(--line-height-relaxed);
+}
+
+
+/* ==========================================================
+   EMAIL
+========================================================== */
+
+.site-footer__email {
+    display: inline-flex;
+
+    color:
+        var(--blue-200);
+
+    font-size:
+        var(--font-size-sm);
+
+    font-weight:
+        var(--font-weight-semibold);
+
+    text-decoration: none;
+
+    transition:
+        color var(--transition-fast);
+}
+
+
+.site-footer__email:hover {
+    color:
+        var(--neutral-0);
+}
+
+
+.site-footer__email:focus-visible {
+    outline:
+        3px solid rgb(255 255 255 / 0.25);
+
+    outline-offset:
+        4px;
+
+    border-radius:
+        var(--radius-sm);
+}
+
+
+/* ==========================================================
+   COLUMNS
+========================================================== */
+
+.site-footer__column h2 {
+    margin:
+        0
+        0
+        var(--space-5);
+
+    color:
+        var(--color-text-inverse);
+
+    font-size:
+        var(--font-size-sm);
+
+    font-weight:
+        var(--font-weight-semibold);
+}
+
+
+/* ==========================================================
+   LINKS
+========================================================== */
+
+.site-footer__links {
+    display: flex;
+
+    flex-direction: column;
+
+    gap:
+        var(--space-3);
+
+    margin: 0;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.site-footer__links a {
+    width: fit-content;
+
+    color:
+        var(--blue-200);
+
+    font-size:
+        var(--font-size-sm);
+
+    text-decoration: none;
+
+    transition:
+        color var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+
+.site-footer__links a:hover {
+    color:
+        var(--neutral-0);
+
+    transform:
+        translateX(2px);
+}
+
+
+.site-footer__links a:focus-visible {
+    outline:
+        3px solid rgb(255 255 255 / 0.22);
+
+    outline-offset:
+        4px;
+
+    border-radius:
+        var(--radius-sm);
+}
+
+
+/* ==========================================================
+   BOTTOM
+========================================================== */
+
+.site-footer__bottom {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap:
+        var(--space-6);
+
+    padding-top:
+        var(--space-6);
+
+    border-top:
+        1px solid rgb(255 255 255 / 0.12);
+}
+
+
+.site-footer__bottom p {
+    margin: 0;
+
+    color:
+        var(--blue-200);
+
+    font-size:
+        var(--font-size-xs);
+}
+
+
+/* ==========================================================
+   BACK TO TOP
+========================================================== */
+
+.site-footer__back-top {
+    flex-shrink: 0;
+
+    color:
+        var(--color-text-inverse);
+
+    font-size:
+        var(--font-size-xs);
+
+    font-weight:
+        var(--font-weight-semibold);
+
+    text-decoration: none;
+
+    transition:
+        color var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+
+.site-footer__back-top:hover {
+    color:
+        var(--blue-200);
+
+    transform:
+        translateY(-2px);
+}
+
+
+.site-footer__back-top:focus-visible {
+    outline:
+        3px solid rgb(255 255 255 / 0.22);
+
+    outline-offset:
+        4px;
+
+    border-radius:
+        var(--radius-sm);
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 64rem) {
+
+    .site-footer__main {
+        grid-template-columns:
+            minmax(0, 1.5fr)
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .site-footer__brand {
+        grid-column:
+            1 / -1;
+
+        max-width:
+            34rem;
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 48rem) {
+
+    .site-footer {
+        padding-top:
+            var(--space-10);
+    }
+
+
+    .site-footer__main {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap:
+            var(--space-8);
+    }
+
+
+    .site-footer__brand {
+        grid-column:
+            1 / -1;
+    }
+
+
+    .site-footer__bottom {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 30rem) {
+
+    .site-footer__main {
+        grid-template-columns:
+            minmax(0, 1fr);
+    }
+
+
+    .site-footer__brand {
+        grid-column:
+            auto;
+    }
+
+}
+
+
+/* ==========================================================
+   REDUCED MOTION
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .site-footer__email,
+    .site-footer__links a,
+    .site-footer__back-top {
+        transition: none;
+    }
+
+
+    .site-footer__links a:hover,
+    .site-footer__back-top:hover {
+        transform: none;
+    }
+
+}

@@ -1,0 +1,277 @@
+/* ==========================================================
+   YASSIR TECHNOLOGIC
+
+   File:
+   variables.css
+
+   Description:
+   Global Design System tokens.
+
+   Responsibility:
+   Defines the primitive and semantic design tokens used
+   throughout the Yassir Technologic corporate website.
+
+   Author:
+   Yassir Technologic
+
+   Version:
+   1.0.0
+========================================================== */
+
+
+/* ==========================================================
+   ROOT
+========================================================== */
+
+:root {
+
+    /* ======================================================
+       BRAND — BLUE SCALE
+
+       Primitive color tokens.
+       These values define the main corporate blue palette.
+    ====================================================== */
+
+    --blue-50: #eff6ff;
+    --blue-100: #dbeafe;
+    --blue-200: #bfdbfe;
+    --blue-300: #93c5fd;
+    --blue-400: #60a5fa;
+    --blue-500: #3b82f6;
+    --blue-600: #2563eb;
+    --blue-700: #1d4ed8;
+    --blue-800: #1e40af;
+    --blue-900: #1e3a8a;
+    --blue-950: #172554;
+
+
+    /* ======================================================
+       NEUTRAL SCALE
+
+       Used for text, borders, surfaces and backgrounds.
+    ====================================================== */
+
+    --neutral-0: #ffffff;
+
+    --neutral-50: #f8fafc;
+    --neutral-100: #f1f5f9;
+    --neutral-200: #e2e8f0;
+    --neutral-300: #cbd5e1;
+    --neutral-400: #94a3b8;
+    --neutral-500: #64748b;
+    --neutral-600: #475569;
+    --neutral-700: #334155;
+    --neutral-800: #1e293b;
+    --neutral-900: #0f172a;
+    --neutral-950: #020617;
+
+
+    /* ======================================================
+       STATUS COLORS
+
+       Primitive colors for interface feedback.
+    ====================================================== */
+
+    --green-500: #22c55e;
+    --green-600: #16a34a;
+
+    --amber-500: #f59e0b;
+    --amber-600: #d97706;
+
+    --red-500: #ef4444;
+    --red-600: #dc2626;
+
+
+    /* ======================================================
+       SEMANTIC — BRAND
+    ====================================================== */
+
+    --color-brand-primary: var(--blue-600);
+    --color-brand-primary-hover: var(--blue-700);
+    --color-brand-primary-active: var(--blue-800);
+
+    --color-brand-soft: var(--blue-50);
+    --color-brand-border: var(--blue-200);
+
+
+    /* ======================================================
+       SEMANTIC — BACKGROUNDS
+    ====================================================== */
+
+    --color-background-primary: var(--neutral-0);
+    --color-background-secondary: var(--neutral-50);
+    --color-background-tertiary: var(--neutral-100);
+
+    --color-surface-primary: var(--neutral-0);
+    --color-surface-secondary: var(--neutral-50);
+
+    --color-background-inverse: var(--neutral-950);
+
+
+    /* ======================================================
+       SEMANTIC — TEXT
+    ====================================================== */
+
+    --color-text-primary: var(--neutral-900);
+    --color-text-secondary: var(--neutral-600);
+    --color-text-muted: var(--neutral-500);
+
+    --color-text-brand: var(--blue-600);
+    --color-text-inverse: var(--neutral-0);
+
+
+    /* ======================================================
+       SEMANTIC — BORDERS
+    ====================================================== */
+
+    --color-border-subtle: var(--neutral-100);
+    --color-border-default: var(--neutral-200);
+    --color-border-strong: var(--neutral-300);
+
+    --color-border-brand: var(--blue-300);
+
+
+    /* ======================================================
+       SEMANTIC — STATUS
+    ====================================================== */
+
+    --color-success: var(--green-600);
+    --color-warning: var(--amber-500);
+    --color-danger: var(--red-600);
+
+
+    /* ======================================================
+       TYPOGRAPHY
+    ====================================================== */
+
+    --font-family-primary:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2.25rem;
+    --font-size-5xl: 3rem;
+    --font-size-6xl: 3.75rem;
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --line-height-tight: 1.15;
+    --line-height-heading: 1.25;
+    --line-height-normal: 1.6;
+    --line-height-relaxed: 1.75;
+
+
+    /* ======================================================
+       SPACING
+
+       Based on a consistent 4px spacing system.
+    ====================================================== */
+
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --space-24: 6rem;
+    --space-32: 8rem;
+
+
+    /* ======================================================
+       BORDER RADIUS
+    ====================================================== */
+
+    --radius-sm: 0.375rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    --radius-2xl: 1.5rem;
+    --radius-full: 9999px;
+
+
+    /* ======================================================
+       SHADOWS
+    ====================================================== */
+
+    --shadow-xs:
+        0 1px 2px rgb(15 23 42 / 0.05);
+
+    --shadow-sm:
+        0 1px 3px rgb(15 23 42 / 0.08),
+        0 1px 2px rgb(15 23 42 / 0.05);
+
+    --shadow-md:
+        0 8px 24px rgb(15 23 42 / 0.08);
+
+    --shadow-lg:
+        0 16px 40px rgb(15 23 42 / 0.10);
+
+    --shadow-xl:
+        0 24px 64px rgb(15 23 42 / 0.12);
+
+
+    /* ======================================================
+       LAYOUT
+    ====================================================== */
+
+    --container-max-width: 1280px;
+    --container-padding: 1.5rem;
+
+    --section-spacing-sm: 4rem;
+    --section-spacing-md: 6rem;
+    --section-spacing-lg: 8rem;
+
+
+    /* ======================================================
+       TRANSITIONS
+    ====================================================== */
+
+    --duration-fast: 150ms;
+    --duration-normal: 250ms;
+    --duration-slow: 400ms;
+
+    --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+    --ease-emphasized: cubic-bezier(0.2, 0, 0, 1.2);
+
+    --transition-fast:
+        var(--duration-fast) var(--ease-standard);
+
+    --transition-normal:
+        var(--duration-normal) var(--ease-standard);
+
+
+    /* ======================================================
+       Z-INDEX
+
+       Shared elevation layers.
+    ====================================================== */
+
+    --z-base: 0;
+    --z-raised: 10;
+    --z-dropdown: 100;
+    --z-sticky: 200;
+    --z-header: 500;
+    --z-overlay: 900;
+    --z-modal: 1000;
+    --z-toast: 1100;
+
+}

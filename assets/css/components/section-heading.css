@@ -1,0 +1,181 @@
+/* ==========================================================
+   YASSIR TECHNOLOGIC
+
+   File:
+   section-heading.css
+
+   Description:
+   Reusable section heading component.
+
+   Responsibility:
+   Defines the shared visual hierarchy for section labels,
+   titles and supporting descriptions across the website.
+
+   Author:
+   Yassir Technologic
+
+   Version:
+   1.0.0
+========================================================== */
+
+
+/* ==========================================================
+   BASE
+========================================================== */
+
+.section-heading {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-4);
+
+    max-width: 760px;
+
+    margin-bottom:
+        var(--space-12);
+}
+
+
+/* ==========================================================
+   CENTERED VARIANT
+========================================================== */
+
+.section-heading--center {
+    align-items: center;
+
+    margin-inline: auto;
+
+    text-align: center;
+}
+
+
+/* ==========================================================
+   EYEBROW / LABEL
+========================================================== */
+
+.section-heading__eyebrow {
+    display: inline-flex;
+
+    align-items: center;
+
+    width: fit-content;
+
+    color:
+        var(--color-text-brand);
+
+    font-size:
+        var(--font-size-sm);
+
+    font-weight:
+        var(--font-weight-semibold);
+
+    line-height: 1.4;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+}
+
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.section-heading__title {
+    max-width: 18ch;
+
+    color:
+        var(--color-text-primary);
+
+    text-wrap: balance;
+}
+
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.section-heading__description {
+    max-width: 65ch;
+
+    color:
+        var(--color-text-secondary);
+
+    font-size:
+        var(--font-size-lg);
+
+    line-height:
+        var(--line-height-relaxed);
+
+    text-wrap: pretty;
+}
+
+
+/* ==========================================================
+   CENTERED CONTENT WIDTH
+========================================================== */
+
+.section-heading--center .section-heading__title,
+.section-heading--center .section-heading__description {
+    margin-inline: auto;
+}
+
+
+/* ==========================================================
+   COMPACT VARIANT
+========================================================== */
+
+.section-heading--compact {
+    gap:
+        var(--space-3);
+
+    margin-bottom:
+        var(--space-8);
+}
+
+
+/* ==========================================================
+   INVERSE VARIANT
+
+   Used on dark or high-contrast backgrounds.
+========================================================== */
+
+.section-heading--inverse .section-heading__eyebrow {
+    color:
+        var(--blue-300);
+}
+
+
+.section-heading--inverse .section-heading__title {
+    color:
+        var(--color-text-inverse);
+}
+
+
+.section-heading--inverse .section-heading__description {
+    color:
+        var(--neutral-300);
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 48rem) {
+
+    .section-heading {
+        gap:
+            var(--space-3);
+
+        margin-bottom:
+            var(--space-8);
+    }
+
+
+    .section-heading__description {
+        font-size:
+            var(--font-size-md);
+    }
+
+}

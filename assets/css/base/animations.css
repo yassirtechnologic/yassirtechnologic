@@ -1,0 +1,170 @@
+/* ==========================================================
+   YASSIR TECHNOLOGIC
+
+   File:
+   animations.css
+
+   Description:
+   Global animation primitives.
+
+   Responsibility:
+   Defines reusable entrance animations and accessibility
+   rules for motion across the corporate website.
+
+   Author:
+   Yassir Technologic
+
+   Version:
+   1.0.0
+========================================================== */
+
+
+/* ==========================================================
+   FADE IN
+========================================================== */
+
+@keyframes fade-in {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+
+/* ==========================================================
+   FADE UP
+========================================================== */
+
+@keyframes fade-up {
+
+    from {
+        opacity: 0;
+        transform: translateY(1.5rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ==========================================================
+   FADE DOWN
+========================================================== */
+
+@keyframes fade-down {
+
+    from {
+        opacity: 0;
+        transform: translateY(-1.5rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ==========================================================
+   SCALE IN
+========================================================== */
+
+@keyframes scale-in {
+
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+/* ==========================================================
+   ANIMATION UTILITIES
+
+   Reusable classes for simple entrance animations.
+========================================================== */
+
+.animate-fade-in {
+    animation:
+        fade-in
+        var(--duration-normal)
+        var(--ease-standard)
+        both;
+}
+
+.animate-fade-up {
+    animation:
+        fade-up
+        var(--duration-slow)
+        var(--ease-standard)
+        both;
+}
+
+.animate-fade-down {
+    animation:
+        fade-down
+        var(--duration-slow)
+        var(--ease-standard)
+        both;
+}
+
+.animate-scale-in {
+    animation:
+        scale-in
+        var(--duration-normal)
+        var(--ease-standard)
+        both;
+}
+
+
+/* ==========================================================
+   MOTION DELAYS
+
+   Small reusable delays for staggered entrances.
+========================================================== */
+
+.animation-delay-1 {
+    animation-delay: 100ms;
+}
+
+.animation-delay-2 {
+    animation-delay: 200ms;
+}
+
+.animation-delay-3 {
+    animation-delay: 300ms;
+}
+
+
+/* ==========================================================
+   REDUCED MOTION
+
+   Disables decorative movement when the user has requested
+   reduced motion at operating-system level.
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .animate-fade-in,
+    .animate-fade-up,
+    .animate-fade-down,
+    .animate-scale-in {
+        animation: none;
+    }
+
+}
