@@ -95,17 +95,52 @@
 
 
     /* ======================================================
-       SEMANTIC — BACKGROUNDS
-    ====================================================== */
+      SEMANTIC — BACKGROUNDS
+   ====================================================== */
 
-    --color-background-primary: var(--neutral-0);
-    --color-background-secondary: var(--neutral-50);
-    --color-background-tertiary: var(--neutral-100);
+   /*
+      Main website canvas.
 
-    --color-surface-primary: var(--neutral-0);
-    --color-surface-secondary: var(--neutral-50);
+      This token defines the global background used across
+      the corporate website.
+   */
+   --color-background-site: #d6e4ff;
 
-    --color-background-inverse: var(--neutral-950);
+
+   /*
+      Section backgrounds.
+
+      All standard page backgrounds inherit the same site
+      canvas to maintain visual consistency.
+   */
+   --color-background-primary:
+      var(--color-background-site);
+
+   --color-background-secondary:
+      var(--color-background-site);
+
+   --color-background-tertiary:
+      var(--color-background-site);
+
+
+   /*
+      Surfaces.
+
+      Cards, forms and interface panels remain white so they
+      preserve contrast against the site background.
+   */
+   --color-surface-primary:
+      var(--neutral-0);
+
+   --color-surface-secondary:
+      var(--neutral-50);
+
+
+   /*
+      Dark / inverse surfaces.
+   */
+   --color-background-inverse:
+      var(--neutral-950);
 
 
     /* ======================================================

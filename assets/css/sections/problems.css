@@ -28,12 +28,8 @@
 
     overflow: hidden;
 
-    background:
-        linear-gradient(
-            180deg,
-            var(--color-background-secondary) 0%,
-            var(--neutral-0) 100%
-        );
+    background-color:
+        var(--color-background-site);
 }
 
 

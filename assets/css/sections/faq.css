@@ -34,7 +34,7 @@
             rgb(37 99 235 / 0.07),
             transparent 30%
         ),
-        var(--neutral-0);
+        var(--color-background-site);
 }
 
 

@@ -19,15 +19,18 @@
 ========================================================== */
 
 
-/* ==========================================================
-   BASE SECTION
-========================================================== */
+/* ========================================================== 
+   BASE SECTION 
+========================================================== */ 
 
-.section {
+.section { 
     position: relative;
 
-    padding-block:
+    padding-block: 
         var(--section-spacing-md);
+
+    background-color:
+        var(--color-background-site);
 }
 
 
@@ -46,23 +49,23 @@
 }
 
 
-/* ==========================================================
-   SECTION BACKGROUNDS
-========================================================== */
+/* ========================================================== 
+   SECTION BACKGROUNDS 
+========================================================== */ 
 
-.section--primary {
-    background-color:
-        var(--color-background-primary);
-}
+.section--primary { 
+    background-color: 
+        var(--color-background-primary); 
+} 
 
-.section--secondary {
-    background-color:
-        var(--color-background-secondary);
-}
+.section--secondary { 
+    background-color: 
+        var(--color-background-secondary); 
+} 
 
-.section--tertiary {
-    background-color:
-        var(--color-background-tertiary);
+.section--tertiary { 
+    background-color: 
+        var(--color-background-tertiary); 
 }
 
 .section--inverse {
