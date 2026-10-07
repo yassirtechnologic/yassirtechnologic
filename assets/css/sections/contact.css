@@ -1,418 +1,56 @@
-/* ==========================================================
-   YASSIR TECHNOLOGIC
-
-   File:
-   contact.css
-
-   Description:
-   Contact section layout and business information.
-
-   Responsibility:
-   Styles the Contact V2 section structure, introductory
-   content, benefits and direct contact information.
-
-   Author:
-   Yassir Technologic
-
-   Version:
-   2.0.0
-========================================================== */
-
-
-/* ==========================================================
-   SECTION
-========================================================== */
-
+/* Direct channels do not depend on an unimplemented contact backend. */
 .contact {
-    position: relative;
-
-    overflow: hidden;
-
-    background:
-        radial-gradient(
-            circle at 15% 20%,
-            rgb(37 99 235 / 0.08),
-            transparent 34%
-        ),
-        var(--color-background-site);
+  background: var(--blue-50);
 }
-
-
-/* ==========================================================
-   HEADING
-========================================================== */
-
-.contact__heading {
-    max-width: 46rem;
-
-    margin-bottom:
-        var(--space-10);
+.contact__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 2rem 3rem;
+  align-items: start;
 }
-
-
-/* ==========================================================
-   MAIN GRID
-========================================================== */
-
-.contact__grid {
-    display: grid;
-
-    grid-template-columns:
-        minmax(0, 0.9fr)
-        minmax(0, 1.1fr);
-
-    gap:
-        var(--space-10);
-
-    align-items: start;
+.contact__channels {
+  display: grid;
+  gap: 1.25rem;
 }
-
-
-/* ==========================================================
-   INFORMATION
-========================================================== */
-
-.contact__information {
-    display: flex;
-
-    flex-direction: column;
-
-    gap:
-        var(--space-8);
+.contact__channels > div {
+  background: white;
+  border: 1px solid var(--blue-100);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
 }
-
-
-/* ==========================================================
-   INTRO
-========================================================== */
-
-.contact__intro {
-    padding:
-        var(--space-8);
-
-    background:
-        linear-gradient(
-            145deg,
-            var(--blue-700),
-            var(--blue-900)
-        );
-
-    border-radius:
-        var(--radius-2xl);
-
-    box-shadow:
-        var(--shadow-lg);
-
-    color:
-        var(--color-text-inverse);
+.contact__channels h3 {
+  font-size: 1rem;
 }
-
-
-.contact__intro h3 {
-    max-width: 28rem;
-
-    margin:
-        var(--space-5)
-        0
-        var(--space-4);
-
-    color:
-        inherit;
-
-    font-size:
-        clamp(1.6rem, 3vw, 2.25rem);
-
-    line-height:
-        1.12;
+.contact__channels p {
+  margin-block: 0.4rem 0.75rem;
 }
-
-
-.contact__intro p {
-    max-width: 34rem;
-
-    margin: 0;
-
-    color:
-        var(--blue-100);
-
-    line-height:
-        var(--line-height-relaxed);
+.contact__address {
+  overflow-wrap: anywhere;
 }
-
-
-/* ==========================================================
-   BENEFITS
-========================================================== */
-
-.contact__benefits {
-    display: flex;
-
-    flex-direction: column;
-
-    gap:
-        var(--space-3);
+.contact__socials {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  border-top: 1px solid var(--blue-200);
+  padding-top: 1.25rem;
 }
-
-
-/* ==========================================================
-   BENEFIT
-========================================================== */
-
-.contact__benefit {
-    display: grid;
-
-    grid-template-columns:
-        auto
-        minmax(0, 1fr);
-
-    gap:
-        var(--space-4);
-
-    padding:
-        var(--space-5);
-
-    background-color:
-        var(--color-surface-primary);
-
-    border:
-        1px solid var(--color-border-subtle);
-
-    border-radius:
-        var(--radius-lg);
-
-    transition:
-        border-color 180ms ease,
-        transform 180ms ease,
-        box-shadow 180ms ease;
+.contact__social {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--blue-800);
+  min-height: 2.75rem;
+  font-size: 0.9375rem;
 }
-
-
-.contact__benefit:hover {
-    transform:
-        translateY(-2px);
-
-    border-color:
-        var(--blue-200);
-
-    box-shadow:
-        var(--shadow-sm);
+.contact__social svg {
+  flex-shrink: 0;
 }
-
-
-/* ==========================================================
-   BENEFIT NUMBER
-========================================================== */
-
-.contact__benefit-number {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    width: 2.5rem;
-    height: 2.5rem;
-
-    flex-shrink: 0;
-
-    background-color:
-        var(--blue-50);
-
-    border:
-        1px solid var(--blue-100);
-
-    border-radius:
-        var(--radius-md);
-
-    color:
-        var(--blue-700);
-
-    font-size:
-        var(--font-size-xs);
-
-    font-weight:
-        var(--font-weight-bold);
+.contact__social--pending {
+  color: var(--neutral-600);
 }
-
-
-/* ==========================================================
-   BENEFIT CONTENT
-========================================================== */
-
-.contact__benefit h4 {
-    margin:
-        0
-        0
-        var(--space-2);
-
-    color:
-        var(--color-text-primary);
-
-    font-size:
-        var(--font-size-base);
-}
-
-
-.contact__benefit p {
-    margin: 0;
-
-    color:
-        var(--color-text-secondary);
-
-    font-size:
-        var(--font-size-sm);
-
-    line-height:
-        var(--line-height-relaxed);
-}
-
-
-/* ==========================================================
-   DIRECT CONTACT
-========================================================== */
-
-.contact__direct {
-    display: flex;
-
-    flex-direction: column;
-
-    gap:
-        var(--space-2);
-
-    padding:
-        var(--space-5)
-        0;
-
-    border-top:
-        1px solid var(--color-border-subtle);
-}
-
-
-.contact__direct-label {
-    color:
-        var(--color-text-muted);
-
-    font-size:
-        var(--font-size-xs);
-
-    font-weight:
-        var(--font-weight-semibold);
-
-    letter-spacing:
-        0.08em;
-
-    text-transform:
-        uppercase;
-}
-
-
-.contact__email {
-    width: fit-content;
-
-    color:
-        var(--blue-700);
-
-    font-weight:
-        var(--font-weight-semibold);
-
-    text-decoration: none;
-
-    transition:
-        color 160ms ease;
-}
-
-
-.contact__email:hover {
-    color:
-        var(--blue-900);
-}
-
-
-.contact__email:focus-visible {
-    outline:
-        3px solid
-        rgb(37 99 235 / 0.22);
-
-    outline-offset:
-        4px;
-
-    border-radius:
-        var(--radius-sm);
-}
-
-
-/* ==========================================================
-   TABLET
-========================================================== */
-
-@media (max-width: 64rem) {
-
-    .contact__grid {
-        grid-template-columns:
-            minmax(0, 1fr);
-
-        gap:
-            var(--space-8);
-    }
-
-
-    .contact__information {
-        display: grid;
-
-        grid-template-columns:
-            minmax(0, 1fr)
-            minmax(0, 1fr);
-
-        align-items: start;
-    }
-
-
-    .contact__direct {
-        grid-column:
-            1 / -1;
-    }
-
-}
-
-
-/* ==========================================================
-   MOBILE
-========================================================== */
-
 @media (max-width: 48rem) {
-
-    .contact__heading {
-        margin-bottom:
-            var(--space-8);
-    }
-
-
-    .contact__information {
-        display: flex;
-    }
-
-
-    .contact__intro {
-        padding:
-            var(--space-6);
-    }
-
-}
-
-
-/* ==========================================================
-   REDUCED MOTION
-========================================================== */
-
-@media (prefers-reduced-motion: reduce) {
-
-    .contact__benefit,
-    .contact__email {
-        transition: none;
-    }
-
-
-    .contact__benefit:hover {
-        transform: none;
-    }
-
+  .contact__layout {
+    grid-template-columns: 1fr;
+  }
 }

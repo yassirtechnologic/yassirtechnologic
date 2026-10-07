@@ -47,6 +47,19 @@ const SELECTORS = {
 let activeModal = null;
 
 let previousFocusedElement = null;
+let backgroundState = [];
+
+function lockBackground(modal) {
+    backgroundState = [...document.body.children]
+        .filter((element) => element !== modal && element.tagName !== 'SCRIPT')
+        .map((element) => ({ element, inert: element.inert }));
+    backgroundState.forEach(({ element }) => { element.inert = true; });
+}
+
+function unlockBackground() {
+    backgroundState.forEach(({ element, inert }) => { element.inert = inert; });
+    backgroundState = [];
+}
 
 
 /* ==========================================================
@@ -68,9 +81,7 @@ function getFocusableElements(modal) {
         )
     ].filter((element) => {
 
-        return !element.hasAttribute(
-            "hidden"
-        );
+        return !element.hasAttribute("hidden") && element.getClientRects().length > 0;
 
     });
 
@@ -96,6 +107,9 @@ function openModal(modal) {
 
     activeModal =
         modal;
+
+    modal.inert = false;
+    lockBackground(modal);
 
 
     modal.classList.add(
@@ -164,6 +178,8 @@ function closeModal(modal = activeModal) {
     );
 
 
+    modal.inert = true;
+    unlockBackground();
     activeModal = null;
 
 
@@ -321,6 +337,7 @@ export function initModals() {
 
     modals.forEach((modal) => {
 
+        modal.inert = true;
         modal.setAttribute(
             "aria-hidden",
             "true"

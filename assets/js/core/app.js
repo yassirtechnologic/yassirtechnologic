@@ -1,3 +1,4 @@
+import { initReviews } from "../components/reviews.js";
 /* ==========================================================
    YASSIR TECHNOLOGIC
 
@@ -63,6 +64,8 @@ function initApp() {
     initNavbar();
 
     initModals();
+
+    initReviews();
 
     initChatbot();
 
