@@ -104,7 +104,7 @@
       This token defines the global background used across
       the corporate website.
    */
-   --color-background-site: #d6e4ff;
+   --color-background-site: #ffffff;
 
 
    /*
@@ -271,9 +271,9 @@
     --container-max-width: 1280px;
     --container-padding: 1.5rem;
 
-    --section-spacing-sm: 4rem;
-    --section-spacing-md: 6rem;
-    --section-spacing-lg: 8rem;
+    --section-spacing-sm: 2.5rem;
+    --section-spacing-md: 3.5rem;
+    --section-spacing-lg: 4rem;
 
 
     /* ======================================================

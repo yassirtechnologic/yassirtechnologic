@@ -1,5964 +1,929 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Yassir Technologic | Backend Developer & AI Solutions</title>
+    <title>
+      Yassir Technologic | Software, automatización e inteligencia artificial
+    </title>
 
-  <meta name="description" content="Professional portfolio of Jorge Luis Carvajal. Backend development, automation, data analysis and AI solutions.">
-  <meta name="author" content="Jorge Luis Carvajal">
+    <meta
+      name="description"
+      content="Software a medida, automatización e inteligencia artificial para empresas. Yassir Technologic: tecnología que trabaja para tu negocio."
+    />
+    <meta name="author" content="Yassir Technologic" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/images/logo-yassir.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo-yassir.png" />
 
-  <!-- ======================================================
+    <!-- ======================================================
       STYLES
   ======================================================= -->
 
-  <!-- New modular Design System -->
-  <link
-    rel="stylesheet"
-    href="assets/css/main.css"
-  >
-</head>
+    <!-- New modular Design System -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta
+      property="og:title"
+      content="Yassir Technologic | Software, automatización e inteligencia artificial"
+    />
+    <meta
+      property="og:description"
+      content="Software a medida, automatización e inteligencia artificial para empresas. Yassir Technologic: tecnología que trabaja para tu negocio."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+  </head>
 
-<body>
-
-<!-- ==========================================================
-     YASSIR TECHNOLOGIC
-
-     Component:
-     Site Header
-
-     Description:
-     Main corporate navigation.
-
-     Responsibility:
-     Provides brand navigation, language controls,
-     primary links and the mobile menu trigger.
-
-     Author:
-     Yassir Technologic
-
-     Version:
-     2.0.0
-========================================================== -->
-
-<header
-  class="site-header"
-  data-header
->
-  <div class="container site-header__container">
-
-    <!-- ======================================================
+  <body>
+    <a data-i18n="skip_content" href="#main" class="skip-link"
+      >Ir al contenido</a
+    >
+    <header class="site-header" data-header>
+      <div class="container site-header__container">
+        <!-- ======================================================
          BRAND
     ======================================================= -->
 
-    <a
-      href="#home"
-      class="site-header__brand"
-      aria-label="Yassir Technologic - Inicio"
-    >
-      <img
-        src="assets/images/logo-yassir.png"
-        alt=""
-        class="site-header__logo"
-        width="48"
-        height="48"
-      >
+        <a
+          href="#home"
+          class="site-header__brand"
+          aria-label="Yassir Technologic - Inicio"
+        >
+          <img
+            src="assets/images/logo-yassir.png"
+            alt=""
+            class="site-header__logo"
+            width="48"
+            height="48"
+          />
 
-      <span class="site-header__brand-name">
-        Yassir Technologic
-      </span>
-    </a>
+          <span class="site-header__brand-name"> Yassir Technologic </span>
+        </a>
 
-
-    <!-- ======================================================
+        <!-- ======================================================
          PRIMARY NAVIGATION
     ======================================================= -->
 
-    <nav
-      id="primary-navigation"
-      class="site-header__navigation"
-      data-navigation
-      aria-label="Navegación principal"
-    >
-      <ul class="site-header__nav-list">
+        <nav
+          id="primary-navigation"
+          class="site-header__navigation"
+          data-navigation
+          aria-label="Navegación principal"
+        >
+          <ul class="site-header__nav-list">
+            <li>
+              <a
+                data-i18n="nav_home"
+                href="#home"
+                class="site-header__nav-link"
+                data-nav-link
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                data-i18n="nav_company"
+                href="#about"
+                class="site-header__nav-link"
+                data-nav-link
+                >Sobre nosotros</a
+              >
+            </li>
+            <li>
+              <a
+                data-i18n="nav_services"
+                href="#services"
+                class="site-header__nav-link"
+                data-nav-link
+                >Servicios</a
+              >
+            </li>
+            <li>
+              <a
+                data-i18n="nav_comments"
+                href="#testimonials"
+                class="site-header__nav-link"
+                data-nav-link
+                >Comentarios</a
+              >
+            </li>
+            <li>
+              <a
+                data-i18n="nav_contact_link"
+                href="#contact"
+                class="site-header__nav-link"
+                data-nav-link
+                >Contacto</a
+              >
+            </li>
+            <li class="site-header__nav-cta">
+              <a
+                data-i18n="nav_contact"
+                href="#contact"
+                class="button button--primary"
+                data-nav-link
+                >Solicitar consulta</a
+              >
+            </li>
+          </ul>
+        </nav>
 
-        <li>
-          <a
-            href="#home"
-            class="site-header__nav-link"
-            data-nav-link
-            data-i18n="nav_home"
-          >
-            Inicio
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="#services"
-            class="site-header__nav-link"
-            data-nav-link
-            data-i18n="nav_services"
-          >
-            Servicios
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="#projects"
-            class="site-header__nav-link"
-            data-nav-link
-            data-i18n="nav_projects"
-          >
-            Proyectos
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="#about"
-            class="site-header__nav-link"
-            data-nav-link
-            data-i18n="nav_company"
-          >
-            Empresa
-          </a>
-        </li>
-
-        <li class="site-header__nav-cta">
-          <a
-            href="#contact"
-            class="button button--primary"
-            data-nav-link
-            data-i18n="nav_contact"
-          >
-            Solicitar consulta
-          </a>
-        </li>
-
-      </ul>
-    </nav>
-
-
-    <!-- ======================================================
+        <!-- ======================================================
          HEADER ACTIONS
     ======================================================= -->
 
-    <div class="site-header__actions">
-
-      <!-- Language switcher -->
-
-      <div
-        class="site-header__languages"
-        aria-label="Seleccionar idioma"
-      >
-        <button
-          type="button"
-          class="site-header__language"
-          data-language="es"
-          aria-pressed="true"
-        >
-          ES
-        </button>
-
-        <button
-          type="button"
-          class="site-header__language"
-          data-language="en"
-          aria-pressed="false"
-        >
-          EN
-        </button>
-      </div>
-
-
-      <!-- Mobile navigation toggle -->
-
-      <button
-        type="button"
-        class="site-header__toggle"
-        data-nav-toggle
-        aria-expanded="false"
-        aria-controls="primary-navigation"
-      >
-        <span class="visually-hidden">
-          Abrir menú de navegación
-        </span>
-
-        <span
-          class="site-header__toggle-icon"
-          aria-hidden="true"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </button>
-
-    </div>
-
-  </div>
-</header>
-
-<!-- ======================================================
-     CONTENT
-======================================================= -->
-
-<div class="hero__content">
-
-  <span
-    class="badge badge--brand"
-    data-i18n="hero_eyebrow"
-  >
-    Inteligencia Artificial · Automatización · Software
-  </span>
-
-
-  <h1
-    class="hero__title"
-    data-i18n="hero_title"
-  >
-    Tecnología que convierte procesos complejos
-    en negocios más eficientes.
-  </h1>
-
-
-  <p
-    class="hero__description"
-    data-i18n="hero_description"
-  >
-    Diseñamos soluciones de inteligencia artificial,
-    automatización y software para ayudar a empresas
-    a ahorrar tiempo, reducir trabajo manual y crecer
-    con una infraestructura preparada para el futuro.
-  </p>
-
-
-  <!-- ==================================================
-       ACTIONS
-  =================================================== -->
-
-  <div class="hero__actions">
-
-    <a
-      href="#services"
-      class="button button--primary button--lg"
-      data-i18n="hero_primary_action"
-    >
-      Explorar soluciones
-    </a>
-
-    <a
-      href="#contact"
-      class="button button--outline button--lg"
-      data-i18n="hero_secondary_action"
-    >
-      Solicitar consulta
-    </a>
-
-  </div>
-
-
-  <!-- ==================================================
-       VALUE POINTS
-  =================================================== -->
-
-  <ul
-    class="hero__benefits"
-    aria-label="Beneficios principales"
-    data-i18n-aria-label="hero_benefits_label"
-  >
-
-    <li class="hero__benefit">
-
-      <span
-        class="hero__benefit-icon"
-        aria-hidden="true"
-      >
-        ✓
-      </span>
-
-      <span data-i18n="hero_benefit_automation">
-        Automatización orientada a resultados
-      </span>
-
-    </li>
-
-
-    <li class="hero__benefit">
-
-      <span
-        class="hero__benefit-icon"
-        aria-hidden="true"
-      >
-        ✓
-      </span>
-
-      <span data-i18n="hero_benefit_scalability">
-        Sistemas preparados para escalar
-      </span>
-
-    </li>
-
-
-    <li class="hero__benefit">
-
-      <span
-        class="hero__benefit-icon"
-        aria-hidden="true"
-      >
-        ✓
-      </span>
-
-      <span data-i18n="hero_benefit_business">
-        Tecnología enfocada en valor de negocio
-      </span>
-
-    </li>
-
-  </ul>
-
-</div>
-
-
-<!-- ======================================================
-     SOLUTION VISUAL
-======================================================= -->
-
-<div
-  class="hero__visual"
-  aria-hidden="true"
->
-
-  <div class="hero-system">
-
-    <!-- ==================================================
-         SYSTEM HEADER
-    =================================================== -->
-
-    <div class="hero-system__header">
-
-      <div class="hero-system__status">
-
-        <span class="hero-system__status-dot"></span>
-
-        <span>
-          Yassir Intelligence
-        </span>
-
-      </div>
-
-
-      <span class="tag tag--brand">
-        AI System
-      </span>
-
-    </div>
-
-
-    <!-- ==================================================
-         SYSTEM CONTENT
-    =================================================== -->
-
-    <div class="hero-system__content">
-
-
-      <!-- ================================================
-           AUTOMATION FLOW
-      ================================================= -->
-
-      <div class="hero-system__flow">
-
-
-        <!-- INPUT NODE -->
-
-        <div class="hero-system__node">
-
-          <span
-            class="hero-system__node-label"
-            data-i18n="hero_system_input_label"
-          >
-            Entrada
-          </span>
-
-          <strong data-i18n="hero_system_processes">
-            Procesos
-          </strong>
-
-        </div>
-
-
-        <!-- CONNECTOR -->
-
-        <span class="hero-system__connector">
-          →
-        </span>
-
-
-        <!-- INTELLIGENCE NODE -->
-
-        <div class="
-          hero-system__node
-          hero-system__node--primary
-        ">
-
-          <span
-            class="hero-system__node-label"
-            data-i18n="hero_system_intelligence_label"
-          >
-            Inteligencia
-          </span>
-
-          <strong data-i18n="hero_system_ai_automation">
-            IA + Automatización
-          </strong>
-
-        </div>
-
-
-        <!-- CONNECTOR -->
-
-        <span class="hero-system__connector">
-          →
-        </span>
-
-
-        <!-- RESULT NODE -->
-
-        <div class="hero-system__node">
-
-          <span
-            class="hero-system__node-label"
-            data-i18n="hero_system_result_label"
-          >
-            Resultado
-          </span>
-
-          <strong data-i18n="hero_system_efficiency">
-            Eficiencia
-          </strong>
-
-        </div>
-
-      </div>
-
-
-      <!-- ================================================
-           TECHNOLOGY CARDS
-      ================================================= -->
-
-      <div class="hero-system__technologies">
-
-
-        <!-- ARTIFICIAL INTELLIGENCE -->
-
-        <div class="hero-system__technology">
-
-          <span>
-            AI
-          </span>
-
-          <strong data-i18n="hero_system_ai">
-            Inteligencia Artificial
-          </strong>
-
-        </div>
-
-
-        <!-- INTEGRATIONS -->
-
-        <div class="hero-system__technology">
-
-          <span>
-            API
-          </span>
-
-          <strong data-i18n="hero_system_integrations">
-            Integraciones
-          </strong>
-
-        </div>
-
-
-        <!-- AUTOMATION -->
-
-        <div class="hero-system__technology">
-
-          <span>
-            ⚙
-          </span>
-
-          <strong data-i18n="hero_system_automation">
-            Automatización
-          </strong>
-
-        </div>
-
-
-        <!-- SCALABILITY -->
-
-        <div class="hero-system__technology">
-
-          <span>
-            ↗
-          </span>
-
-          <strong data-i18n="hero_system_scalability">
-            Escalabilidad
-          </strong>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
-<!-- ==========================================================
-     YASSIR TECHNOLOGIC
-
-     Section:
-     Companies
-
-     Description:
-     Business audience and trust section.
-
-     Responsibility:
-     Communicates the types of businesses Yassir Technologic
-     serves and the principles behind our solutions.
-
-     Author:
-     Yassir Technologic
-
-     Version:
-     1.0.0
-========================================================== -->
-
-<section
-  id="companies"
-  class="companies section section--primary"
->
-
-  <div class="container">
-
-    <!-- ======================================================
-         SECTION HEADING
-    ======================================================= -->
-
-    <div
-      class="
-        section-heading
-        section-heading--center
-        companies__heading
-      "
-    >
-
-      <span
-        class="section-heading__eyebrow"
-        data-i18n="companies_eyebrow"
-      >
-        Tecnología para negocios reales
-      </span>
-
-
-      <h2
-        class="section-heading__title"
-        data-i18n="companies_title"
-      >
-        Soluciones adaptadas a cómo funciona tu negocio.
-      </h2>
-
-
-      <p
-        class="section-heading__description"
-        data-i18n="companies_description"
-      >
-        Trabajamos con empresas, profesionales y negocios
-        que quieren automatizar procesos, reducir tareas
-        manuales y utilizar mejor la tecnología.
-      </p>
-
-    </div>
-
-
-    <!-- ======================================================
-         BUSINESS AUDIENCES
-    ======================================================= -->
-
-    <ul
-      class="companies__audiences"
-      aria-label="Tipos de negocios"
-      data-i18n-aria-label="companies_audiences_label"
-    >
-
-      <li class="companies__audience">
-        <span
-          class="companies__audience-mark"
-          aria-hidden="true"
-        >
-          01
-        </span>
-
-        <span data-i18n="companies_businesses">
-          Empresas
-        </span>
-      </li>
-
-
-      <li class="companies__audience">
-        <span
-          class="companies__audience-mark"
-          aria-hidden="true"
-        >
-          02
-        </span>
-
-        <span data-i18n="companies_freelancers">
-          Autónomos
-        </span>
-      </li>
-
-
-      <li class="companies__audience">
-        <span
-          class="companies__audience-mark"
-          aria-hidden="true"
-        >
-          03
-        </span>
-
-        <span data-i18n="companies_restaurants">
-          Restaurantes
-        </span>
-      </li>
-
-
-      <li class="companies__audience">
-        <span
-          class="companies__audience-mark"
-          aria-hidden="true"
-        >
-          04
-        </span>
-
-        <span data-i18n="companies_hotels">
-          Hoteles
-        </span>
-      </li>
-
-
-      <li class="companies__audience">
-        <span
-          class="companies__audience-mark"
-          aria-hidden="true"
-        >
-          05
-        </span>
-
-        <span data-i18n="companies_professionals">
-          Profesionales
-        </span>
-      </li>
-
-
-      <li class="companies__audience">
-        <span
-          class="companies__audience-mark"
-          aria-hidden="true"
-        >
-          06
-        </span>
-
-        <span data-i18n="companies_local_businesses">
-          Negocios locales
-        </span>
-      </li>
-
-    </ul>
-
-
-    <!-- ======================================================
-         TRUST PRINCIPLES
-    ======================================================= -->
-
-    <div class="companies__trust">
-
-      <!-- SCALABILITY -->
-
-      <div class="companies__trust-item">
-
-        <span
-          class="companies__trust-icon"
-          aria-hidden="true"
-        >
-          ↗
-        </span>
-
-        <div>
-
-          <strong data-i18n="companies_scalability_title">
-            Preparado para crecer
-          </strong>
-
-          <p data-i18n="companies_scalability_text">
-            Diseñamos soluciones que pueden evolucionar
-            junto con tu negocio.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <!-- SECURITY -->
-
-      <div class="companies__trust-item">
-
-        <span
-          class="companies__trust-icon"
-          aria-hidden="true"
-        >
-          ✓
-        </span>
-
-        <div>
-
-          <strong data-i18n="companies_security_title">
-            Seguridad desde el diseño
-          </strong>
-
-          <p data-i18n="companies_security_text">
-            La estabilidad, la protección y las buenas
-            prácticas forman parte de la arquitectura.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <!-- BUSINESS VALUE -->
-
-      <div class="companies__trust-item">
-
-        <span
-          class="companies__trust-icon"
-          aria-hidden="true"
-        >
-          +
-        </span>
-
-        <div>
-
-          <strong data-i18n="companies_value_title">
-            Tecnología con propósito
-          </strong>
-
-          <p data-i18n="companies_value_text">
-            Cada solución debe generar eficiencia,
-            ahorro o nuevas oportunidades de crecimiento.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ==========================================================
-     YASSIR TECHNOLOGIC
-
-     Section:
-     Problems
-
-     Description:
-     Business problems section.
-
-     Responsibility:
-     Identifies common operational and technology challenges
-     that Yassir Technologic solutions are designed to solve.
-
-     Author:
-     Yassir Technologic
-
-     Version:
-     1.0.0
-========================================================== -->
-
-<section
-  id="problems"
-  class="problems section section--secondary"
->
-
-  <div class="container">
-
-    <!-- ======================================================
-         SECTION HEADING
-    ======================================================= -->
-
-    <div
-      class="
-        section-heading
-        problems__heading
-      "
-    >
-
-      <span
-        class="section-heading__eyebrow"
-        data-i18n="problems_eyebrow"
-      >
-        El problema no siempre es trabajar más
-      </span>
-
-
-      <h2
-        class="section-heading__title"
-        data-i18n="problems_title"
-      >
-        Muchos negocios pierden tiempo y dinero en procesos
-        que la tecnología puede simplificar.
-      </h2>
-
-
-      <p
-        class="section-heading__description"
-        data-i18n="problems_description"
-      >
-        Identificamos cuellos de botella, tareas repetitivas
-        y sistemas desconectados para convertirlos en procesos
-        más rápidos, medibles y escalables.
-      </p>
-
-    </div>
-
-
-    <!-- ======================================================
-         PROBLEMS GRID
-    ======================================================= -->
-
-    <div class="problems__grid">
-
-
-      <!-- PROBLEM 01 -->
-
-      <article class="card problems__card">
-
-        <span class="problems__number">
-          01
-        </span>
-
-        <div class="problems__icon" aria-hidden="true">
-          ↻
-        </div>
-
-        <h3
-          class="problems__card-title"
-          data-i18n="problem_manual_title"
-        >
-          Demasiado trabajo manual
-        </h3>
-
-        <p
-          class="problems__card-description"
-          data-i18n="problem_manual_text"
-        >
-          Tareas repetitivas consumen horas que podrían
-          dedicarse a clientes, estrategia y crecimiento.
-        </p>
-
-      </article>
-
-
-      <!-- PROBLEM 02 -->
-
-      <article class="card problems__card">
-
-        <span class="problems__number">
-          02
-        </span>
-
-        <div class="problems__icon" aria-hidden="true">
-          ⛓
-        </div>
-
-        <h3
-          class="problems__card-title"
-          data-i18n="problem_disconnected_title"
-        >
-          Herramientas desconectadas
-        </h3>
-
-        <p
-          class="problems__card-description"
-          data-i18n="problem_disconnected_text"
-        >
-          Información repartida entre aplicaciones obliga
-          a copiar datos y aumenta el riesgo de errores.
-        </p>
-
-      </article>
-
-
-      <!-- PROBLEM 03 -->
-
-      <article class="card problems__card">
-
-        <span class="problems__number">
-          03
-        </span>
-
-        <div class="problems__icon" aria-hidden="true">
-          ⏱
-        </div>
-
-        <h3
-          class="problems__card-title"
-          data-i18n="problem_response_title"
-        >
-          Respuestas demasiado lentas
-        </h3>
-
-        <p
-          class="problems__card-description"
-          data-i18n="problem_response_text"
-        >
-          Clientes y equipos esperan información que podría
-          obtenerse o gestionarse automáticamente.
-        </p>
-
-      </article>
-
-
-      <!-- PROBLEM 04 -->
-
-      <article class="card problems__card">
-
-        <span class="problems__number">
-          04
-        </span>
-
-        <div class="problems__icon" aria-hidden="true">
-          ◫
-        </div>
-
-        <h3
-          class="problems__card-title"
-          data-i18n="problem_visibility_title"
-        >
-          Falta de visibilidad
-        </h3>
-
-        <p
-          class="problems__card-description"
-          data-i18n="problem_visibility_text"
-        >
-          Sin datos claros es difícil saber qué funciona,
-          detectar problemas y tomar mejores decisiones.
-        </p>
-
-      </article>
-
-
-      <!-- PROBLEM 05 -->
-
-      <article class="card problems__card">
-
-        <span class="problems__number">
-          05
-        </span>
-
-        <div class="problems__icon" aria-hidden="true">
-          ↗
-        </div>
-
-        <h3
-          class="problems__card-title"
-          data-i18n="problem_scale_title"
-        >
-          Procesos que no escalan
-        </h3>
-
-        <p
-          class="problems__card-description"
-          data-i18n="problem_scale_text"
-        >
-          Lo que funciona con pocos clientes puede convertirse
-          en un cuello de botella cuando el negocio crece.
-        </p>
-
-      </article>
-
-
-      <!-- PROBLEM 06 -->
-
-      <article class="card problems__card">
-
-        <span class="problems__number">
-          06
-        </span>
-
-        <div class="problems__icon" aria-hidden="true">
-          ◈
-        </div>
-
-        <h3
-          class="problems__card-title"
-          data-i18n="problem_generic_title"
-        >
-          Software que no se adapta
-        </h3>
-
-        <p
-          class="problems__card-description"
-          data-i18n="problem_generic_text"
-        >
-          Las herramientas genéricas no siempre encajan
-          con los procesos reales de cada empresa.
-        </p>
-
-      </article>
-
-    </div>
-
-
-    <!-- ======================================================
-         CLOSING MESSAGE
-    ======================================================= -->
-
-    <div class="problems__closing">
-
-      <p data-i18n="problems_closing">
-        La tecnología correcta no añade complejidad:
-        elimina fricción.
-      </p>
-
-      <a
-        href="#services"
-        class="button button--outline"
-        data-i18n="problems_action"
-      >
-        Ver cómo lo resolvemos
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ==========================================================
-     YASSIR TECHNOLOGIC
-
-     Section:
-     Company
-
-     Description:
-     Corporate company presentation section.
-
-     Responsibility:
-     Explains the mission, technology philosophy and
-     operating principles behind Yassir Technologic.
-
-     Author:
-     Yassir Technologic
-
-     Version:
-     2.0.0
-========================================================== -->
-
-<section
-  id="about"
-  class="about section section--primary"
->
-
-  <div class="container">
-
-    <!-- ======================================================
-         MAIN LAYOUT
-    ======================================================= -->
-
-    <div class="about__layout">
-
-
-      <!-- ==================================================
-           COMPANY CONTENT
-      =================================================== -->
-
-      <div class="about__content">
-
-        <span
-          class="section-heading__eyebrow"
-          data-i18n="about_eyebrow_v2"
-        >
-          Yassir Technologic
-        </span>
-
-
-        <h2
-          class="about__title"
-          data-i18n="about_title_v2"
-        >
-          Construimos tecnología con un objetivo:
-          hacer que los negocios funcionen mejor.
-        </h2>
-
-
-        <p
-          class="about__lead"
-          data-i18n="about_lead_v2"
-        >
-          No desarrollamos tecnología simplemente porque sea
-          posible. Analizamos primero dónde puede generar
-          eficiencia, ahorro, control o nuevas oportunidades.
-        </p>
-
-
-        <p
-          class="about__description"
-          data-i18n="about_description_v2"
-        >
-          Yassir Technologic desarrolla soluciones de
-          inteligencia artificial, automatización y software
-          con una arquitectura profesional preparada para
-          evolucionar junto con cada negocio.
-        </p>
-
-
-        <!-- ================================================
-             COMPANY CAPABILITIES
-        ================================================= -->
-
-        <div class="about__capabilities">
-
-          <span class="tag tag--brand">
-            Artificial Intelligence
-          </span>
-
-          <span class="tag">
-            Automation
-          </span>
-
-          <span class="tag">
-            Software
-          </span>
-
-          <span class="tag">
-            APIs
-          </span>
-
-          <span class="tag">
-            SaaS
-          </span>
-
-        </div>
-
-
-        <!-- ================================================
-             ACTION
-        ================================================= -->
-
-        <div class="about__actions">
-
-          <a
-            href="#projects"
-            class="button button--primary"
-            data-i18n="about_projects_action"
-          >
-            Ver proyectos
-          </a>
-
-          <a
-            href="#contact"
-            class="button button--outline"
-            data-i18n="about_contact_action"
-          >
-            Hablar con nosotros
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <!-- ==================================================
-           COMPANY SYSTEM
-      =================================================== -->
-
-      <div
-        class="about__visual"
-        aria-hidden="true"
-      >
-
-        <div class="about-system">
-
-
-          <!-- ==============================================
-               SYSTEM HEADER
-          =============================================== -->
-
-          <div class="about-system__header">
-
-            <div class="about-system__brand">
-
-              <span class="about-system__status"></span>
-
-              <strong>
-                Yassir Technologic
-              </strong>
-
-            </div>
-
-
-            <span
-              class="badge badge--brand"
-              data-i18n="about_company_badge"
-            >
-              Empresa tecnológica
-            </span>
-
-          </div>
-
-
-          <!-- ==============================================
-               CORE PRINCIPLE
-          =============================================== -->
-
-          <div class="about-system__core">
-
-            <span
-              class="about-system__core-label"
-              data-i18n="about_system_input"
-            >
-              Necesidad empresarial
-            </span>
-
-
-            <span
-              class="about-system__arrow"
-              aria-hidden="true"
-            >
-              ↓
-            </span>
-
-
-            <div class="about-system__engine">
-
-              <span>
-                YASSIR
-              </span>
-
-              <strong data-i18n="about_system_engine">
-                Tecnología aplicada
-              </strong>
-
-            </div>
-
-
-            <span
-              class="about-system__arrow"
-              aria-hidden="true"
-            >
-              ↓
-            </span>
-
-
-            <span
-              class="about-system__core-label"
-              data-i18n="about_system_output"
-            >
-              Resultado de negocio
-            </span>
-
-          </div>
-
-
-          <!-- ==============================================
-               PRINCIPLES
-          =============================================== -->
-
-          <div class="about-system__principles">
-
-
-            <!-- BUSINESS FIRST -->
-
-            <div class="about-system__principle">
-
-              <span
-                class="about-system__principle-icon"
-                aria-hidden="true"
-              >
-                01
-              </span>
-
-              <div>
-
-                <strong data-i18n="about_business_title">
-                  Negocio primero
-                </strong>
-
-                <p data-i18n="about_business_text">
-                  Entendemos el problema antes de elegir
-                  la tecnología.
-                </p>
-
-              </div>
-
-            </div>
-
-
-            <!-- ARCHITECTURE -->
-
-            <div class="about-system__principle">
-
-              <span
-                class="about-system__principle-icon"
-                aria-hidden="true"
-              >
-                02
-              </span>
-
-              <div>
-
-                <strong data-i18n="about_architecture_title">
-                  Arquitectura preparada para crecer
-                </strong>
-
-                <p data-i18n="about_architecture_text">
-                  Construimos sistemas modulares,
-                  mantenibles y escalables.
-                </p>
-
-              </div>
-
-            </div>
-
-
-            <!-- SECURITY -->
-
-            <div class="about-system__principle">
-
-              <span
-                class="about-system__principle-icon"
-                aria-hidden="true"
-              >
-                03
-              </span>
-
-              <div>
-
-                <strong data-i18n="about_security_title">
-                  Seguridad y calidad
-                </strong>
-
-                <p data-i18n="about_security_text">
-                  Aplicamos buenas prácticas desde
-                  la base del proyecto.
-                </p>
-
-              </div>
-
-            </div>
-
-
-            <!-- EVOLUTION -->
-
-            <div class="about-system__principle">
-
-              <span
-                class="about-system__principle-icon"
-                aria-hidden="true"
-              >
-                04
-              </span>
-
-              <div>
-
-                <strong data-i18n="about_evolution_title">
-                  Evolución continua
-                </strong>
-
-                <p data-i18n="about_evolution_text">
-                  Diseñamos soluciones que pueden mejorar
-                  a medida que cambia el negocio.
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <!-- ======================================================
-         COMPANY STATEMENT
-    ======================================================= -->
-
-    <div class="about__statement">
-
-      <span
-        class="about__statement-label"
-        data-i18n="about_statement_label"
-      >
-        Nuestra visión
-      </span>
-
-
-      <p data-i18n="about_statement_text">
-        Las empresas que incorporen la tecnología adecuada
-        antes que su competencia estarán mejor preparadas
-        para operar, crecer y adaptarse al futuro.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ==========================================================
-     YASSIR TECHNOLOGIC
-
-     Section:
-     Services
-
-     Description:
-     Corporate technology services section.
-
-     Responsibility:
-     Presents the core technology services offered by
-     Yassir Technologic and connects business problems
-     with practical technology solutions.
-
-     Author:
-     Yassir Technologic
-
-     Version:
-     2.0.0
-========================================================== -->
-
-<section
-  id="services"
-  class="services section section--primary"
->
-
-  <div class="container">
-
-    <!-- ======================================================
-         SECTION HEADING
-    ======================================================= -->
-
-    <div
-      class="
-        section-heading
-        section-heading--center
-        services__heading
-      "
-    >
-
-      <span
-        class="section-heading__eyebrow"
-        data-i18n="services_eyebrow"
-      >
-        Soluciones tecnológicas
-      </span>
-
-
-      <h2
-        class="section-heading__title"
-        data-i18n="services_title_v2"
-      >
-        Tecnología diseñada para resolver problemas reales.
-      </h2>
-
-
-      <p
-        class="section-heading__description"
-        data-i18n="services_description"
-      >
-        Combinamos inteligencia artificial, automatización
-        y desarrollo de software para construir soluciones
-        adaptadas a las necesidades reales de cada negocio.
-      </p>
-
-    </div>
-
-
-    <!-- ======================================================
-         SERVICES GRID
-    ======================================================= -->
-
-    <div class="services__grid">
-
-
-      <!-- ==================================================
-           SERVICE 01
-           AUTOMATION
-      =================================================== -->
-
-      <article class="card services__card">
-
-        <div class="services__card-header">
-
-          <span class="services__number">
-            01
-          </span>
+        <div class="site-header__actions">
+          <!-- Language switcher -->
 
           <div
-            class="services__icon"
-            aria-hidden="true"
+            class="site-header__languages"
+            role="group"
+            aria-label="Seleccionar idioma"
           >
-            ⚙
-          </div>
-
-        </div>
-
-
-        <h3
-          class="services__title"
-          data-i18n="service_automation_title_v2"
-        >
-          Automatización de procesos
-        </h3>
-
-
-        <p
-          class="services__description"
-          data-i18n="service_automation_text_v2"
-        >
-          Automatizamos tareas repetitivas y flujos de trabajo
-          para reducir errores, ahorrar tiempo y liberar recursos.
-        </p>
-
-
-        <div class="tag-group services__tags">
-
-          <span class="tag">
-            Python
-          </span>
-
-          <span class="tag">
-            Workflows
-          </span>
-
-          <span class="tag">
-            APIs
-          </span>
-
-        </div>
-
-      </article>
-
-
-      <!-- ==================================================
-           SERVICE 02
-           AI & CHATBOTS
-      =================================================== -->
-
-      <article class="card services__card">
-
-        <div class="services__card-header">
-
-          <span class="services__number">
-            02
-          </span>
-
-          <div
-            class="services__icon"
-            aria-hidden="true"
-          >
-            AI
-          </div>
-
-        </div>
-
-
-        <h3
-          class="services__title"
-          data-i18n="service_ai_title"
-        >
-          Inteligencia Artificial y Chatbots
-        </h3>
-
-
-        <p
-          class="services__description"
-          data-i18n="service_ai_text"
-        >
-          Creamos asistentes inteligentes capaces de atender,
-          responder, clasificar información y automatizar
-          conversaciones y procesos.
-        </p>
-
-
-        <div class="tag-group services__tags">
-
-          <span class="tag">
-            AI
-          </span>
-
-          <span class="tag">
-            LLM
-          </span>
-
-          <span class="tag">
-            Chatbots
-          </span>
-
-        </div>
-
-      </article>
-
-
-      <!-- ==================================================
-           SERVICE 03
-           CUSTOM SOFTWARE
-      =================================================== -->
-
-      <article class="card services__card">
-
-        <div class="services__card-header">
-
-          <span class="services__number">
-            03
-          </span>
-
-          <div
-            class="services__icon"
-            aria-hidden="true"
-          >
-            &lt;/&gt;
-          </div>
-
-        </div>
-
-
-        <h3
-          class="services__title"
-          data-i18n="service_software_title"
-        >
-          Software a medida
-        </h3>
-
-
-        <p
-          class="services__description"
-          data-i18n="service_software_text"
-        >
-          Desarrollamos sistemas adaptados a procesos específicos
-          cuando las herramientas genéricas no son suficientes.
-        </p>
-
-
-        <div class="tag-group services__tags">
-
-          <span class="tag">
-            Backend
-          </span>
-
-          <span class="tag">
-            Web Apps
-          </span>
-
-          <span class="tag">
-            SaaS
-          </span>
-
-        </div>
-
-      </article>
-
-
-      <!-- ==================================================
-           SERVICE 04
-           WEB DEVELOPMENT
-      =================================================== -->
-
-      <article class="card services__card">
-
-        <div class="services__card-header">
-
-          <span class="services__number">
-            04
-          </span>
-
-          <div
-            class="services__icon"
-            aria-hidden="true"
-          >
-            WEB
-          </div>
-
-        </div>
-
-
-        <h3
-          class="services__title"
-          data-i18n="service_web_title"
-        >
-          Desarrollo Web
-        </h3>
-
-
-        <p
-          class="services__description"
-          data-i18n="service_web_text"
-        >
-          Diseñamos y desarrollamos experiencias web rápidas,
-          profesionales y orientadas a captar clientes y generar negocio.
-        </p>
-
-
-        <div class="tag-group services__tags">
-
-          <span class="tag">
-            Web
-          </span>
-
-          <span class="tag">
-            Responsive
-          </span>
-
-          <span class="tag">
-            SEO
-          </span>
-
-        </div>
-
-      </article>
-
-
-      <!-- ==================================================
-           SERVICE 05
-           INTEGRATIONS
-      =================================================== -->
-
-      <article class="card services__card">
-
-        <div class="services__card-header">
-
-          <span class="services__number">
-            05
-          </span>
-
-          <div
-            class="services__icon"
-            aria-hidden="true"
-          >
-            API
-          </div>
-
-        </div>
-
-
-        <h3
-          class="services__title"
-          data-i18n="service_integrations_title"
-        >
-          Integraciones y APIs
-        </h3>
-
-
-        <p
-          class="services__description"
-          data-i18n="service_integrations_text"
-        >
-          Conectamos herramientas, plataformas y datos para
-          eliminar duplicaciones y crear flujos de trabajo unificados.
-        </p>
-
-
-        <div class="tag-group services__tags">
-
-          <span class="tag">
-            REST
-          </span>
-
-          <span class="tag">
-            API
-          </span>
-
-          <span class="tag">
-            Integrations
-          </span>
-
-        </div>
-
-      </article>
-
-
-      <!-- ==================================================
-           SERVICE 06
-           DASHBOARDS
-      =================================================== -->
-
-      <article class="card services__card">
-
-        <div class="services__card-header">
-
-          <span class="services__number">
-            06
-          </span>
-
-          <div
-            class="services__icon"
-            aria-hidden="true"
-          >
-            DATA
-          </div>
-
-        </div>
-
-
-        <h3
-          class="services__title"
-          data-i18n="service_dashboards_title"
-        >
-          Dashboards y análisis de datos
-        </h3>
-
-
-        <p
-          class="services__description"
-          data-i18n="service_dashboards_text"
-        >
-          Transformamos información dispersa en indicadores
-          claros para controlar operaciones y tomar mejores decisiones.
-        </p>
-
-
-        <div class="tag-group services__tags">
-
-          <span class="tag">
-            Analytics
-          </span>
-
-          <span class="tag">
-            KPIs
-          </span>
-
-          <span class="tag">
-            Data
-          </span>
-
-        </div>
-
-      </article>
-
-
-      <!-- ==================================================
-           SERVICE 07
-           SAAS
-      =================================================== -->
-
-      <article class="card services__card">
-
-        <div class="services__card-header">
-
-          <span class="services__number">
-            07
-          </span>
-
-          <div
-            class="services__icon"
-            aria-hidden="true"
-          >
-            SaaS
-          </div>
-
-        </div>
-
-
-        <h3
-          class="services__title"
-          data-i18n="service_saas_title"
-        >
-          Soluciones SaaS
-        </h3>
-
-
-        <p
-          class="services__description"
-          data-i18n="service_saas_text"
-        >
-          Construimos productos digitales escalables preparados
-          para ofrecer servicios mediante modelos de suscripción.
-        </p>
-
-
-        <div class="tag-group services__tags">
-
-          <span class="tag">
-            Cloud
-          </span>
-
-          <span class="tag">
-            SaaS
-          </span>
-
-          <span class="tag">
-            Scale
-          </span>
-
-        </div>
-
-      </article>
-
-
-      <!-- ==================================================
-           SERVICE 08
-           CONSULTING
-      =================================================== -->
-
-      <article
-        class="
-          card
-          services__card
-          services__card--featured
-        "
-      >
-
-        <div class="services__card-header">
-
-          <span class="services__number">
-            08
-          </span>
-
-          <div
-            class="
-              services__icon
-              services__icon--featured
-            "
-            aria-hidden="true"
-          >
-            +
-          </div>
-
-        </div>
-
-
-        <h3
-          class="services__title"
-          data-i18n="service_consulting_title"
-        >
-          Consultoría tecnológica
-        </h3>
-
-
-        <p
-          class="services__description"
-          data-i18n="service_consulting_text"
-        >
-          Analizamos procesos y oportunidades para identificar
-          dónde la automatización, la IA o el software pueden
-          generar mayor impacto.
-        </p>
-
-
-        <a
-          href="#contact"
-          class="services__link"
-          data-i18n="service_consulting_action"
-        >
-          Analizar mi negocio
-          <span aria-hidden="true">→</span>
-        </a>
-
-      </article>
-
-    </div>
-
-
-    <!-- ======================================================
-         SERVICES CTA
-    ======================================================= -->
-
-    <div class="services__cta">
-
-      <div>
-
-        <strong data-i18n="services_cta_title">
-          ¿No sabes qué solución necesitas?
-        </strong>
-
-        <p data-i18n="services_cta_text">
-          Cuéntanos cómo funciona tu negocio y analizaremos
-          dónde la tecnología puede generar mayor impacto.
-        </p>
-
-      </div>
-
-
-      <a
-        href="#contact"
-        class="button button--primary button--lg"
-        data-i18n="services_cta_action"
-      >
-        Hablar con Yassir Technologic
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ==========================================================
-     YASSIR TECHNOLOGIC
-
-     Section:
-     Products
-
-     Description:
-     Technology products and platforms section.
-
-     Responsibility:
-     Presents scalable technology products developed by
-     Yassir Technologic and their business applications.
-
-     Author:
-     Yassir Technologic
-
-     Version:
-     1.0.0
-========================================================== -->
-
-<section
-  id="products"
-  class="products section section--secondary"
->
-
-  <div class="container">
-
-    <!-- ======================================================
-         SECTION HEADING
-    ======================================================= -->
-
-    <div
-      class="
-        section-heading
-        section-heading--center
-        products__heading
-      "
-    >
-
-      <span
-        class="section-heading__eyebrow"
-        data-i18n="products_eyebrow"
-      >
-        Productos Yassir Technologic
-      </span>
-
-
-      <h2
-        class="section-heading__title"
-        data-i18n="products_title"
-      >
-        Tecnología creada para convertirse en una ventaja competitiva.
-      </h2>
-
-
-      <p
-        class="section-heading__description"
-        data-i18n="products_description"
-      >
-        Desarrollamos plataformas y productos tecnológicos
-        preparados para automatizar operaciones, mejorar
-        la experiencia del cliente y facilitar el crecimiento.
-      </p>
-
-    </div>
-
-
-    <!-- ======================================================
-         FEATURED PRODUCT
-    ======================================================= -->
-
-    <article class="products__featured">
-
-      <!-- ==================================================
-           FEATURED CONTENT
-      =================================================== -->
-
-      <div class="products__featured-content">
-
-        <span
-          class="badge badge--brand"
-          data-i18n="products_featured_badge"
-        >
-          Inteligencia Artificial
-        </span>
-
-
-        <span class="products__product-number">
-          PRODUCT 01
-        </span>
-
-
-        <h3
-          class="products__featured-title"
-          data-i18n="product_ai_title"
-        >
-          Yassir AI Assistant
-        </h3>
-
-
-        <p
-          class="products__featured-description"
-          data-i18n="product_ai_description"
-        >
-          Asistentes inteligentes para automatizar atención,
-          captación de clientes, preguntas frecuentes y procesos
-          de conversación dentro de un negocio.
-        </p>
-
-
-        <!-- ================================================
-             BENEFITS
-        ================================================= -->
-
-        <ul class="products__features">
-
-          <li>
-            <span aria-hidden="true">✓</span>
-
-            <span data-i18n="product_ai_feature_1">
-              Atención automatizada las 24 horas
-            </span>
-          </li>
-
-
-          <li>
-            <span aria-hidden="true">✓</span>
-
-            <span data-i18n="product_ai_feature_2">
-              Captación y clasificación de potenciales clientes
-            </span>
-          </li>
-
-
-          <li>
-            <span aria-hidden="true">✓</span>
-
-            <span data-i18n="product_ai_feature_3">
-              Integración con procesos y sistemas empresariales
-            </span>
-          </li>
-
-        </ul>
-
-
-        <!-- ================================================
-             TECHNOLOGIES
-        ================================================= -->
-
-        <div class="tag-group products__tags">
-
-          <span class="tag tag--brand">
-            AI
-          </span>
-
-          <span class="tag">
-            LLM
-          </span>
-
-          <span class="tag">
-            APIs
-          </span>
-
-          <span class="tag">
-            Automation
-          </span>
-
-        </div>
-
-
-        <!-- ================================================
-             ACTIONS
-        ================================================= -->
-
-        <div class="products__actions">
-
-          <a
-            href="#contact"
-            class="button button--primary"
-            data-i18n="product_ai_action"
-          >
-            Solicitar información
-          </a>
-
-          <a
-            href="#projects"
-            class="button button--ghost"
-            data-i18n="product_view_projects"
-          >
-            Ver casos relacionados
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <!-- ==================================================
-           FEATURED VISUAL
-      =================================================== -->
-
-      <div
-        class="products__featured-visual"
-        aria-hidden="true"
-      >
-
-        <div class="products-ai">
-
-          <div class="products-ai__header">
-
-            <div class="products-ai__brand">
-
-              <span class="products-ai__status"></span>
-
-              <strong>
-                Yassir AI
-              </strong>
-
-            </div>
-
-            <span class="tag tag--brand">
-              Online
-            </span>
-
-          </div>
-
-          <div class="products-ai__conversation">
-
-            <!-- CLIENT MESSAGE -->
-
-            <div class="
-              products-ai__message
-              products-ai__message--client
-            "
-              data-i18n="product_ai_demo_client"
+            <button
+              type="button"
+              class="site-header__language"
+              data-language="es"
+              aria-pressed="true"
             >
-              Necesito automatizar la atención
-              de mis clientes.
-            </div>
+              ES
+            </button>
 
-
-            <!-- AI RESPONSE -->
-
-            <div class="
-              products-ai__message
-              products-ai__message--assistant
-            "
-              data-i18n="product_ai_demo_assistant"
+            <button
+              type="button"
+              class="site-header__language"
+              data-language="en"
+              aria-pressed="false"
             >
-              Podemos analizar tus consultas,
-              responder automáticamente y enviar
-              cada oportunidad al proceso adecuado.
-            </div>
-
-
-            <!-- AI PROCESSING -->
-
-            <div class="products-ai__processing">
-
-              <span>
-                AI
-              </span>
-
-              <span data-i18n="product_ai_demo_processing">
-                Analizando necesidad
-              </span>
-
-              <span>
-                →
-              </span>
-
-              <span data-i18n="product_ai_demo_result">
-                Lead cualificado
-              </span>
-
-            </div>
-
+              EN
+            </button>
           </div>
 
-          </div>
-
-        </div>
-
-      </div>
-
-    </article>
-
-
-    <!-- ======================================================
-         SECONDARY PRODUCTS
-    ======================================================= -->
-
-    <div class="products__grid">
-
-
-      <!-- ==================================================
-           PRODUCT 02
-           YASSIR CORE
-      =================================================== -->
-
-      <article class="card products__card">
-
-        <div class="products__card-header">
-
-          <span class="products__product-number">
-            PRODUCT 02
-          </span>
-
-          <span
-            class="badge badge--neutral"
-            data-i18n="product_core_category"
-          >
-            Gestión empresarial
-          </span>
-
-        </div>
-
-
-        <div
-          class="products__icon"
-          aria-hidden="true"
-        >
-          CORE
-        </div>
-
-
-        <h3
-          class="products__card-title"
-          data-i18n="product_core_title"
-        >
-          Yassir Core
-        </h3>
-
-
-        <p
-          class="products__card-description"
-          data-i18n="product_core_description"
-        >
-          Plataforma empresarial modular para centralizar
-          clientes, operaciones, finanzas, ventas y datos
-          dentro de un único ecosistema.
-        </p>
-
-
-        <ul class="products__mini-features">
-
-          <li data-i18n="product_core_feature_1">
-            Gestión centralizada
-          </li>
-
-          <li data-i18n="product_core_feature_2">
-            Arquitectura modular
-          </li>
-
-          <li data-i18n="product_core_feature_3">
-            Información para tomar decisiones
-          </li>
-
-        </ul>
-
-
-        <div class="tag-group products__tags">
-
-          <span class="tag">
-            CRM
-          </span>
-
-          <span class="tag">
-            Analytics
-          </span>
-
-          <span class="tag">
-            Automation
-          </span>
-
-        </div>
-
-
-        <a
-          href="#contact"
-          class="products__link"
-          data-i18n="product_core_action"
-        >
-          Conocer la plataforma
-
-          <span aria-hidden="true">
-            →
-          </span>
-        </a>
-
-      </article>
-
-
-      <!-- ==================================================
-           PRODUCT 03
-           SMART ORDERING
-      =================================================== -->
-
-      <article class="card products__card">
-
-        <div class="products__card-header">
-
-          <span class="products__product-number">
-            PRODUCT 03
-          </span>
-
-          <span
-            class="badge badge--neutral"
-            data-i18n="product_ordering_category"
-          >
-            Hostelería
-          </span>
-
-        </div>
-
-
-        <div
-          class="products__icon"
-          aria-hidden="true"
-        >
-          ORDER
-        </div>
-
-
-        <h3
-          class="products__card-title"
-          data-i18n="product_ordering_title"
-        >
-          Yassir Smart Ordering
-        </h3>
-
-
-        <p
-          class="products__card-description"
-          data-i18n="product_ordering_description"
-        >
-          Sistema digital de pedidos diseñado para restaurantes,
-          cafeterías y negocios de hostelería que quieren agilizar
-          pedidos y mejorar la experiencia del cliente.
-        </p>
-
-
-        <ul class="products__mini-features">
-
-          <li data-i18n="product_ordering_feature_1">
-            Pedidos digitales
-          </li>
-
-          <li data-i18n="product_ordering_feature_2">
-            Menor carga operativa
-          </li>
-
-          <li data-i18n="product_ordering_feature_3">
-            Experiencia de compra más rápida
-          </li>
-
-        </ul>
-
-
-        <div class="tag-group products__tags">
-
-          <span class="tag">
-            Ordering
-          </span>
-
-          <span class="tag">
-            Automation
-          </span>
-
-          <span class="tag">
-            Hospitality
-          </span>
-
-        </div>
-
-
-        <a
-          href="#contact"
-          class="products__link"
-          data-i18n="product_ordering_action"
-        >
-          Solicitar información
-
-          <span aria-hidden="true">
-            →
-          </span>
-        </a>
-
-      </article>
-
-    </div>
-
-
-    <!-- ======================================================
-         PRODUCTS CLOSING CTA
-    ======================================================= -->
-
-    <div class="products__cta">
-
-      <div>
-
-        <span
-          class="products__cta-label"
-          data-i18n="products_cta_label"
-        >
-          ¿Necesitas algo diferente?
-        </span>
-
-
-        <h3 data-i18n="products_cta_title">
-          También construimos soluciones específicas para cada negocio.
-        </h3>
-
-
-        <p data-i18n="products_cta_description">
-          Si ninguno de nuestros productos encaja exactamente
-          con tu proceso, podemos diseñar una solución a medida.
-        </p>
-
-      </div>
-
-
-      <a
-        href="#contact"
-        class="button button--primary button--lg"
-        data-i18n="products_cta_action"
-      >
-        Cuéntanos qué necesitas
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ==========================================================
-     YASSIR TECHNOLOGIC
-
-     Section:
-     Process
-
-     Description:
-     Technology delivery process section.
-
-     Responsibility:
-     Explains how Yassir Technologic analyzes, designs,
-     develops, integrates and improves client solutions.
-
-     Author:
-     Yassir Technologic
-
-     Version:
-     1.0.0
-========================================================== -->
-
-<section
-  id="process"
-  class="process section section--primary"
->
-
-  <div class="container">
-
-    <!-- ======================================================
-         SECTION HEADING
-    ======================================================= -->
-
-    <div
-      class="
-        section-heading
-        section-heading--center
-        process__heading
-      "
-    >
-
-      <span
-        class="section-heading__eyebrow"
-        data-i18n="process_eyebrow"
-      >
-        Cómo trabajamos
-      </span>
-
-
-      <h2
-        class="section-heading__title"
-        data-i18n="process_title"
-      >
-        De un problema real a una solución funcionando.
-      </h2>
-
-
-      <p
-        class="section-heading__description"
-        data-i18n="process_description"
-      >
-        Cada proyecto comienza entendiendo el negocio.
-        Después diseñamos, construimos e integramos la tecnología
-        necesaria con una metodología clara y medible.
-      </p>
-
-    </div>
-
-
-    <!-- ======================================================
-         PROCESS STEPS
-    ======================================================= -->
-
-    <div class="process__steps">
-
-
-      <!-- ==================================================
-           STEP 01
-           ANALYSIS
-      =================================================== -->
-
-      <article class="process__step">
-
-        <div class="process__step-header">
-
-          <span class="process__number">
-            01
-          </span>
-
-          <span
-            class="process__icon"
-            aria-hidden="true"
-          >
-            ◎
-          </span>
-
-        </div>
-
-
-        <h3
-          class="process__step-title"
-          data-i18n="process_analysis_title"
-        >
-          Analizamos
-        </h3>
-
-
-        <p
-          class="process__step-description"
-          data-i18n="process_analysis_text"
-        >
-          Estudiamos tus procesos, objetivos y puntos de fricción
-          para identificar dónde la tecnología puede generar
-          mayor impacto.
-        </p>
-
-      </article>
-
-
-      <!-- ==================================================
-           STEP 02
-           DESIGN
-      =================================================== -->
-
-      <article class="process__step">
-
-        <div class="process__step-header">
-
-          <span class="process__number">
-            02
-          </span>
-
-          <span
-            class="process__icon"
-            aria-hidden="true"
-          >
-            ◇
-          </span>
-
-        </div>
-
-
-        <h3
-          class="process__step-title"
-          data-i18n="process_design_title"
-        >
-          Diseñamos
-        </h3>
-
-
-        <p
-          class="process__step-description"
-          data-i18n="process_design_text"
-        >
-          Definimos la arquitectura, las funcionalidades
-          y la estrategia técnica antes de comenzar
-          el desarrollo.
-        </p>
-
-      </article>
-
-
-      <!-- ==================================================
-           STEP 03
-           BUILD
-      =================================================== -->
-
-      <article class="process__step">
-
-        <div class="process__step-header">
-
-          <span class="process__number">
-            03
-          </span>
-
-          <span
-            class="process__icon"
-            aria-hidden="true"
-          >
-            &lt;/&gt;
-          </span>
-
-        </div>
-
-
-        <h3
-          class="process__step-title"
-          data-i18n="process_build_title"
-        >
-          Construimos
-        </h3>
-
-
-        <p
-          class="process__step-description"
-          data-i18n="process_build_text"
-        >
-          Desarrollamos la solución utilizando una arquitectura
-          modular, mantenible y preparada para crecer.
-        </p>
-
-      </article>
-
-
-      <!-- ==================================================
-           STEP 04
-           INTEGRATION
-      =================================================== -->
-
-      <article class="process__step">
-
-        <div class="process__step-header">
-
-          <span class="process__number">
-            04
-          </span>
-
-          <span
-            class="process__icon"
-            aria-hidden="true"
-          >
-            ⛓
-          </span>
-
-        </div>
-
-
-        <h3
-          class="process__step-title"
-          data-i18n="process_integrate_title"
-        >
-          Integramos
-        </h3>
-
-
-        <p
-          class="process__step-description"
-          data-i18n="process_integrate_text"
-        >
-          Conectamos la solución con los sistemas, herramientas
-          y flujos existentes para que forme parte real
-          de la operación.
-        </p>
-
-      </article>
-
-
-      <!-- ==================================================
-           STEP 05
-           OPTIMIZATION
-      =================================================== -->
-
-      <article class="
-        process__step
-        process__step--featured
-      ">
-
-        <div class="process__step-header">
-
-          <span class="process__number">
-            05
-          </span>
-
-          <span
-            class="
-              process__icon
-              process__icon--featured
-            "
-            aria-hidden="true"
-          >
-            ↗
-          </span>
-
-        </div>
-
-
-        <h3
-          class="process__step-title"
-          data-i18n="process_optimize_title"
-        >
-          Optimizamos
-        </h3>
-
-
-        <p
-          class="process__step-description"
-          data-i18n="process_optimize_text"
-        >
-          Medimos resultados, detectamos mejoras y evolucionamos
-          la solución a medida que cambian las necesidades
-          del negocio.
-        </p>
-
-      </article>
-
-    </div>
-
-
-    <!-- ======================================================
-         PROCESS PRINCIPLE
-    ======================================================= -->
-
-    <div class="process__principle">
-
-      <div class="process__principle-content">
-
-        <span
-          class="process__principle-label"
-          data-i18n="process_principle_label"
-        >
-          Nuestro principio
-        </span>
-
-
-        <p data-i18n="process_principle_text">
-          La tecnología debe adaptarse al negocio.
-          El negocio no debería tener que adaptarse
-          a una mala tecnología.
-        </p>
-
-      </div>
-
-
-      <a
-        href="#contact"
-        class="button button--primary button--lg"
-        data-i18n="process_action"
-      >
-        Hablar sobre mi proyecto
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ==========================================================
-     YASSIR TECHNOLOGIC
-
-     Section:
-     Technology
-
-     Description:
-     Technology capabilities and engineering stack section.
-
-     Responsibility:
-     Presents the technologies and technical capabilities used
-     to build secure, scalable and maintainable solutions.
-
-     Author:
-     Yassir Technologic
-
-     Version:
-     1.0.0
-========================================================== -->
-
-<section
-  id="technology"
-  class="technology section section--secondary"
->
-
-  <div class="container">
-
-    <!-- ======================================================
-         SECTION HEADING
-    ======================================================= -->
-
-    <div
-      class="
-        section-heading
-        section-heading--center
-        technology__heading
-      "
-    >
-
-      <span
-        class="section-heading__eyebrow"
-        data-i18n="technology_eyebrow"
-      >
-        Tecnología
-      </span>
-
-
-      <h2
-        class="section-heading__title"
-        data-i18n="technology_title"
-      >
-        Elegimos la tecnología según el problema,
-        no el problema según la tecnología.
-      </h2>
-
-
-      <p
-        class="section-heading__description"
-        data-i18n="technology_description"
-      >
-        Combinamos inteligencia artificial, machine learning,
-        desarrollo de software, datos, integraciones y cloud
-        para construir soluciones profesionales y escalables.
-      </p>
-
-    </div>
-
-
-    <!-- ======================================================
-         TECHNOLOGY CAPABILITIES
-    ======================================================= -->
-
-    <div class="technology__grid">
-
-
-      <!-- ==================================================
-          ARTIFICIAL INTELLIGENCE & MACHINE LEARNING
-      =================================================== -->
-
-      <article class="technology__card">
-
-        <div class="technology__card-header">
-
-          <span class="technology__number">
-            01
-          </span>
-
-          <span
-            class="technology__symbol"
-            aria-hidden="true"
-          >
-            AI
-          </span>
-
-        </div>
-
-
-        <h3 data-i18n="technology_ai_title">
-          Inteligencia Artificial y Machine Learning
-        </h3>
-
-
-        <p data-i18n="technology_ai_text">
-          Aplicamos modelos de lenguaje, machine learning
-          y sistemas inteligentes para analizar información,
-          automatizar procesos y construir soluciones capaces
-          de aprender de los datos.
-        </p>
-
-
-        <div class="tag-group technology__tags">
-
-          <span class="tag">
-            OpenAI
-          </span>
-
-          <span class="tag">
-            LLM
-          </span>
-
-          <span class="tag">
-            Machine Learning
-          </span>
-
-          <span class="tag">
-            AI Agents
-          </span>
-
-        </div>
-
-      </article>
-
-
-      <!-- ==================================================
-           SOFTWARE ENGINEERING
-      =================================================== -->
-
-      <article class="technology__card">
-
-        <div class="technology__card-header">
-
-          <span class="technology__number">
-            02
-          </span>
-
-          <span
-            class="technology__symbol"
-            aria-hidden="true"
-          >
-            &lt;/&gt;
-          </span>
-
-        </div>
-
-
-        <h3 data-i18n="technology_backend_title">
-          Ingeniería de software
-        </h3>
-
-
-        <p data-i18n="technology_backend_text">
-          Sistemas backend, APIs y aplicaciones diseñadas
-          con arquitecturas modulares, mantenibles
-          y preparadas para crecer.
-        </p>
-
-
-        <div class="tag-group technology__tags">
-
-          <span class="tag">
-            Python
-          </span>
-
-          <span class="tag">
-            FastAPI
-          </span>
-
-          <span class="tag">
-            Node.js
-          </span>
-
-        </div>
-
-      </article>
-
-
-      <!-- ==================================================
-           FRONTEND
-      =================================================== -->
-
-      <article class="technology__card">
-
-        <div class="technology__card-header">
-
-          <span class="technology__number">
-            03
-          </span>
-
-          <span
-            class="technology__symbol"
-            aria-hidden="true"
-          >
-            UI
-          </span>
-
-        </div>
-
-
-        <h3 data-i18n="technology_frontend_title">
-          Experiencias digitales
-        </h3>
-
-
-        <p data-i18n="technology_frontend_text">
-          Interfaces rápidas, accesibles y responsive
-          enfocadas en experiencia de usuario,
-          rendimiento y conversión.
-        </p>
-
-
-        <div class="tag-group technology__tags">
-
-          <span class="tag">
-            JavaScript
-          </span>
-
-          <span class="tag">
-            React
-          </span>
-
-          <span class="tag">
-            Next.js
-          </span>
-
-        </div>
-
-      </article>
-
-
-      <!-- ==================================================
-           DATA
-      =================================================== -->
-
-      <article class="technology__card">
-
-        <div class="technology__card-header">
-
-          <span class="technology__number">
-            04
-          </span>
-
-          <span
-            class="technology__symbol"
-            aria-hidden="true"
-          >
-            DATA
-          </span>
-
-        </div>
-
-
-        <h3 data-i18n="technology_data_title">
-          Datos y analítica
-        </h3>
-
-
-        <p data-i18n="technology_data_text">
-          Transformamos datos operativos en información
-          estructurada, indicadores y herramientas
-          para tomar mejores decisiones.
-        </p>
-
-
-        <div class="tag-group technology__tags">
-
-          <span class="tag">
-            PostgreSQL
-          </span>
-
-          <span class="tag">
-            Analytics
-          </span>
-
-          <span class="tag">
-            KPIs
-          </span>
-
-        </div>
-
-      </article>
-
-
-      <!-- ==================================================
-           INTEGRATIONS
-      =================================================== -->
-
-      <article class="technology__card">
-
-        <div class="technology__card-header">
-
-          <span class="technology__number">
-            05
-          </span>
-
-          <span
-            class="technology__symbol"
-            aria-hidden="true"
-          >
-            API
-          </span>
-
-        </div>
-
-
-        <h3 data-i18n="technology_integrations_title">
-          Integraciones
-        </h3>
-
-
-        <p data-i18n="technology_integrations_text">
-          Conectamos plataformas, servicios y herramientas
-          para crear procesos continuos y reducir
-          trabajo manual entre sistemas.
-        </p>
-
-
-        <div class="tag-group technology__tags">
-
-          <span class="tag">
-            REST
-          </span>
-
-          <span class="tag">
-            Webhooks
-          </span>
-
-          <span class="tag">
-            APIs
-          </span>
-
-        </div>
-
-      </article>
-
-
-      <!-- ==================================================
-           CLOUD & SECURITY
-      =================================================== -->
-
-      <article
-        class="
-          technology__card
-          technology__card--featured
-        "
-      >
-
-        <div class="technology__card-header">
-
-          <span class="technology__number">
-            06
-          </span>
-
-          <span
-            class="
-              technology__symbol
-              technology__symbol--featured
-            "
-            aria-hidden="true"
-          >
-            ☁
-          </span>
-
-        </div>
-
-
-        <h3 data-i18n="technology_cloud_title">
-          Cloud y seguridad
-        </h3>
-
-
-        <p data-i18n="technology_cloud_text">
-          Diseñamos infraestructura preparada para
-          desplegar, proteger y operar soluciones
-          empresariales de forma fiable.
-        </p>
-
-
-        <div class="tag-group technology__tags">
-
-          <span class="tag tag--brand">
-            AWS
-          </span>
-
-          <span class="tag">
-            Cloud
-          </span>
-
-          <span class="tag">
-            Security
-          </span>
-
-        </div>
-
-      </article>
-
-    </div>
-
-
-    <!-- ======================================================
-         ENGINEERING PRINCIPLE
-    ======================================================= -->
-
-    <div class="technology__principle">
-
-      <div>
-
-        <span
-          class="technology__principle-label"
-          data-i18n="technology_principle_label"
-        >
-          Ingeniería antes que moda
-        </span>
-
-
-        <h3 data-i18n="technology_principle_title">
-          No utilizamos una tecnología porque esté de moda.
-        </h3>
-
-
-        <p data-i18n="technology_principle_text">
-          Elegimos las herramientas que ofrecen el equilibrio
-          adecuado entre rendimiento, seguridad, mantenimiento,
-          coste y capacidad de crecimiento.
-        </p>
-
-      </div>
-
-
-      <a
-        href="#projects"
-        class="button button--outline button--lg"
-        data-i18n="technology_action"
-      >
-        Ver tecnología aplicada
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ==========================================================
-     YASSIR TECHNOLOGIC
-
-     Section:
-     Projects
-
-     Description:
-     Technology projects and real-world case studies.
-
-     Responsibility:
-     Demonstrates how Yassir Technologic applies technology
-     to real projects, business needs and digital products.
-
-     Author:
-     Yassir Technologic
-
-     Version:
-     2.0.0
-========================================================== -->
-
-<section
-  id="projects"
-  class="projects section section--primary"
->
-
-  <div class="container">
-
-    <!-- ======================================================
-         SECTION HEADING
-    ======================================================= -->
-
-    <div
-      class="
-        section-heading
-        section-heading--center
-        projects__heading
-      "
-    >
-
-      <span
-        class="section-heading__eyebrow"
-        data-i18n="projects_eyebrow"
-      >
-        Proyectos y casos reales
-      </span>
-
-
-      <h2
-        class="section-heading__title"
-        data-i18n="projects_title_v2"
-      >
-        Tecnología aplicada a problemas reales.
-      </h2>
-
-
-      <p
-        class="section-heading__description"
-        data-i18n="projects_description_v2"
-      >
-        Cada proyecto nos permite convertir una necesidad
-        concreta en una solución funcional mediante software,
-        automatización, inteligencia artificial y desarrollo web.
-      </p>
-
-    </div>
-
-
-    <!-- ======================================================
-         FEATURED PROJECT
-    ======================================================= -->
-
-    <article class="projects__featured">
-
-      <!-- ==================================================
-           FEATURED CONTENT
-      =================================================== -->
-
-      <div class="projects__featured-content">
-
-        <div class="projects__meta">
-
-          <span class="badge badge--brand">
-            AI
-          </span>
-
-          <span class="projects__project-number">
-            PROJECT 01
-          </span>
-
-        </div>
-
-
-        <h3
-          class="projects__featured-title"
-          data-i18n="project_chatbot_title"
-        >
-          Yassir Universal AI Chatbot
-        </h3>
-
-
-        <p
-          class="projects__featured-description"
-          data-i18n="project_chatbot_description"
-        >
-          Sistema de chatbot inteligente diseñado para
-          automatizar conversaciones, responder consultas
-          y reducir trabajo manual en la atención al cliente.
-        </p>
-
-
-        <!-- ================================================
-             CASE STUDY
-        ================================================= -->
-
-        <div class="projects__case-study">
-
-          <div class="projects__case-item">
-
-            <span data-i18n="projects_problem_label">
-              Problema
-            </span>
-
-            <p data-i18n="project_chatbot_problem">
-              Atención repetitiva y procesos de conversación
-              que requieren intervención manual.
-            </p>
-
-          </div>
-
-
-          <div class="projects__case-item">
-
-            <span data-i18n="projects_solution_label">
-              Solución
-            </span>
-
-            <p data-i18n="project_chatbot_solution">
-              Asistente basado en inteligencia artificial
-              capaz de gestionar interacciones y automatizar
-              parte del flujo de atención.
-            </p>
-
-          </div>
-
-
-          <div class="projects__case-item">
-
-            <span data-i18n="projects_value_label">
-              Valor
-            </span>
-
-            <p data-i18n="project_chatbot_value">
-              Reduce tiempos de respuesta y disminuye
-              la carga de trabajo manual.
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div class="tag-group projects__tags">
-
-          <span class="tag">
-            Node.js
-          </span>
-
-          <span class="tag">
-            OpenAI
-          </span>
-
-          <span class="tag">
-            REST APIs
-          </span>
-
-          <span class="tag">
-            Automation
-          </span>
-
-        </div>
-
-
-        <div class="projects__actions">
-
-          <a
-            href="https://github.com/yassirtechnologic/yassir-universal-ai-chatbot"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="button button--primary"
-            data-i18n="projects_repository_action"
-          >
-            Ver repositorio
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <!-- ==================================================
-           FEATURED VISUAL
-      =================================================== -->
-
-      <div
-        class="projects__featured-visual"
-        aria-hidden="true"
-      >
-
-        <div class="project-ai">
-
-          <div class="project-ai__header">
-
-            <div class="project-ai__brand">
-
-              <span class="project-ai__status"></span>
-
-              <strong>
-                Yassir AI
-              </strong>
-
-            </div>
-
-
-            <span class="tag tag--brand">
-              Live System
-            </span>
-
-          </div>
-
-
-          <div class="project-ai__content">
-
-            <div class="project-ai__message project-ai__message--user">
-
-              <span>
-                User
-              </span>
-
-              <p data-i18n="project_demo_user">
-                Necesito información sobre sus servicios.
-              </p>
-
-            </div>
-
-
-            <div class="project-ai__message project-ai__message--bot">
-
-              <span>
-                Yassir AI
-              </span>
-
-              <p data-i18n="project_demo_bot">
-                Puedo ayudarte a identificar la solución
-                adecuada y recopilar la información necesaria.
-              </p>
-
-            </div>
-
-
-            <div class="project-ai__flow">
-
-              <span>
-                Intent
-              </span>
-
-              <span aria-hidden="true">
-                →
-              </span>
-
-              <span>
-                AI
-              </span>
-
-              <span aria-hidden="true">
-                →
-              </span>
-
-              <span>
-                Lead
-              </span>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </article>
-
-
-    <!-- ======================================================
-         PROJECTS GRID
-    ======================================================= -->
-
-    <div class="projects__grid">
-
-
-      <!-- ==================================================
-           PROJECT 02
-           EVENT MANAGEMENT APP
-      =================================================== -->
-
-      <article class="card projects__card">
-
-        <div class="projects__card-header">
-
-          <span class="projects__project-number">
-            PROJECT 02
-          </span>
-
-          <span class="badge badge--neutral">
-            Android
-          </span>
-
-        </div>
-
-
-        <h3
-          class="projects__card-title"
-          data-i18n="project_events_app_title"
-        >
-          Eventos York & Katy — Android App
-        </h3>
-
-
-        <p
-          class="projects__card-description"
-          data-i18n="project_events_app_description"
-        >
-          Aplicación para gestionar procesos relacionados
-          con eventos, interacción con clientes y reservas.
-        </p>
-
-
-        <div class="projects__card-value">
-
-          <span data-i18n="projects_value_label">
-            Valor
-          </span>
-
-          <p data-i18n="project_events_app_value">
-            Solución desarrollada para una necesidad
-            empresarial real y utilizada en producción.
-          </p>
-
-        </div>
-
-
-        <div class="tag-group projects__tags">
-
-          <span class="tag">
-            Android
-          </span>
-
-          <span class="tag">
-            Kotlin
-          </span>
-
-          <span class="tag">
-            Firebase
-          </span>
-
-          <span class="tag">
-            Java
-          </span>
-
-        </div>
-
-
-        <div class="projects__card-actions">
-
-          <a
-            href="https://github.com/yassirtechnologic/app-eventos-yorkat"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="projects__link"
-            data-i18n="projects_repository_action"
-          >
-            Ver repositorio
-            <span aria-hidden="true">→</span>
-          </a>
-
-        </div>
-
-      </article>
-
-
-      <!-- ==================================================
-           PROJECT 03
-           CORPORATE WEBSITE
-      =================================================== -->
-
-      <article class="card projects__card">
-
-        <div class="projects__card-header">
-
-          <span class="projects__project-number">
-            PROJECT 03
-          </span>
-
-          <span class="badge badge--neutral">
-            Web
-          </span>
-
-        </div>
-
-
-        <h3
-          class="projects__card-title"
-          data-i18n="project_yassir_web_title"
-        >
-          Yassir Technologic Corporate Website
-        </h3>
-
-
-        <p
-          class="projects__card-description"
-          data-i18n="project_yassir_web_description"
-        >
-          Plataforma web corporativa multilingüe diseñada
-          para presentar servicios, productos tecnológicos
-          y proyectos de Yassir Technologic.
-        </p>
-
-
-        <div class="projects__card-value">
-
-          <span data-i18n="projects_value_label">
-            Valor
-          </span>
-
-          <p data-i18n="project_yassir_web_value">
-            Arquitectura modular, responsive y preparada
-            para crecer con nuevos productos y servicios.
-          </p>
-
-        </div>
-
-
-        <div class="tag-group projects__tags">
-
-          <span class="tag">
-            HTML
-          </span>
-
-          <span class="tag">
-            CSS
-          </span>
-
-          <span class="tag">
-            JavaScript
-          </span>
-
-          <span class="tag">
-            Responsive
-          </span>
-
-        </div>
-
-
-        <div class="projects__card-actions">
-
-          <a
-            href="https://github.com/yassirtechnologic/yassirtechnologic"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="projects__link"
-            data-i18n="projects_repository_action"
-          >
-            Ver repositorio
-            <span aria-hidden="true">→</span>
-          </a>
-
-        </div>
-
-      </article>
-
-
-      <!-- ==================================================
-           PROJECT 04
-           MAINTENANCE WEBSITE
-      =================================================== -->
-
-      <article class="card projects__card">
-
-        <div class="projects__card-header">
-
-          <span class="projects__project-number">
-            PROJECT 04
-          </span>
-
-          <span class="badge badge--neutral">
-            Client Web
-          </span>
-
-        </div>
-
-
-        <h3
-          class="projects__card-title"
-          data-i18n="project_balladares_title"
-        >
-          Web Mantenimiento Balladares
-        </h3>
-
-
-        <p
-          class="projects__card-description"
-          data-i18n="project_balladares_description"
-        >
-          Sitio web profesional desarrollado para mejorar
-          la presencia digital de un negocio real.
-        </p>
-
-
-        <div class="projects__card-value">
-
-          <span data-i18n="projects_value_label">
-            Valor
-          </span>
-
-          <p data-i18n="project_balladares_value">
-            Facilita que potenciales clientes conozcan
-            los servicios del negocio mediante una
-            presencia online accesible.
-          </p>
-
-        </div>
-
-
-        <div class="tag-group projects__tags">
-
-          <span class="tag">
-            HTML
-          </span>
-
-          <span class="tag">
-            CSS
-          </span>
-
-          <span class="tag">
-            GitHub Pages
-          </span>
-
-        </div>
-
-
-        <div class="projects__card-actions">
-
-          <a
-            href="https://yassirtechnologic.github.io/mantenimiento-balladares/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="projects__link"
-            data-i18n="projects_live_action"
-          >
-            Ver proyecto
-            <span aria-hidden="true">↗</span>
-          </a>
-
-
-          <a
-            href="https://github.com/yassirtechnologic/mantenimiento-balladares"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="projects__link"
-            data-i18n="projects_repository_action"
-          >
-            Repositorio
-            <span aria-hidden="true">→</span>
-          </a>
-
-        </div>
-
-      </article>
-
-
-      <!-- ==================================================
-           PROJECT 05
-           EVENT WEBSITE
-      =================================================== -->
-
-      <article class="card projects__card">
-
-        <div class="projects__card-header">
-
-          <span class="projects__project-number">
-            PROJECT 05
-          </span>
-
-          <span class="badge badge--neutral">
-            Business Web
-          </span>
-
-        </div>
-
-
-        <h3
-          class="projects__card-title"
-          data-i18n="project_events_web_title"
-        >
-          Eventos York & Katy Website
-        </h3>
-
-
-        <p
-          class="projects__card-description"
-          data-i18n="project_events_web_description"
-        >
-          Web para promoción de servicios de eventos con
-          contenido visual, testimonios y experiencia
-          adaptada a diferentes dispositivos.
-        </p>
-
-
-        <div class="projects__card-value">
-
-          <span data-i18n="projects_value_label">
-            Valor
-          </span>
-
-          <p data-i18n="project_events_web_value">
-            Centraliza la presencia digital del negocio
-            y facilita que los visitantes conozcan
-            sus servicios.
-          </p>
-
-        </div>
-
-
-        <div class="tag-group projects__tags">
-
-          <span class="tag">
-            HTML
-          </span>
-
-          <span class="tag">
-            CSS
-          </span>
-
-          <span class="tag">
-            JavaScript
-          </span>
-
-          <span class="tag">
-            Responsive
-          </span>
-
-        </div>
-
-
-        <div class="projects__card-actions">
-
-          <a
-            href="https://yassirtechnologic.github.io/Eventos-yorkat_25/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="projects__link"
-            data-i18n="projects_live_action"
-          >
-            Ver proyecto
-            <span aria-hidden="true">↗</span>
-          </a>
-
-
-          <a
-            href="https://github.com/yassirtechnologic/Eventos-yorkat_25"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="projects__link"
-            data-i18n="projects_repository_action"
-          >
-            Repositorio
-            <span aria-hidden="true">→</span>
-          </a>
-
-        </div>
-
-      </article>
-
-
-      <!-- ==================================================
-           PROJECT 06
-           DATA ANALYSIS
-      =================================================== -->
-
-      <article class="card projects__card">
-
-        <div class="projects__card-header">
-
-          <span class="projects__project-number">
-            PROJECT 06
-          </span>
-
-          <span class="badge badge--neutral">
-            Data
-          </span>
-
-        </div>
-
-
-        <h3
-          class="projects__card-title"
-          data-i18n="project_data_title"
-        >
-          Python Data Analysis Portfolio
-        </h3>
-
-
-        <p
-          class="projects__card-description"
-          data-i18n="project_data_description"
-        >
-          Proyectos de análisis y transformación de datos
-          desarrollados con Python utilizando conjuntos
-          de datos y ejercicios prácticos.
-        </p>
-
-
-        <div class="projects__card-value">
-
-          <span data-i18n="projects_value_label">
-            Valor
-          </span>
-
-          <p data-i18n="project_data_value">
-            Demuestra procesos de limpieza, análisis
-            y transformación de información mediante Python.
-          </p>
-
-        </div>
-
-
-        <div class="tag-group projects__tags">
-
-          <span class="tag">
-            Python
-          </span>
-
-          <span class="tag">
-            Data Analysis
-          </span>
-
-        </div>
-
-
-        <div class="projects__card-actions">
-
-          <a
-            href="https://github.com/yassirtechnologic/Portafolio_Python_AnalisisDatos"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="projects__link"
-            data-i18n="projects_repository_action"
-          >
-            Ver repositorio
-            <span aria-hidden="true">→</span>
-          </a>
-
-        </div>
-
-      </article>
-
-    </div>
-
-
-    <!-- ======================================================
-         PROJECTS CTA
-    ======================================================= -->
-
-    <div class="projects__cta">
-
-      <div>
-
-        <span
-          class="projects__cta-label"
-          data-i18n="projects_cta_label"
-        >
-          Tu proyecto puede ser el siguiente
-        </span>
-
-
-        <h3 data-i18n="projects_cta_title">
-          ¿Tienes un proceso, una idea o un problema que podamos transformar con tecnología?
-        </h3>
-
-      </div>
-
-
-      <a
-        href="#contact"
-        class="button button--primary button--lg"
-        data-i18n="projects_cta_action"
-      >
-        Cuéntanos tu proyecto
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ================= IMAGE MODAL ================= -->
-<div class="image-modal" id="imageModal" onclick="closeModal()">
-  <span class="close-modal" aria-label="Close image">&times;</span>
-
-  <img
-    class="modal-content"
-    id="modalImg"
-    alt="Certificate preview"
-  >
-</div>
-
-<!-- ==========================================================
-     CONTACT V2
-========================================================== -->
-
-<section
-  id="contact"
-  class="contact section"
-  aria-labelledby="contact-title"
->
-
-  <div class="container">
-
-    <!-- ======================================================
-         SECTION HEADING
-    ======================================================= -->
-
-    <div class="contact__heading section-heading">
-
-      <span
-        class="section-heading__eyebrow"
-        data-i18n="contact_eyebrow"
-      >
-        Hablemos
-      </span>
-
-      <h2
-        id="contact-title"
-        class="section-heading__title"
-        data-i18n="contact_title_v2"
-      >
-        Convirtamos tu próxima idea en una solución real.
-      </h2>
-
-      <p
-        class="section-heading__description"
-        data-i18n="contact_description_v2"
-      >
-        Cuéntanos qué quieres mejorar, automatizar o construir.
-        Analizaremos tu necesidad y buscaremos la solución tecnológica
-        adecuada para tu negocio.
-      </p>
-
-    </div>
-
-
-    <!-- ======================================================
-         CONTACT LAYOUT
-    ======================================================= -->
-
-    <div class="contact__grid">
-
-
-      <!-- ====================================================
-           CONTACT INFORMATION
-      ===================================================== -->
-
-      <div class="contact__information">
-
-        <div class="contact__intro">
-
-          <span
-            class="badge badge--brand"
-            data-i18n="contact_consultation_badge"
-          >
-            Consulta inicial
-          </span>
-
-          <h3 data-i18n="contact_information_title">
-            Empecemos por entender tu necesidad.
-          </h3>
-
-          <p data-i18n="contact_information_description">
-            No necesitas tener una solución técnica definida.
-            Explícanos el problema y nosotros te ayudaremos
-            a determinar cómo puede resolverlo la tecnología.
-          </p>
-
-        </div>
-
-
-        <!-- ==================================================
-             CONTACT BENEFITS
-        =================================================== -->
-
-        <div class="contact__benefits">
-
-          <article class="contact__benefit">
-
-            <span class="contact__benefit-number">
-              01
-            </span>
-
-            <div>
-
-              <h4 data-i18n="contact_benefit_analysis_title">
-                Analizamos tu caso
-              </h4>
-
-              <p data-i18n="contact_benefit_analysis_description">
-                Entendemos primero el problema, el proceso y los
-                objetivos de tu negocio.
-              </p>
-
-            </div>
-
-          </article>
-
-
-          <article class="contact__benefit">
-
-            <span class="contact__benefit-number">
-              02
-            </span>
-
-            <div>
-
-              <h4 data-i18n="contact_benefit_solution_title">
-                Diseñamos la solución
-              </h4>
-
-              <p data-i18n="contact_benefit_solution_description">
-                Evaluamos qué tecnología puede generar mayor valor
-                sin añadir complejidad innecesaria.
-              </p>
-
-            </div>
-
-          </article>
-
-
-          <article class="contact__benefit">
-
-            <span class="contact__benefit-number">
-              03
-            </span>
-
-            <div>
-
-              <h4 data-i18n="contact_benefit_growth_title">
-                Pensamos a largo plazo
-              </h4>
-
-              <p data-i18n="contact_benefit_growth_description">
-                Construimos soluciones preparadas para evolucionar
-                junto con tu negocio.
-              </p>
-
-            </div>
-
-          </article>
-
-        </div>
-
-
-        <!-- ==================================================
-             DIRECT CONTACT
-        =================================================== -->
-
-        <div class="contact__direct">
-
-          <span
-            class="contact__direct-label"
-            data-i18n="contact_direct_label"
-          >
-            Contacto directo
-          </span>
-
-          <a
-            class="contact__email"
-            href="mailto:yassir.technologic@gmail.com"
-          >
-            yassir.technologic@gmail.com
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <!-- ====================================================
-           CONTACT FORM
-      ===================================================== -->
-
-      <div class="contact__form-wrapper">
-
-        <form
-          class="contact__form"
-          id="contactForm"
-        >
-
-          <div class="contact__form-header">
-
-            <span
-              class="contact__form-label"
-              data-i18n="contact_form_label"
-            >
-              Cuéntanos sobre tu proyecto
-            </span>
-
-            <p data-i18n="contact_form_description">
-              Completa los datos y podremos entender mejor
-              qué necesitas.
-            </p>
-
-          </div>
-
-
-          <!-- NAME -->
-
-          <div class="contact__field">
-
-            <label
-              for="contactName"
-              data-i18n="contact_name_label"
-            >
-              Nombre
-            </label>
-
-            <input
-              id="contactName"
-              name="name"
-              type="text"
-              autocomplete="name"
-              data-i18n-placeholder="contact_name_placeholder"
-              placeholder="Tu nombre"
-              required
-            >
-
-          </div>
-
-
-          <!-- EMAIL -->
-
-          <div class="contact__field">
-
-            <label
-              for="contactEmail"
-              data-i18n="contact_email_label"
-            >
-              Email
-            </label>
-
-            <input
-              id="contactEmail"
-              name="email"
-              type="email"
-              autocomplete="email"
-              data-i18n-placeholder="contact_email_placeholder"
-              placeholder="tu@email.com"
-              required
-            >
-
-          </div>
-
-
-          <!-- COMPANY -->
-
-          <div class="contact__field">
-
-            <label
-              for="contactCompany"
-              data-i18n="contact_company_label"
-            >
-              Empresa o negocio
-            </label>
-
-            <input
-              id="contactCompany"
-              name="company"
-              type="text"
-              autocomplete="organization"
-              data-i18n-placeholder="contact_company_placeholder"
-              placeholder="Nombre de tu empresa"
-            >
-
-          </div>
-
-
-          <!-- SERVICE -->
-
-          <div class="contact__field">
-
-            <label
-              for="contactService"
-              data-i18n="contact_service_label"
-            >
-              ¿En qué podemos ayudarte?
-            </label>
-
-            <select
-              id="contactService"
-              name="service"
-              required
-            >
-
-              <option
-                value=""
-                selected
-                disabled
-                data-i18n="contact_service_placeholder"
-              >
-                Selecciona una opción
-              </option>
-
-              <option
-                value="automation"
-                data-i18n="contact_service_automation"
-              >
-                Automatización de procesos
-              </option>
-
-              <option
-                value="ai"
-                data-i18n="contact_service_ai"
-              >
-                Inteligencia Artificial y Chatbots
-              </option>
-
-              <option
-                value="software"
-                data-i18n="contact_service_software"
-              >
-                Software a medida
-              </option>
-
-              <option
-                value="web"
-                data-i18n="contact_service_web"
-              >
-                Desarrollo web
-              </option>
-
-              <option
-                value="integration"
-                data-i18n="contact_service_integration"
-              >
-                Integraciones y APIs
-              </option>
-
-              <option
-                value="data"
-                data-i18n="contact_service_data"
-              >
-                Datos y analítica
-              </option>
-
-              <option
-                value="consulting"
-                data-i18n="contact_service_consulting"
-              >
-                Consultoría tecnológica
-              </option>
-
-              <option
-                value="other"
-                data-i18n="contact_service_other"
-              >
-                Otro proyecto
-              </option>
-
-            </select>
-
-          </div>
-
-
-          <!-- MESSAGE -->
-
-          <div class="contact__field">
-
-            <label
-              for="contactMessage"
-              data-i18n="contact_message_label"
-            >
-              Proyecto o necesidad
-            </label>
-
-            <textarea
-              id="contactMessage"
-              name="message"
-              rows="6"
-              data-i18n-placeholder="contact_message_placeholder"
-              placeholder="Cuéntanos qué quieres mejorar, automatizar o construir..."
-              required
-            ></textarea>
-
-          </div>
-
-
-          <!-- SUBMIT -->
+          <!-- Mobile navigation toggle -->
 
           <button
-            class="button button--primary button--lg contact__submit"
-            type="submit"
-            data-i18n="contact_submit"
-          >
-            Solicitar consulta
-          </button>
-
-
-          <p
-            class="contact__form-note"
-            data-i18n="contact_form_note"
-          >
-            Revisaremos tu solicitud para entender el proyecto antes
-            de proponerte el siguiente paso.
-          </p>
-
-        </form>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ==========================================================
-     TESTIMONIALS V2
-========================================================== -->
-
-<section
-  id="testimonials"
-  class="testimonials section"
-  aria-labelledby="testimonials-title"
->
-
-  <div class="container">
-
-    <!-- ======================================================
-         SECTION HEADING
-    ======================================================= -->
-
-    <div class="testimonials__heading section-heading">
-
-      <span
-        class="section-heading__eyebrow"
-        data-i18n="testimonials_eyebrow"
-      >
-        Experiencias de clientes
-      </span>
-
-      <h2
-        id="testimonials-title"
-        class="section-heading__title"
-        data-i18n="testimonials_title"
-      >
-        La confianza se construye con resultados reales.
-      </h2>
-
-      <p
-        class="section-heading__description"
-        data-i18n="testimonials_description"
-      >
-        Queremos que cada opinión publicada represente una experiencia
-        real con nuestros servicios, productos o proyectos tecnológicos.
-      </p>
-
-    </div>
-
-
-    <!-- ======================================================
-         TESTIMONIALS CONTENT
-    ======================================================= -->
-
-    <div class="testimonials__content">
-
-      <!-- ====================================================
-           TRUST PANEL
-      ===================================================== -->
-
-      <div class="testimonials__trust">
-
-        <span
-          class="badge badge--brand"
-          data-i18n="testimonials_trust_badge"
-        >
-          Opiniones verificadas
-        </span>
-
-        <h3 data-i18n="testimonials_trust_title">
-          Testimonios auténticos, no comentarios genéricos.
-        </h3>
-
-        <p data-i18n="testimonials_trust_description">
-          Las opiniones que mostremos aquí estarán vinculadas
-          a clientes y experiencias reales con Yassir Technologic.
-        </p>
-
-        <div class="testimonials__principles">
-
-          <div class="testimonials__principle">
-
-            <span>
-              01
-            </span>
-
-            <p data-i18n="testimonials_principle_real">
-              Experiencias reales
-            </p>
-
-          </div>
-
-          <div class="testimonials__principle">
-
-            <span>
-              02
-            </span>
-
-            <p data-i18n="testimonials_principle_reviewed">
-              Opiniones revisadas
-            </p>
-
-          </div>
-
-          <div class="testimonials__principle">
-
-            <span>
-              03
-            </span>
-
-            <p data-i18n="testimonials_principle_context">
-              Contexto del proyecto
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- ====================================================
-           TESTIMONIALS AREA
-      ===================================================== -->
-
-      <div class="testimonials__reviews">
-
-        <div class="testimonials__reviews-header">
-
-          <span
-            class="testimonials__reviews-label"
-            data-i18n="testimonials_reviews_label"
-          >
-            Testimonios
-          </span>
-
-          <span class="testimonials__reviews-status">
-            Yassir Technologic
-          </span>
-
-        </div>
-
-
-        <!-- ==================================================
-             EMPTY / INITIAL STATE
-
-             Real approved testimonials will be inserted here.
-        =================================================== -->
-
-        <div class="testimonials__empty">
-
-          <div
-            class="testimonials__empty-icon"
-            aria-hidden="true"
-          >
-            ★
-          </div>
-
-          <h3 data-i18n="testimonials_empty_title">
-            Estamos construyendo esta sección con experiencias reales.
-          </h3>
-
-          <p data-i18n="testimonials_empty_description">
-            Los próximos testimonios publicados corresponderán a
-            clientes y proyectos reales de Yassir Technologic.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <!-- ======================================================
-         SHARE EXPERIENCE CTA
-    ======================================================= -->
-
-    <div class="testimonials__cta">
-
-      <div>
-
-        <span
-          class="testimonials__cta-label"
-          data-i18n="testimonials_cta_label"
-        >
-          ¿Ya has trabajado con nosotros?
-        </span>
-
-        <h3 data-i18n="testimonials_cta_title">
-          Tu experiencia puede ayudar a otros negocios a tomar una mejor decisión.
-        </h3>
-
-      </div>
-
-      <button
-        class="button button--secondary button--lg"
-        type="button"
-        data-modal-open="testimonialModal"
-        data-i18n="testimonials_cta_action"
-      >
-        Compartir mi experiencia
-      </button>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ==========================================================
-     TESTIMONIAL MODAL
-========================================================== -->
-
-<div
-  id="testimonialModal"
-  class="modal"
-  data-modal
-  role="dialog"
-  aria-modal="true"
-  aria-labelledby="testimonialModalTitle"
-  aria-describedby="testimonialModalDescription"
-  aria-hidden="true"
->
-
-  <!-- ======================================================
-       OVERLAY
-  ======================================================= -->
-
-  <div
-    class="modal__overlay"
-    data-modal-close
-    aria-hidden="true"
-  ></div>
-
-
-  <!-- ======================================================
-       DIALOG
-  ======================================================= -->
-
-  <div class="modal__dialog">
-
-    <!-- ====================================================
-         HEADER
-    ===================================================== -->
-
-    <div class="modal__header">
-
-      <div>
-
-        <span
-          class="testimonial-form__eyebrow"
-          data-i18n="testimonial_modal_eyebrow"
-        >
-          Tu experiencia
-        </span>
-
-        <h2
-          id="testimonialModalTitle"
-          class="modal__title"
-          data-i18n="testimonial_modal_title"
-        >
-          Comparte tu experiencia con Yassir Technologic.
-        </h2>
-
-      </div>
-
-
-      <button
-        class="modal__close"
-        type="button"
-        data-modal-close
-        data-i18n-aria-label="testimonial_modal_close"
-        aria-label="Cerrar"
-      >
-        <span aria-hidden="true">
-          ×
-        </span>
-      </button>
-
-    </div>
-
-
-    <!-- ====================================================
-         BODY
-    ===================================================== -->
-
-    <div class="modal__body">
-
-      <p
-        id="testimonialModalDescription"
-        class="testimonial-form__description"
-        data-i18n="testimonial_modal_description"
-      >
-        Tu opinión nos ayuda a mejorar y permite que otros negocios
-        conozcan experiencias reales con nuestras soluciones.
-      </p>
-
-
-      <!-- ==================================================
-           FORM
-      =================================================== -->
-
-      <form
-        id="testimonialForm"
-        class="testimonial-form"
-      >
-
-        <!-- NAME -->
-
-        <div class="testimonial-form__field">
-
-          <label
-            for="testimonialName"
-            data-i18n="testimonial_name_label"
-          >
-            Nombre
-          </label>
-
-          <input
-            id="testimonialName"
-            name="name"
-            type="text"
-            autocomplete="name"
-            data-i18n-placeholder="testimonial_name_placeholder"
-            placeholder="Tu nombre"
-            required
-          >
-
-        </div>
-
-
-        <!-- COMPANY -->
-
-        <div class="testimonial-form__field">
-
-          <label
-            for="testimonialCompany"
-            data-i18n="testimonial_company_label"
-          >
-            Empresa o negocio
-          </label>
-
-          <input
-            id="testimonialCompany"
-            name="company"
-            type="text"
-            autocomplete="organization"
-            data-i18n-placeholder="testimonial_company_placeholder"
-            placeholder="Nombre de tu empresa"
-          >
-
-        </div>
-
-
-        <!-- PROJECT / SERVICE -->
-
-        <div class="testimonial-form__field">
-
-          <label
-            for="testimonialProject"
-            data-i18n="testimonial_project_label"
-          >
-            Servicio o proyecto
-          </label>
-
-          <input
-            id="testimonialProject"
-            name="project"
-            type="text"
-            data-i18n-placeholder="testimonial_project_placeholder"
-            placeholder="Ej. Automatización, desarrollo web, chatbot..."
-            required
-          >
-
-        </div>
-
-
-        <!-- ==================================================
-             RATING
-        =================================================== -->
-
-        <fieldset class="testimonial-form__rating">
-
-          <legend data-i18n="testimonial_rating_label">
-            Valoración
-          </legend>
-
-          <div class="testimonial-form__stars">
-
-            <input
-              id="testimonialStar5"
-              name="rating"
-              type="radio"
-              value="5"
-              required
-            >
-
-            <label
-              for="testimonialStar5"
-              data-i18n-aria-label="testimonial_rating_5"
-              aria-label="5 estrellas"
-            >
-              ★
-            </label>
-
-
-            <input
-              id="testimonialStar4"
-              name="rating"
-              type="radio"
-              value="4"
-            >
-
-            <label
-              for="testimonialStar4"
-              data-i18n-aria-label="testimonial_rating_4"
-              aria-label="4 estrellas"
-            >
-              ★
-            </label>
-
-
-            <input
-              id="testimonialStar3"
-              name="rating"
-              type="radio"
-              value="3"
-            >
-
-            <label
-              for="testimonialStar3"
-              data-i18n-aria-label="testimonial_rating_3"
-              aria-label="3 estrellas"
-            >
-              ★
-            </label>
-
-
-            <input
-              id="testimonialStar2"
-              name="rating"
-              type="radio"
-              value="2"
-            >
-
-            <label
-              for="testimonialStar2"
-              data-i18n-aria-label="testimonial_rating_2"
-              aria-label="2 estrellas"
-            >
-              ★
-            </label>
-
-
-            <input
-              id="testimonialStar1"
-              name="rating"
-              type="radio"
-              value="1"
-            >
-
-            <label
-              for="testimonialStar1"
-              data-i18n-aria-label="testimonial_rating_1"
-              aria-label="1 estrella"
-            >
-              ★
-            </label>
-
-          </div>
-
-        </fieldset>
-
-
-        <!-- REVIEW -->
-
-        <div class="testimonial-form__field">
-
-          <label
-            for="testimonialMessage"
-            data-i18n="testimonial_message_label"
-          >
-            Tu experiencia
-          </label>
-
-          <textarea
-            id="testimonialMessage"
-            name="message"
-            rows="5"
-            data-i18n-placeholder="testimonial_message_placeholder"
-            placeholder="Cuéntanos cómo fue trabajar con Yassir Technologic..."
-            required
-          ></textarea>
-
-        </div>
-
-
-        <!-- MODERATION NOTICE -->
-
-        <div class="testimonial-form__notice">
-
-          <span aria-hidden="true">
-            ✓
-          </span>
-
-          <p data-i18n="testimonial_review_notice">
-            Las opiniones se revisan antes de publicarse para proteger
-            la calidad y autenticidad de los testimonios.
-          </p>
-
-        </div>
-
-
-        <!-- ==================================================
-             ACTIONS
-        =================================================== -->
-
-        <div class="modal__footer">
-
-          <button
-            class="button button--ghost"
             type="button"
+            class="site-header__toggle"
+            data-nav-toggle
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+          >
+            <span class="visually-hidden"> Abrir menú de navegación </span>
+
+            <span class="site-header__toggle-icon" aria-hidden="true">
+              <span> </span>
+              <span> </span>
+              <span> </span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <section id="home" class="hero section" aria-labelledby="hero-title">
+        <div class="container hero__layout">
+          <div class="hero__content">
+            <span data-i18n="hero_eyebrow" class="section-heading__eyebrow"
+              >YASSIR TECHNOLOGIC · SOFTWARE · IA · AUTOMATIZACIÓN</span
+            >
+            <h1 data-i18n="hero_title" id="hero-title" class="hero__title">
+              Software que trabaja para tu negocio.
+            </h1>
+            <p data-i18n="hero_description" class="hero__description">
+              Convertimos procesos complejos, tareas repetitivas y sistemas
+              desconectados en operaciones más fluidas para tu equipo y tus
+              clientes.
+            </p>
+            <div class="hero__actions">
+              <a
+                data-i18n="hero_primary_action"
+                href="#contact"
+                class="button button--primary"
+                >Solicitar una consulta</a
+              >
+              <a
+                data-i18n="hero_secondary_action"
+                href="#services"
+                class="button button--outline"
+                >Ver servicios</a
+              >
+            </div>
+          </div>
+          <div class="hero__system" aria-hidden="true">
+            <div class="hero__system-line"></div>
+            <span data-i18n="flow_input" class="hero__node">Tu negocio</span>
+            <div class="hero__engine">
+              <span class="hero__engine-mark">Y</span>
+              <span data-i18n="flow_engine"
+                >Software · IA · Automatización</span
+              >
+            </div>
+            <span data-i18n="flow_output" class="hero__node"
+              >Operaciones más fluidas</span
+            >
+          </div>
+        </div>
+      </section>
+      <section
+        id="about"
+        class="about section section--primary"
+        aria-labelledby="about-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <span data-i18n="about_eyebrow" class="section-heading__eyebrow"
+              >SOBRE YASSIR TECHNOLOGIC</span
+            >
+            <h2
+              data-i18n="about_title"
+              id="about-title"
+              class="section-heading__title"
+            >
+              Tecnología que elimina fricción.
+            </h2>
+          </div>
+          <p data-i18n="about_description" class="about__description">
+            En Yassir Technologic ayudamos a empresas y profesionales a
+            incorporar tecnología que responda a necesidades reales. Analizamos
+            sus procesos y desarrollamos soluciones a medida para mejorar la
+            productividad, reducir tareas manuales y costes operativos, ofrecer
+            una mejor atención al cliente y facilitar la toma de decisiones con
+            datos.
+          </p>
+          <div class="about__areas">
+            <div class="about__area">
+              <h3 data-i18n="about_area_0_title">Tareas repetitivas</h3>
+              <p data-i18n="about_area_0_text">
+                Automatización para liberar tiempo y reducir errores.
+              </p>
+            </div>
+            <div class="about__area">
+              <h3 data-i18n="about_area_1_title">Sistemas aislados</h3>
+              <p data-i18n="about_area_1_text">
+                Integraciones y APIs para conectar herramientas y datos.
+              </p>
+            </div>
+            <div class="about__area">
+              <h3 data-i18n="about_area_2_title">Atención al cliente</h3>
+              <p data-i18n="about_area_2_text">
+                Experiencias digitales y asistentes adaptados al negocio.
+              </p>
+            </div>
+            <div class="about__area">
+              <h3 data-i18n="about_area_3_title">Cobros y operaciones</h3>
+              <p data-i18n="about_area_3_text">
+                Flujos de pago integrados con los procesos de venta.
+              </p>
+            </div>
+          </div>
+          <div class="about__closing">
+            <p data-i18n="about_closing">
+              No solo desarrollamos software. Creamos tecnología que trabaja
+              para tu negocio.
+            </p>
+            <p data-i18n="about_attributes" class="about__attributes">
+              Soluciones a medida · Seguridad · Escalabilidad · Automatización
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="services"
+        class="services section"
+        aria-labelledby="services-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <span data-i18n="services_eyebrow" class="section-heading__eyebrow"
+              >SERVICIOS</span
+            >
+            <h2
+              data-i18n="services_title"
+              id="services-title"
+              class="section-heading__title"
+            >
+              Soluciones para necesidades reales.
+            </h2>
+          </div>
+          <div class="services__grid">
+            <article class="services__card">
+              <span class="services__number" aria-hidden="true">01</span>
+              <h3 data-i18n="service_1_title">Consultoría tecnológica</h3>
+              <p data-i18n="service_1_text">
+                Detectar problemas, definir prioridades y decidir dónde tiene
+                sentido invertir en tecnología.
+              </p>
+            </article>
+            <article class="services__card">
+              <span class="services__number" aria-hidden="true">02</span>
+              <h3 data-i18n="service_2_title">Automatización de procesos</h3>
+              <p data-i18n="service_2_text">
+                Reducir tareas repetitivas, trabajo manual y errores operativos.
+              </p>
+            </article>
+            <article class="services__card">
+              <span class="services__number" aria-hidden="true">03</span>
+              <h3 data-i18n="service_3_title">
+                Integración de sistemas y APIs
+              </h3>
+              <p data-i18n="service_3_text">
+                Conectar herramientas y evitar copiar información manualmente
+                entre sistemas.
+              </p>
+            </article>
+            <article class="services__card">
+              <span class="services__number" aria-hidden="true">04</span>
+              <h3 data-i18n="service_4_title">
+                Desarrollo de software a medida
+              </h3>
+              <p data-i18n="service_4_text">
+                Resolver necesidades que el software estándar no cubre
+                adecuadamente.
+              </p>
+            </article>
+            <article class="services__card">
+              <span class="services__number" aria-hidden="true">05</span>
+              <h3 data-i18n="service_5_title">
+                Desarrollo web, portales y backend
+              </h3>
+              <p data-i18n="service_5_text">
+                Digitalizar operaciones, servicios y experiencias para clientes
+                y equipos.
+              </p>
+            </article>
+            <article class="services__card">
+              <span class="services__number" aria-hidden="true">06</span>
+              <h3 data-i18n="service_6_title">
+                Gestión de clientes y procesos comerciales
+              </h3>
+              <p data-i18n="service_6_text">
+                Organizar consultas, seguimiento, oportunidades y próximas
+                acciones comerciales.
+              </p>
+            </article>
+            <article class="services__card">
+              <span class="services__number" aria-hidden="true">07</span>
+              <h3 data-i18n="service_7_title">
+                Inteligencia artificial aplicada
+              </h3>
+              <p data-i18n="service_7_text">
+                Incorporar asistentes y funciones de IA cuando exista un caso de
+                uso empresarial concreto.
+              </p>
+            </article>
+            <article class="services__card">
+              <span class="services__number" aria-hidden="true">08</span>
+              <h3 data-i18n="service_8_title">
+                Machine learning y análisis de datos
+              </h3>
+              <p data-i18n="service_8_text">
+                Analizar información y evaluar oportunidades de predicción,
+                clasificación o apoyo a decisiones según los datos disponibles.
+              </p>
+            </article>
+            <article class="services__card">
+              <span class="services__number" aria-hidden="true">09</span>
+              <h3 data-i18n="service_9_title">Infraestructura cloud y AWS</h3>
+              <p data-i18n="service_9_text">
+                Desplegar sistemas seguros, mantenibles y preparados para crecer
+                en la nube.
+              </p>
+            </article>
+            <article class="services__card">
+              <span class="services__number" aria-hidden="true">10</span>
+              <h3 data-i18n="service_10_title">
+                Integración de pagos digitales
+              </h3>
+              <p data-i18n="service_10_text">
+                Incorporar cobros digitales dentro del proceso de compra o
+                contratación.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section
+        id="testimonials"
+        class="testimonials section section--primary"
+        aria-labelledby="testimonials-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <span
+              data-i18n="testimonials_eyebrow"
+              class="section-heading__eyebrow"
+              >COMENTARIOS</span
+            >
+            <h2
+              data-i18n="testimonials_title"
+              id="testimonials-title"
+              class="section-heading__title"
+            >
+              La confianza se construye con resultados reales.
+            </h2>
+          </div>
+          <div class="testimonials__empty">
+            <p data-i18n="reviews_empty">
+              Todavía no hay comentarios públicos aprobados.
+            </p>
+          </div>
+          <div class="testimonials__actions">
+            <button
+              data-i18n="reviews_more"
+              type="button"
+              class="button button--outline"
+              data-modal-open="reviewsModal"
+            >
+              Ver más comentarios
+            </button>
+            <button
+              data-i18n="reviews_leave"
+              type="button"
+              class="button button--primary"
+              data-modal-open="testimonialModal"
+            >
+              Dejar un comentario
+            </button>
+          </div>
+        </div>
+      </section>
+      <section
+        id="contact"
+        class="contact section"
+        aria-labelledby="contact-title"
+      >
+        <div class="container contact__layout">
+          <div>
+            <div class="section-heading">
+              <span data-i18n="contact_eyebrow" class="section-heading__eyebrow"
+                >CONTACTO</span
+              >
+              <h2
+                data-i18n="contact_title"
+                id="contact-title"
+                class="section-heading__title"
+              >
+                Hablemos de lo que tu negocio necesita mejorar.
+              </h2>
+            </div>
+            <p data-i18n="contact_description">
+              Cuéntanos qué proceso, tarea o problema quieres mejorar. Podemos
+              analizar contigo si una solución de software, automatización o
+              inteligencia artificial tiene sentido para tu negocio.
+            </p>
+          </div>
+          <div class="contact__channels">
+            <div>
+              <h3>Email</h3>
+              <p class="contact__address">yassir.technologic@gmail.com</p>
+              <a
+                data-i18n="contact_email"
+                href="mailto:yassir.technologic@gmail.com"
+                class="button button--outline"
+                >Enviar email</a
+              >
+            </div>
+            <div>
+              <h3>WhatsApp</h3>
+              <p>+34 600 284 845</p>
+              <a
+                data-i18n="contact_whatsapp"
+                href="https://wa.me/34600284845"
+                class="button button--primary"
+                >Hablar por WhatsApp</a
+              >
+            </div>
+          </div>
+          <div class="contact__socials">
+            <a
+              href="https://www.linkedin.com/in/jorgeluiscarvajal"
+              class="contact__social"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <path d="M7 10v7m0-10v.1M11 17v-7m0 3c0-4 6-4 6 0v4" />
+              </svg>
+              <span data-i18n="contact_linkedin">Conectar en LinkedIn</span>
+            </a>
+            <span class="contact__social contact__social--pending">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <path d="M17.5 6.5h.01" />
+              </svg>
+              <span data-i18n="contact_instagram">Instagram</span>
+            </span>
+            <a
+              href="https://www.tiktok.com/@yassir.tech"
+              class="contact__social"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M14 3v12a4 4 0 1 1-4-4m4-8c0 4 3 6 6 6" />
+              </svg>
+              <span>TikTok · @yassir.tech</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__main">
+          <div class="site-footer__brand">
+            <a href="#home" class="site-footer__logo">Yassir Technologic</a>
+            <p data-i18n="footer_description">
+              Software, automatización e inteligencia artificial para empresas.
+            </p>
+          </div>
+          <nav
+            class="site-footer__column"
+            aria-label="Navegación del pie de página"
+            data-i18n-aria-label="footer_navigation_label"
+          >
+            <h2 data-i18n="footer_navigation_title">Navegación</h2>
+            <ul class="site-footer__links">
+              <li>
+                <a data-i18n="nav_company" href="#about">Sobre nosotros</a>
+              </li>
+              <li>
+                <a data-i18n="nav_services" href="#services">Servicios</a>
+              </li>
+              <li>
+                <a data-i18n="nav_comments" href="#testimonials">Comentarios</a>
+              </li>
+              <li>
+                <a data-i18n="nav_contact_link" href="#contact">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="site-footer__column">
+            <h2 data-i18n="footer_contact_title">Contacto</h2>
+            <ul class="site-footer__links">
+              <li>
+                <a href="mailto:yassir.technologic@gmail.com">Email</a>
+              </li>
+              <li>
+                <a href="https://wa.me/34600284845">WhatsApp</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/jorgeluiscarvajal"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/@yassir.tech">TikTok</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="site-footer__bottom">
+          <p>
+            © 2026 Yassir Technologic.
+            <span data-i18n="footer_rights"
+              >Todos los derechos reservados.</span
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div
+      id="testimonialModal"
+      class="modal"
+      data-modal
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-labelledby="testimonialModalTitle"
+      aria-describedby="testimonialModalDescription"
+    >
+      <div class="modal__overlay" data-modal-close></div>
+      <div class="modal__dialog" tabindex="0">
+        <div class="modal__header">
+          <h2
+            data-i18n="review_modal_title"
+            id="testimonialModalTitle"
+            class="modal__title"
+          >
+            Dejar un comentario
+          </h2>
+          <button
+            data-i18n="modal_close"
+            type="button"
+            class="modal__close"
             data-modal-close
-            data-i18n="testimonial_cancel"
           >
-            Cancelar
+            Cerrar
           </button>
-
-          <button
-            class="button button--primary"
-            type="button"
-            data-testimonial-submit
-            data-i18n="testimonial_submit"
-          >
-            Enviar
-          </button>
-
         </div>
-
-      </form>
-
-    </div>
-
-  </div>
-
-</div>
-
-<!-- ==========================================================
-     FAQ V2
-========================================================== -->
-
-<section
-  id="faq"
-  class="faq section section--primary"
-  aria-labelledby="faq-title"
->
-
-  <div class="container">
-
-    <!-- ======================================================
-         SECTION HEADING
-    ======================================================= -->
-
-    <div class="faq__heading section-heading">
-
-      <span
-        class="section-heading__eyebrow"
-        data-i18n="faq_eyebrow"
-      >
-        Preguntas frecuentes
-      </span>
-
-      <h2
-        id="faq-title"
-        class="section-heading__title"
-        data-i18n="faq_title"
-      >
-        Antes de comenzar un proyecto, resolvamos tus dudas.
-      </h2>
-
-      <p
-        class="section-heading__description"
-        data-i18n="faq_description"
-      >
-        Estas son algunas de las preguntas más habituales sobre
-        nuestros servicios, procesos y soluciones tecnológicas.
-      </p>
-
-    </div>
-
-
-    <!-- ======================================================
-         FAQ LAYOUT
-    ======================================================= -->
-
-    <div class="faq__layout">
-
-      <!-- ====================================================
-           BUSINESS MESSAGE
-      ===================================================== -->
-
-      <aside class="faq__intro">
-
-        <span
-          class="badge badge--brand"
-          data-i18n="faq_intro_badge"
-        >
-          Tecnología con propósito
-        </span>
-
-        <h3 data-i18n="faq_intro_title">
-          No necesitas saber qué tecnología necesitas.
-        </h3>
-
-        <p data-i18n="faq_intro_description">
-          Nuestro trabajo comienza entendiendo tu problema,
-          tus procesos y tus objetivos. La tecnología viene después.
-        </p>
-
-        <a
-          href="#contact"
-          class="button button--primary"
-          data-i18n="faq_contact_action"
-        >
-          Hablar sobre mi proyecto
-        </a>
-
-      </aside>
-
-
-      <!-- ====================================================
-           QUESTIONS
-      ===================================================== -->
-
-      <div class="faq__questions">
-
-
-        <!-- FAQ 01 -->
-
-        <details class="faq__item">
-
-          <summary class="faq__question">
-
-            <span class="faq__number">
-              01
-            </span>
-
-            <span data-i18n="faq_question_1">
-              ¿Qué tipo de empresas pueden trabajar con Yassir Technologic?
-            </span>
-
-            <span
-              class="faq__icon"
-              aria-hidden="true"
-            >
-              +
-            </span>
-
-          </summary>
-
-          <div class="faq__answer">
-
-            <p data-i18n="faq_answer_1">
-              Trabajamos con empresas, autónomos, profesionales y negocios
-              que quieren mejorar procesos, automatizar tareas, desarrollar
-              software o aplicar nuevas tecnologías de forma útil.
+        <div class="modal__body">
+          <p
+            data-i18n="review_modal_description"
+            id="testimonialModalDescription"
+          >
+            Los comentarios se revisan antes de publicarse. El formulario está
+            preparado; el envío online está pendiente de activación.
+          </p>
+          <form id="testimonialForm" class="testimonial-form">
+            <div class="testimonial-form__field">
+              <label data-i18n="review_name" for="testimonialName"
+                >Nombre</label
+              >
+              <input
+                id="testimonialName"
+                name="name"
+                maxlength="120"
+                autocomplete="name"
+                required
+              />
+            </div>
+            <div class="testimonial-form__field">
+              <label data-i18n="review_company" for="testimonialCompany"
+                >Empresa (opcional)</label
+              >
+              <input
+                id="testimonialCompany"
+                name="company"
+                maxlength="120"
+                autocomplete="organization"
+              />
+            </div>
+            <div class="testimonial-form__field">
+              <label data-i18n="review_message" for="testimonialMessage"
+                >Comentario</label
+              >
+              <textarea
+                id="testimonialMessage"
+                name="message"
+                required
+                maxlength="2000"
+                rows="4"
+              ></textarea>
+            </div>
+            <fieldset class="testimonial-form__rating">
+              <legend data-i18n="review_rating">Valoración</legend>
+              <div class="review-stars">
+                <label>
+                  <input type="radio" name="rating" value="1" required />
+                  <span data-i18n="review_star_1">1 estrella</span>
+                </label>
+                <label>
+                  <input type="radio" name="rating" value="2" required />
+                  <span data-i18n="review_star_2">2 estrellas</span>
+                </label>
+                <label>
+                  <input type="radio" name="rating" value="3" required />
+                  <span data-i18n="review_star_3">3 estrellas</span>
+                </label>
+                <label>
+                  <input type="radio" name="rating" value="4" required />
+                  <span data-i18n="review_star_4">4 estrellas</span>
+                </label>
+                <label>
+                  <input type="radio" name="rating" value="5" required />
+                  <span data-i18n="review_star_5">5 estrellas</span>
+                </label>
+              </div>
+            </fieldset>
+            <p data-i18n="review_unavailable" class="testimonial-form__notice">
+              El envío de comentarios aún no está disponible. Puedes compartir
+              tu experiencia por email.
             </p>
-
-          </div>
-
-        </details>
-
-
-        <!-- FAQ 02 -->
-
-        <details class="faq__item">
-
-          <summary class="faq__question">
-
-            <span class="faq__number">
-              02
-            </span>
-
-            <span data-i18n="faq_question_2">
-              ¿Necesito saber exactamente qué solución tecnológica quiero?
-            </span>
-
-            <span
-              class="faq__icon"
-              aria-hidden="true"
-            >
-              +
-            </span>
-
-          </summary>
-
-          <div class="faq__answer">
-
-            <p data-i18n="faq_answer_2">
-              No. Puedes comenzar explicándonos el problema, la tarea
-              repetitiva o el proceso que quieres mejorar. A partir de ahí
-              analizamos qué solución puede tener más sentido.
-            </p>
-
-          </div>
-
-        </details>
-
-
-        <!-- FAQ 03 -->
-
-        <details class="faq__item">
-
-          <summary class="faq__question">
-
-            <span class="faq__number">
-              03
-            </span>
-
-            <span data-i18n="faq_question_3">
-              ¿Todas las soluciones utilizan inteligencia artificial?
-            </span>
-
-            <span
-              class="faq__icon"
-              aria-hidden="true"
-            >
-              +
-            </span>
-
-          </summary>
-
-          <div class="faq__answer">
-
-            <p data-i18n="faq_answer_3">
-              No. Utilizamos inteligencia artificial cuando aporta valor
-              real. En otros casos, una automatización, integración,
-              aplicación web o solución de software tradicional puede ser
-              más adecuada.
-            </p>
-
-          </div>
-
-        </details>
-
-
-        <!-- FAQ 04 -->
-
-        <details class="faq__item">
-
-          <summary class="faq__question">
-
-            <span class="faq__number">
-              04
-            </span>
-
-            <span data-i18n="faq_question_4">
-              ¿Podéis integrar una solución con herramientas que ya utilizamos?
-            </span>
-
-            <span
-              class="faq__icon"
-              aria-hidden="true"
-            >
-              +
-            </span>
-
-          </summary>
-
-          <div class="faq__answer">
-
-            <p data-i18n="faq_answer_4">
-              Dependiendo de las herramientas y de las integraciones que
-              permitan, podemos estudiar conexiones mediante APIs,
-              automatizaciones y otros mecanismos de integración.
-            </p>
-
-          </div>
-
-        </details>
-
-
-        <!-- FAQ 05 -->
-
-        <details class="faq__item">
-
-          <summary class="faq__question">
-
-            <span class="faq__number">
-              05
-            </span>
-
-            <span data-i18n="faq_question_5">
-              ¿Cuánto tiempo tarda un proyecto?
-            </span>
-
-            <span
-              class="faq__icon"
-              aria-hidden="true"
-            >
-              +
-            </span>
-
-          </summary>
-
-          <div class="faq__answer">
-
-            <p data-i18n="faq_answer_5">
-              Depende del alcance, las integraciones y la complejidad.
-              Antes de comenzar definimos los objetivos y las fases
-              necesarias para que el proyecto tenga un alcance claro.
-            </p>
-
-          </div>
-
-        </details>
-
-
-        <!-- FAQ 06 -->
-
-        <details class="faq__item">
-
-          <summary class="faq__question">
-
-            <span class="faq__number">
-              06
-            </span>
-
-            <span data-i18n="faq_question_6">
-              ¿Cómo se determina el precio de una solución?
-            </span>
-
-            <span
-              class="faq__icon"
-              aria-hidden="true"
-            >
-              +
-            </span>
-
-          </summary>
-
-          <div class="faq__answer">
-
-            <p data-i18n="faq_answer_6">
-              El coste depende de las necesidades del proyecto, su alcance,
-              funcionalidades e integraciones. Primero analizamos el caso
-              para poder plantear una propuesta adecuada.
-            </p>
-
-          </div>
-
-        </details>
-
-
-        <!-- FAQ 07 -->
-
-        <details class="faq__item">
-
-          <summary class="faq__question">
-
-            <span class="faq__number">
-              07
-            </span>
-
-            <span data-i18n="faq_question_7">
-              ¿La solución puede crecer si mi negocio también crece?
-            </span>
-
-            <span
-              class="faq__icon"
-              aria-hidden="true"
-            >
-              +
-            </span>
-
-          </summary>
-
-          <div class="faq__answer">
-
-            <p data-i18n="faq_answer_7">
-              Ese es uno de nuestros principios de arquitectura. Diseñamos
-              pensando en evolución, mantenimiento y crecimiento siempre
-              que las necesidades del proyecto lo permitan.
-            </p>
-
-          </div>
-
-        </details>
-
+            <div class="modal__footer">
+              <button
+                data-i18n="review_submit"
+                type="submit"
+                class="button button--primary"
+                disabled
+                aria-describedby="testimonialModalDescription"
+              >
+                Enviar comentario
+              </button>
+              <a
+                data-i18n="contact_email"
+                href="mailto:yassir.technologic@gmail.com"
+                class="button button--outline"
+                >Enviar email</a
+              >
+            </div>
+          </form>
+        </div>
       </div>
-
     </div>
-
-  </div>
-
-</section>
-
-<!-- ==========================================================
-     FOOTER V2
-========================================================== -->
-
-<footer class="site-footer">
-
-  <div class="container">
-
-    <!-- ======================================================
-         FOOTER MAIN
-    ======================================================= -->
-
-    <div class="site-footer__main">
-
-      <!-- ====================================================
-           BRAND
-      ===================================================== -->
-
-      <div class="site-footer__brand">
-
-        <a
-          href="#home"
-          class="site-footer__logo"
-          aria-label="Yassir Technologic"
-        >
-          Yassir Technologic
-        </a>
-
-        <p data-i18n="footer_description">
-          Creamos soluciones de software, automatización e inteligencia
-          artificial para ayudar a negocios y profesionales a trabajar
-          de forma más eficiente.
-        </p>
-
-        <a
-          href="mailto:yassir.technologic@gmail.com"
-          class="site-footer__email"
-        >
-          yassir.technologic@gmail.com
-        </a>
-
+    <div
+      id="reviewsModal"
+      class="modal"
+      data-modal
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-labelledby="reviewsModalTitle"
+      aria-describedby="reviewsModalDescription"
+    >
+      <div class="modal__overlay" data-modal-close></div>
+      <div class="modal__dialog" tabindex="0">
+        <div class="modal__header">
+          <h2
+            data-i18n="reviews_modal_title"
+            id="reviewsModalTitle"
+            class="modal__title"
+          >
+            Comentarios públicos
+          </h2>
+          <button
+            data-i18n="modal_close"
+            type="button"
+            class="modal__close"
+            data-modal-close
+          >
+            Cerrar
+          </button>
+        </div>
+        <div class="modal__body">
+          <p data-i18n="reviews_empty" id="reviewsModalDescription">
+            Todavía no hay comentarios públicos aprobados.
+          </p>
+        </div>
       </div>
-
-
-      <!-- ====================================================
-           NAVIGATION
-      ===================================================== -->
-
-      <nav
-        class="site-footer__column"
-        aria-label="Navegación del pie de página"
-        data-i18n-aria-label="footer_navigation_label"
-      >
-
-        <h2 data-i18n="footer_navigation_title">
-          Navegación
-        </h2>
-
-        <ul class="site-footer__links">
-
-          <li>
-            <a
-              href="#home"
-              data-i18n="footer_home"
-            >
-              Inicio
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#services"
-              data-i18n="footer_services"
-            >
-              Servicios
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#projects"
-              data-i18n="footer_projects"
-            >
-              Proyectos
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#about"
-              data-i18n="footer_company"
-            >
-              Empresa
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#contact"
-              data-i18n="footer_contact"
-            >
-              Contacto
-            </a>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-      <!-- ====================================================
-           SOLUTIONS
-      ===================================================== -->
-
-      <div class="site-footer__column">
-
-        <h2 data-i18n="footer_solutions_title">
-          Soluciones
-        </h2>
-
-        <ul class="site-footer__links">
-
-          <li>
-            <a
-              href="#services"
-              data-i18n="footer_solution_automation"
-            >
-              Automatización
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#services"
-              data-i18n="footer_solution_ai"
-            >
-              IA y Chatbots
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#services"
-              data-i18n="footer_solution_software"
-            >
-              Software a medida
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#services"
-              data-i18n="footer_solution_web"
-            >
-              Desarrollo web
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#services"
-              data-i18n="footer_solution_integrations"
-            >
-              Integraciones y APIs
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-
-      <!-- ====================================================
-           CONNECT
-      ===================================================== -->
-
-      <div class="site-footer__column">
-
-        <h2 data-i18n="footer_connect_title">
-          Conecta
-        </h2>
-
-        <ul class="site-footer__links">
-
-          <li>
-            <a
-              href="https://github.com/yassirtechnologic"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#faq"
-              data-i18n="footer_faq"
-            >
-              Preguntas frecuentes
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#contact"
-              data-i18n="footer_consultation"
-            >
-              Solicitar consulta
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
     </div>
-
-
-    <!-- ======================================================
-         FOOTER BOTTOM
-    ======================================================= -->
-
-    <div class="site-footer__bottom">
-
-      <p>
-        © 2026 Yassir Technologic.
-        <span data-i18n="footer_rights">
-          Todos los derechos reservados.
-        </span>
-      </p>
-
-      <a
-        href="#home"
-        class="site-footer__back-top"
-        data-i18n="footer_back_top"
-      >
-        Volver arriba ↑
-      </a>
-
-    </div>
-
-  </div>
-
-</footer>
-
-<!-- ==========================================================
-     YASSIR AI CHATBOT
-========================================================== -->
-
-<div
-  class="chatbot"
-  data-chatbot
->
-
-  <!-- ======================================================
+    <div class="chatbot" data-chatbot>
+      <!-- ======================================================
        CHAT PANEL
   ======================================================= -->
 
-  <section
-    id="chatbotPanel"
-    class="chatbot__panel"
-    data-chatbot-panel
-    aria-labelledby="chatbotTitle"
-    aria-hidden="true"
-  >
-
-    <!-- ====================================================
+      <section
+        id="chatbotPanel"
+        class="chatbot__panel"
+        data-chatbot-panel
+        aria-labelledby="chatbotTitle"
+        aria-hidden="true"
+      >
+        <!-- ====================================================
         HEADER
     ===================================================== -->
 
-    <header class="chatbot__header">
+        <header class="chatbot__header">
+          <div class="chatbot__identity">
+            <div class="chatbot__avatar" aria-hidden="true">AI</div>
 
-      <div class="chatbot__identity">
+            <div>
+              <h2 id="chatbotTitle" class="chatbot__title">Yassir AI</h2>
 
-        <div
-          class="chatbot__avatar"
-          aria-hidden="true"
-        >
-          AI
-        </div>
+              <p class="chatbot__status" data-i18n="chatbot_status">
+                Asistente virtual
+              </p>
+            </div>
+          </div>
 
-        <div>
-
-          <h2
-            id="chatbotTitle"
-            class="chatbot__title"
+          <button
+            class="chatbot__close"
+            type="button"
+            data-chatbot-close
+            data-i18n-aria-label="chatbot_close"
+            aria-label="Cerrar asistente"
           >
-            Yassir AI
-          </h2>
+            <span aria-hidden="true"> × </span>
+          </button>
+        </header>
 
-          <p
-            class="chatbot__status"
-            data-i18n="chatbot_status"
-          >
-            Asistente virtual
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <button
-        class="chatbot__close"
-        type="button"
-        data-chatbot-close
-        data-i18n-aria-label="chatbot_close"
-        aria-label="Cerrar asistente"
-      >
-        <span aria-hidden="true">
-          ×
-        </span>
-      </button>
-
-    </header>
-
-
-    <!-- ====================================================
+        <!-- ====================================================
         MESSAGES
     ===================================================== -->
 
-    <div
-      class="chatbot__messages"
-      data-chatbot-messages
-      role="log"
-      aria-live="polite"
-      aria-relevant="additions"
-    >
+        <div
+          class="chatbot__messages"
+          data-chatbot-messages
+          role="log"
+          aria-live="polite"
+          aria-relevant="additions"
+        >
+          <div class="chatbot__message chatbot__message--bot">
+            <span class="chatbot__message-author"> Andy </span>
 
-      <div class="chatbot__message chatbot__message--bot">
+            <p data-i18n="chatbot_welcome">
+              Hola 👋 Soy Andy, el asistente virtual de Yassir Technologic. ¿En
+              qué puedo ayudarte?
+            </p>
+          </div>
+        </div>
 
-        <span class="chatbot__message-author">
-          Yassir AI
-        </span>
-
-        <p data-i18n="chatbot_welcome">
-          Hola 👋 Soy el asistente virtual de Yassir Technologic.
-          ¿En qué puedo ayudarte?
-        </p>
-
-      </div>
-
-    </div>
-
-
-    <!-- ====================================================
+        <!-- ====================================================
         QUICK ACTIONS
     ===================================================== -->
 
-    <div class="chatbot__quick-actions">
+        <div class="chatbot__quick-actions">
+          <button
+            type="button"
+            class="chatbot__quick-action"
+            data-chatbot-quick="services"
+            data-i18n="chatbot_quick_services"
+          >
+            Ver servicios
+          </button>
 
-      <button
-        type="button"
-        class="chatbot__quick-action"
-        data-chatbot-quick="services"
-        data-i18n="chatbot_quick_services"
-      >
-        Ver servicios
-      </button>
+          <button
+            type="button"
+            class="chatbot__quick-action"
+            data-chatbot-quick="automation"
+            data-i18n="chatbot_quick_automation"
+          >
+            Automatizar mi negocio
+          </button>
 
+          <button
+            type="button"
+            class="chatbot__quick-action"
+            data-chatbot-quick="project"
+            data-i18n="chatbot_quick_project"
+          >
+            Tengo un proyecto
+          </button>
+        </div>
 
-      <button
-        type="button"
-        class="chatbot__quick-action"
-        data-chatbot-quick="automation"
-        data-i18n="chatbot_quick_automation"
-      >
-        Automatizar mi negocio
-      </button>
-
-
-      <button
-        type="button"
-        class="chatbot__quick-action"
-        data-chatbot-quick="project"
-        data-i18n="chatbot_quick_project"
-      >
-        Tengo un proyecto
-      </button>
-
-    </div>
-
-
-    <!-- ====================================================
+        <!-- ====================================================
         INPUT
     ===================================================== -->
 
-    <form
-      class="chatbot__form"
-      data-chatbot-form
-    >
+        <form class="chatbot__form" data-chatbot-form>
+          <label
+            for="chatbotMessage"
+            class="visually-hidden"
+            data-i18n="chatbot_message_label"
+          >
+            Escribe tu mensaje
+          </label>
 
-      <label
-        for="chatbotMessage"
-        class="visually-hidden"
-        data-i18n="chatbot_message_label"
-      >
-        Escribe tu mensaje
-      </label>
+          <textarea
+            id="chatbotMessage"
+            class="chatbot__input"
+            data-chatbot-input
+            rows="1"
+            maxlength="1000"
+            data-i18n-placeholder="chatbot_message_placeholder"
+            placeholder="Escribe tu mensaje..."
+            autocomplete="off"
+            required
+          ></textarea>
 
+          <button
+            class="chatbot__send"
+            type="submit"
+            data-i18n-aria-label="chatbot_send"
+            aria-label="Enviar mensaje"
+          >
+            <span aria-hidden="true"> ➜ </span>
+          </button>
+        </form>
 
-      <textarea
-        id="chatbotMessage"
-        class="chatbot__input"
-        data-chatbot-input
-        rows="1"
-        maxlength="1000"
-        data-i18n-placeholder="chatbot_message_placeholder"
-        placeholder="Escribe tu mensaje..."
-        autocomplete="off"
-        required
-      ></textarea>
-
-
-      <button
-        class="chatbot__send"
-        type="submit"
-        data-i18n-aria-label="chatbot_send"
-        aria-label="Enviar mensaje"
-      >
-        <span aria-hidden="true">
-          ➜
-        </span>
-      </button>
-
-    </form>
-
-
-    <!-- ======================================================
+        <!-- ======================================================
         END CHAT PANEL
     ======================================================= -->
+      </section>
 
-    </section>
-
-
-    <!-- ======================================================
+      <!-- ======================================================
         FLOATING TRIGGER
     ======================================================= -->
 
-    <button
-      class="chatbot__trigger"
-      type="button"
-      data-chatbot-trigger
-      aria-controls="chatbotPanel"
-      aria-expanded="false"
-      data-i18n-aria-label="chatbot_open"
-      aria-label="Abrir asistente Yassir AI"
-    >
-
-      <span
-        class="chatbot__trigger-icon"
-        aria-hidden="true"
+      <button
+        class="chatbot__trigger"
+        type="button"
+        data-chatbot-trigger
+        aria-controls="chatbotPanel"
+        aria-expanded="false"
+        data-i18n-aria-label="chatbot_open"
+        aria-label="Abrir asistente Yassir AI"
       >
-        AI
-      </span>
+        <span class="chatbot__trigger-icon" aria-hidden="true"> AI </span>
 
-      <span
-        class="visually-hidden"
-        data-i18n="chatbot_open"
-      >
-        Abrir asistente Yassir AI
-      </span>
-
-    </button>
-
-</div>
-<!-- ==========================================================
-     SCRIPTS
-========================================================== -->
-
-<!-- New modular application -->
-<script
-  type="module"
-  src="assets/js/core/app.js"
-></script>
-
-</body>
+        <span class="visually-hidden" data-i18n="chatbot_open">
+          Abrir asistente Yassir AI
+        </span>
+      </button>
+    </div>
+    <script type="module" src="assets/js/core/app.js"></script>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

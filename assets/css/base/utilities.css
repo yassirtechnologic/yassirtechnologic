@@ -156,3 +156,9 @@
 [id] {
     scroll-margin-top: 6rem;
 }
+/* Visible keyboard focus and a bypass for repeated navigation. */
+:focus-visible { outline: 3px solid var(--blue-600); outline-offset: 4px; }
+.site-footer :focus-visible { outline-color: white; }
+section[id], main[id] { scroll-margin-top: 5.25rem; }
+.skip-link { position: fixed; top: .5rem; left: 1rem; z-index: 1200; padding: .75rem 1rem; background: white; color: var(--blue-800); transform: translateY(-200%); }
+.skip-link:focus { transform: translateY(0); }

@@ -1,86 +1,31 @@
-🚀 Yassir Technologic
+# Yassir Technologic
 
-Portafolio profesional de Jorge Luis Carvajal
-Desarrollador Backend Junior / Junior+ especializado en Python, automatización, análisis de datos e inteligencia artificial aplicada.
+Web corporativa de software a medida, automatización e inteligencia artificial
+para empresas y profesionales. HTML, CSS y JavaScript nativos y modulares, con
+contenido en español e inglés.
 
-🌍 Palma de Mallorca, España
-💼 Abierto a oportunidades laborales y proyectos freelance
+## Ejecutar localmente
 
-👨‍💻 Sobre mí
+Desde la raíz del repositorio: `python -m http.server 8000`.
+Abrir `http://localhost:8000`. Se necesita un servidor HTTP para los módulos ES.
 
-Soy Jorge Luis Carvajal, desarrollador backend con enfoque en crear aplicaciones funcionales, seguras y escalables.
-Me gusta transformar ideas en soluciones reales usando código limpio, buenas prácticas y tecnología moderna.
+## Arquitectura
 
-Actualmente busco:
+- `index.html`: estructura y contenido corporativo.
+- `assets/css/main.css`: estilos base, layout, componentes y secciones.
+- `assets/js/core/app.js`: inicialización de idiomas, navegación, modales,
+  comentarios y chatbot.
+- `assets/js/services/chatbot-api.js`: conexión real de Yassir AI / Andy.
+- `docs/compact-home-v3.md`: alcance, moderación pendiente y validación.
 
-Oportunidades junior o junior+ como desarrollador backend
+## Contacto
 
-Colaborar en proyectos reales donde pueda aportar valor y seguir creciendo
+- Email: yassir.technologic@gmail.com
+- WhatsApp: https://wa.me/34600284845
+- LinkedIn: https://www.linkedin.com/in/jorgeluiscarvajal
+- TikTok: https://www.tiktok.com/@yassir.tech
 
-🧠 Especialidades
+La URL oficial de Instagram sigue pendiente de confirmación. El envío online de
+comentarios necesita backend y moderación; actualmente no almacena datos.
 
-⚙️ Automatización con Python
-Scripts y herramientas para optimizar procesos y ahorrar tiempo.
-
-📊 Análisis y visualización de datos
-Limpieza, análisis y dashboards para apoyar la toma de decisiones.
-
-🤖 Inteligencia Artificial aplicada
-Integración de IA (APIs, chatbots, automatización inteligente).
-
-🔐 Ciberseguridad básica y prevención
-Buenas prácticas, análisis y scripts orientados a seguridad.
-
-## 🛠️ Tecnologías y Plataformas
-
-- **Lenguajes:** Python, JavaScript
-
-- **Backend:** Node.js, APIs REST
-
-- **Frontend:** HTML5, CSS3
-
-- **IA:** OpenAI API (integración de chatbots y automatización)
-
-- **Plataformas:** GitHub Pages, Render
-
-- **Control de versiones:** Git & GitHub
-
-Otros: Automatización, scripts, análisis técnico
-
-📂 Proyectos
-
-En este repositorio y en mi web encontrarás proyectos como:
-
-🤖 Bots de automatización en Python
-
-📈 Dashboards de análisis de datos
-
-🔍 Scripts de seguridad y escaneo
-
-🌐 Proyectos web profesionales
-
-👉 Todos los proyectos están pensados para casos reales, no solo ejercicios.
-
-🌐 Sitio Web
-
-🔗 Portafolio online:
-👉 https://yassirtecnologic.github.io/portafolio/
-
-📬 Contacto
-
-¿Tienes una idea, proyecto o oportunidad laboral?
-
-✉️ Email: yassir.technologic@gmail.com
-
-💼 LinkedIn: https://www.linkedin.com/in/jorgeluiscarvajal
-
-📸 Instagram: @YassirTechnologic
-
-📌 Estado del proyecto
-
-🟢 En constante evolución
-Se irán añadiendo nuevos proyectos, mejoras visuales y funcionalidades.
-
-© 2025 – Yassir Technologic
-Todos los derechos reservados.
-
+© 2026 Yassir Technologic. Todos los derechos reservados.

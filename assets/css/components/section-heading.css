@@ -32,7 +32,7 @@
     max-width: 760px;
 
     margin-bottom:
-        var(--space-12);
+        var(--space-6);
 }
 
 
@@ -82,7 +82,7 @@
 ========================================================== */
 
 .section-heading__title {
-    max-width: 18ch;
+    max-width: 30ch;
 
     color:
         var(--color-text-primary);
@@ -179,3 +179,4 @@
     }
 
 }
+.section-heading__title { font-size: clamp(1.75rem, 3vw, 2.5rem); }

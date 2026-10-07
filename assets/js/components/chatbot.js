@@ -427,7 +427,7 @@ function createMessage(
 
 
         authorElement.textContent =
-            "Yassir AI";
+            "Andy";
 
 
         message.appendChild(

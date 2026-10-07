@@ -622,38 +622,47 @@
    MOBILE
 ========================================================== */
 
-@media (max-width: 40rem) {
-
-    .chatbot {
-        right:
-            var(--space-4);
-
-        bottom:
-            var(--space-4);
+/*
+ * On compact headers, reserve a dedicated slot for the fixed trigger.
+ * Its 44px touch target stays above page content without adding page padding.
+ * Keep the panel below the header and within the dynamic viewport.
+ */
+@media (max-width: 64rem) {
+    .site-header__actions {
+        margin-inline-end: 3.5rem;
     }
 
+    .chatbot {
+        top: 0.125rem;
+        right: var(--space-4);
+        bottom: auto;
+    }
+
+    .chatbot__trigger {
+        width: 2.75rem;
+        height: 2.75rem;
+    }
+
+    .chatbot__trigger:hover,
+    .chatbot.is-open .chatbot__trigger {
+        transform: none;
+    }
+
+    .chatbot__trigger:focus-visible {
+        outline: 3px solid var(--neutral-0);
+        outline-offset: -5px;
+    }
 
     .chatbot__panel {
         position: fixed;
-
-        right:
-            var(--space-3);
-
-        bottom:
-            5.5rem;
-
-        left:
-            var(--space-3);
-
-        width: auto;
-
-        height:
-            min(38rem, calc(100dvh - 7rem));
-
-        transform-origin:
-            bottom center;
+        top: 3.75rem;
+        right: var(--space-3);
+        bottom: auto;
+        left: auto;
+        width: min(24rem, calc(100vw - 1.5rem));
+        height: min(38rem, calc(100dvh - 4.5rem));
+        transform-origin: top right;
     }
-
 }
 
 
