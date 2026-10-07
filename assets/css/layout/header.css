@@ -23,47 +23,32 @@
    HEADER 
 ========================================================== */ 
 
-.site-header { 
-    position: sticky; 
-
-    top: 0; 
-
-    z-index: 
-        var(--z-header); 
-
-    width: 100%; 
-
-    background-color: 
-        var(--neutral-0);
-
-    border-bottom: 
-        1px solid var(--blue-100);
-
-    -webkit-backdrop-filter: 
-        blur(14px);
-
-    backdrop-filter: 
-        blur(14px);
-
-    transition: 
-        background-color var(--transition-normal),
-        border-color var(--transition-normal),
-        box-shadow var(--transition-normal);
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: var(--z-header);
+    isolation: isolate;
+    width: 100%;
+    background: linear-gradient(110deg, var(--tech-purple-dark), var(--tech-purple) 72%, var(--tech-purple-light));
+    border-bottom: 1px solid var(--tech-header-border);
+    transition: box-shadow var(--transition-normal);
 }
 
-/* ========================================================== 
-   SCROLLED STATE 
-========================================================== */ 
+/* Static digital detail: no animation, assets or interaction layer. */
+.site-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(ellipse at 78% 0%, rgb(var(--tech-cyan-rgb) / 0.10), transparent 55%),
+        repeating-linear-gradient(90deg, transparent 0 47px, rgb(255 255 255 / 0.035) 47px 48px),
+        repeating-linear-gradient(0deg, transparent 0 23px, rgb(255 255 255 / 0.025) 23px 24px);
+}
 
-.site-header.is-scrolled { 
-    background-color: 
-        var(--neutral-0);
-
-    border-color: 
-        var(--blue-200);
-
-    box-shadow: 
-        var(--shadow-sm);
+.site-header.is-scrolled {
+    box-shadow: 0 4px 24px rgb(var(--tech-purple-dark-rgb) / 0.18);
 }
 
 
@@ -73,6 +58,7 @@
 
 .site-header__container {
     position: relative;
+    z-index: 1;
 
     display: flex;
 
@@ -101,7 +87,7 @@
         var(--space-3);
 
     color:
-        var(--color-text-primary);
+        var(--neutral-0);
 
     text-decoration: none;
 }
@@ -169,7 +155,7 @@
         var(--space-3);
 
     color:
-        var(--color-text-secondary);
+        var(--neutral-0);
 
     font-size:
         var(--font-size-sm);
@@ -190,16 +176,21 @@
 
 .site-header__nav-link:hover {
     color:
-        var(--color-text-primary);
+        var(--tech-cyan);
 
     background-color:
-        var(--color-background-secondary);
+        var(--tech-header-surface);
 }
 
 
+.site-header :focus-visible {
+    outline: 3px solid var(--neutral-0);
+    outline-offset: 3px;
+}
+
 .site-header__nav-link:focus-visible {
     outline:
-        3px solid var(--color-brand-primary);
+        3px solid var(--neutral-0);
 
     outline-offset:
         2px;
@@ -215,6 +206,24 @@
         var(--space-2);
 }
 
+
+.site-header__nav-cta .button--primary {
+    color: var(--tech-purple-dark);
+    background-color: var(--neutral-0);
+}
+
+.site-header__nav-cta .button--primary:hover {
+    background-color: var(--blue-50);
+}
+
+.site-header__nav-cta .button:focus-visible {
+    outline-color: var(--neutral-0);
+}
+
+.site-header__logo {
+    border-radius: var(--radius-md);
+    box-shadow: 0 0 0 1px var(--tech-header-border);
+}
 
 /* ==========================================================
    ACTIONS
@@ -245,10 +254,10 @@
         var(--space-1);
 
     background-color:
-        var(--color-background-secondary);
+        var(--tech-header-surface);
 
     border:
-        1px solid var(--color-border-default);
+        1px solid var(--tech-header-border);
 
     border-radius:
         var(--radius-full);
@@ -268,7 +277,7 @@
         var(--space-2);
 
     color:
-        var(--color-text-muted);
+        var(--neutral-0);
 
     background-color:
         transparent;
@@ -295,7 +304,7 @@
 
 .site-header__language[aria-pressed="true"] {
     color:
-        var(--color-text-primary);
+        var(--tech-purple-dark);
 
     background-color:
         var(--color-surface-primary);
@@ -307,7 +316,7 @@
 
 .site-header__language:focus-visible {
     outline:
-        2px solid var(--color-brand-primary);
+        2px solid var(--neutral-0);
 
     outline-offset:
         2px;
@@ -330,10 +339,10 @@
     padding: 0;
 
     background-color:
-        var(--color-background-secondary);
+        var(--tech-header-surface);
 
     border:
-        1px solid var(--color-border-default);
+        1px solid var(--tech-header-border);
 
     border-radius:
         var(--radius-md);
@@ -360,7 +369,7 @@
     height: 2px;
 
     background-color:
-        var(--color-text-primary);
+        var(--neutral-0);
 
     border-radius:
         var(--radius-full);
@@ -426,11 +435,11 @@
         padding:
             var(--space-4);
 
-        background-color:
-            var(--color-surface-primary);
+        background:
+            linear-gradient(135deg, var(--tech-purple-dark), var(--tech-purple));
 
         border:
-            1px solid var(--color-border-default);
+            1px solid var(--tech-header-border);
 
         border-radius:
             var(--radius-xl);

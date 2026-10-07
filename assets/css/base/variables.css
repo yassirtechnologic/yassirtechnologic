@@ -25,6 +25,20 @@
 
 :root {
 
+    /* Complementary technology palette; corporate blue remains unchanged. */
+    --tech-purple-dark: #2b0a5a;
+    --tech-purple: #5b21b6;
+    --tech-purple-light: #7c3aed;
+    --tech-purple-soft: #f5f0ff;
+    --tech-cyan: #67e8f9;
+    --tech-purple-rgb: 124 58 237;
+    --tech-blue-rgb: 37 99 235;
+    --tech-cyan-rgb: 103 232 249;
+    --tech-purple-dark-rgb: 43 10 90;
+    --tech-header-surface: rgb(var(--tech-purple-dark-rgb) / 0.45);
+    --tech-header-border: rgb(255 255 255 / 0.24);
+
+
     /* ======================================================
        BRAND — BLUE SCALE
 
