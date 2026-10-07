@@ -46,9 +46,6 @@
 .contact__social svg {
   flex-shrink: 0;
 }
-.contact__social--pending {
-  color: var(--neutral-600);
-}
 @media (max-width: 48rem) {
   .contact__layout {
     grid-template-columns: 1fr;

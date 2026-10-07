@@ -1,0 +1,38 @@
+/* One decorative layer spans the existing About and Services rows.
+   Shared grid placement keeps it aligned in either language without extra markup. */
+#main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  isolation: isolate;
+}
+#main > section {
+  grid-column: 1;
+}
+#main > section:nth-child(1) { grid-row: 1; }
+#main > section:nth-child(2) { grid-row: 2; }
+#main > section:nth-child(3) { grid-row: 3; }
+#main > section:nth-child(4) { grid-row: 4; }
+#main > section:nth-child(5) { grid-row: 5; }
+#main::before {
+  content: "";
+  grid-column: 1;
+  grid-row: 2 / 4;
+  min-width: 0;
+  min-height: 0;
+  background: url("../../images/yt-watermark.png") center / min(90vw, 72rem) auto no-repeat;
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: 0;
+}
+#about,
+#services {
+  background-color: transparent;
+  z-index: 1;
+}
+@media (max-width: 48rem) {
+  #main::before {
+    /* A square symbol stays undistorted; background clipping cannot cause overflow. */
+    background-size: min(220vw, 60rem) auto;
+    background-position: center 32rem;
+  }
+}

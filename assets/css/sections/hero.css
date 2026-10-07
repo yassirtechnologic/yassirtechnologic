@@ -1,9 +1,66 @@
 /* Compact corporate hero; the diagram illustrates a process, not a customer result. */
 .hero {
-  background: linear-gradient(120deg, var(--blue-50), white 65%);
+  isolation: isolate;
+  background:
+    radial-gradient(
+      ellipse at 88% 34%,
+      rgb(var(--tech-magenta-rgb) / 0.12),
+      transparent 58%
+    ),
+    radial-gradient(ellipse at 72% 85%, rgb(var(--tech-blue-rgb) / 0.07), transparent 50%),
+    linear-gradient(
+      110deg,
+      var(--neutral-0) 8%,
+      var(--tech-rose-soft) 70%,
+      var(--blue-50)
+    );
   padding-block: clamp(3rem, 6vw, 5rem);
 }
+/* Decorative layers stay behind content and cannot capture pointer events. */
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.hero::before {
+  background-image:
+    linear-gradient(rgb(var(--tech-magenta-rgb) / 0.06) 1px, transparent 1px),
+    linear-gradient(
+      90deg,
+      rgb(var(--tech-magenta-rgb) / 0.06) 1px,
+      transparent 1px
+    );
+  background-size: 48px 48px;
+  mask-image: linear-gradient(90deg, transparent 35%, black 100%);
+}
+.hero::after {
+  background:
+    radial-gradient(
+      circle at 70% 16%,
+      rgb(var(--tech-magenta-rgb) / 0.22) 0 3px,
+      transparent 4px
+    ),
+    radial-gradient(
+      circle at 92% 76%,
+      rgb(var(--tech-blue-rgb) / 0.2) 0 3px,
+      transparent 4px
+    ),
+    linear-gradient(
+      125deg,
+      transparent 74%,
+      rgb(var(--tech-magenta-rgb) / 0.07) 74% 74.15%,
+      transparent 74.15%
+    );
+}
+.hero .section-heading__eyebrow {
+  color: var(--tech-magenta-strong);
+}
 .hero__layout {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
   gap: 4rem;
@@ -21,6 +78,10 @@
   max-width: 55ch;
   font-size: 1.125rem;
 }
+.hero .button--outline {
+  color: var(--tech-magenta-strong);
+  border-color: rgb(var(--tech-magenta-rgb) / 0.35);
+}
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
@@ -33,14 +94,19 @@
   justify-items: center;
   gap: 1.5rem;
   padding: 2rem;
-  border: 1px solid var(--blue-100);
+  border: 1px solid rgb(var(--tech-magenta-rgb) / 0.2);
   border-radius: 1.5rem;
-  background: radial-gradient(circle, var(--blue-100), white 75%);
+  background: radial-gradient(
+    circle at 50% 40%,
+    var(--tech-rose-soft),
+    var(--neutral-0) 78%
+  );
+  box-shadow: 0 18px 54px rgb(var(--tech-plum-rgb) / 0.06);
 }
 .hero__system-line {
   position: absolute;
   width: 2px;
-  background: var(--blue-200);
+  background: linear-gradient(var(--tech-pink-light), var(--blue-500));
   inset-block: 3rem;
 }
 .hero__node,
@@ -50,10 +116,10 @@
 }
 .hero__node {
   padding: 0.6rem 1rem;
-  background: white;
-  border: 1px solid var(--blue-200);
+  background: var(--neutral-0);
+  border: 1px solid rgb(var(--tech-magenta-rgb) / 0.24);
   border-radius: 0.6rem;
-  color: var(--blue-900);
+  color: var(--tech-plum-dark);
   font-size: 0.875rem;
 }
 .hero__engine {
@@ -61,9 +127,11 @@
   justify-items: center;
   gap: 0.75rem;
   padding: 1.25rem;
-  background: var(--blue-700);
+  background:
+    linear-gradient(rgb(var(--tech-plum-rgb) / 0.4), rgb(var(--tech-plum-rgb) / 0.4)),
+    linear-gradient(135deg, var(--tech-magenta), var(--tech-pink), var(--tech-purple-light));
   border-radius: 1rem;
-  color: white;
+  color: var(--neutral-0);
   font-size: 0.875rem;
   box-shadow: var(--shadow-md);
 }
