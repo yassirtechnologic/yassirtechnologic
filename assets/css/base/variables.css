@@ -35,7 +35,16 @@
     --tech-blue-rgb: 37 99 235;
     --tech-cyan-rgb: 103 232 249;
     --tech-purple-dark-rgb: 43 10 90;
-    --tech-header-surface: rgb(var(--tech-purple-dark-rgb) / 0.45);
+    /* Rose experiment: strong text tones and light decorative surfaces. */
+    --tech-plum-dark: #4a154b;
+    --tech-magenta: #c026d3;
+    --tech-magenta-strong: #a21caf;
+    --tech-pink: #ec4899;
+    --tech-pink-light: #f472b6;
+    --tech-rose-soft: #fff8fc;
+    --tech-plum-rgb: 74 21 75;
+    --tech-magenta-rgb: 192 38 211;
+    --tech-header-surface: rgb(var(--tech-plum-rgb) / 0.45);
     --tech-header-border: rgb(255 255 255 / 0.24);
 
 

@@ -4,14 +4,14 @@
   background:
     radial-gradient(
       ellipse at 88% 34%,
-      rgb(var(--tech-purple-rgb) / 0.12),
+      rgb(var(--tech-magenta-rgb) / 0.12),
       transparent 58%
     ),
     radial-gradient(ellipse at 72% 85%, rgb(var(--tech-blue-rgb) / 0.07), transparent 50%),
     linear-gradient(
       110deg,
       var(--neutral-0) 8%,
-      var(--tech-purple-soft) 70%,
+      var(--tech-rose-soft) 70%,
       var(--blue-50)
     );
   padding-block: clamp(3rem, 6vw, 5rem);
@@ -27,10 +27,10 @@
 }
 .hero::before {
   background-image:
-    linear-gradient(rgb(var(--tech-purple-rgb) / 0.06) 1px, transparent 1px),
+    linear-gradient(rgb(var(--tech-magenta-rgb) / 0.06) 1px, transparent 1px),
     linear-gradient(
       90deg,
-      rgb(var(--tech-purple-rgb) / 0.06) 1px,
+      rgb(var(--tech-magenta-rgb) / 0.06) 1px,
       transparent 1px
     );
   background-size: 48px 48px;
@@ -40,7 +40,7 @@
   background:
     radial-gradient(
       circle at 70% 16%,
-      rgb(var(--tech-purple-rgb) / 0.22) 0 3px,
+      rgb(var(--tech-magenta-rgb) / 0.22) 0 3px,
       transparent 4px
     ),
     radial-gradient(
@@ -51,12 +51,12 @@
     linear-gradient(
       125deg,
       transparent 74%,
-      rgb(var(--tech-purple-rgb) / 0.07) 74% 74.15%,
+      rgb(var(--tech-magenta-rgb) / 0.07) 74% 74.15%,
       transparent 74.15%
     );
 }
 .hero .section-heading__eyebrow {
-  color: var(--tech-purple);
+  color: var(--tech-magenta-strong);
 }
 .hero__layout {
   position: relative;
@@ -79,8 +79,8 @@
   font-size: 1.125rem;
 }
 .hero .button--outline {
-  color: var(--tech-purple);
-  border-color: rgb(var(--tech-purple-rgb) / 0.35);
+  color: var(--tech-magenta-strong);
+  border-color: rgb(var(--tech-magenta-rgb) / 0.35);
 }
 .hero__actions {
   display: flex;
@@ -94,19 +94,19 @@
   justify-items: center;
   gap: 1.5rem;
   padding: 2rem;
-  border: 1px solid rgb(var(--tech-purple-rgb) / 0.2);
+  border: 1px solid rgb(var(--tech-magenta-rgb) / 0.2);
   border-radius: 1.5rem;
   background: radial-gradient(
     circle at 50% 40%,
-    var(--tech-purple-soft),
+    var(--tech-rose-soft),
     var(--neutral-0) 78%
   );
-  box-shadow: 0 18px 54px rgb(var(--tech-purple-dark-rgb) / 0.06);
+  box-shadow: 0 18px 54px rgb(var(--tech-plum-rgb) / 0.06);
 }
 .hero__system-line {
   position: absolute;
   width: 2px;
-  background: linear-gradient(var(--tech-purple-light), var(--blue-500));
+  background: linear-gradient(var(--tech-pink-light), var(--blue-500));
   inset-block: 3rem;
 }
 .hero__node,
@@ -117,9 +117,9 @@
 .hero__node {
   padding: 0.6rem 1rem;
   background: var(--neutral-0);
-  border: 1px solid rgb(var(--tech-purple-rgb) / 0.24);
+  border: 1px solid rgb(var(--tech-magenta-rgb) / 0.24);
   border-radius: 0.6rem;
-  color: var(--tech-purple-dark);
+  color: var(--tech-plum-dark);
   font-size: 0.875rem;
 }
 .hero__engine {
@@ -127,7 +127,9 @@
   justify-items: center;
   gap: 0.75rem;
   padding: 1.25rem;
-  background: linear-gradient(135deg, var(--tech-purple), var(--blue-700));
+  background:
+    linear-gradient(rgb(var(--tech-plum-rgb) / 0.4), rgb(var(--tech-plum-rgb) / 0.4)),
+    linear-gradient(135deg, var(--tech-magenta), var(--tech-pink), var(--tech-purple-light));
   border-radius: 1rem;
   color: var(--neutral-0);
   font-size: 0.875rem;

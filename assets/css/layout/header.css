@@ -29,12 +29,23 @@
     z-index: var(--z-header);
     isolation: isolate;
     width: 100%;
-    background: linear-gradient(110deg, var(--tech-purple-dark), var(--tech-purple) 72%, var(--tech-purple-light));
+    /* The plum veil preserves white text contrast throughout the animation. */
+    background:
+        linear-gradient(rgb(var(--tech-plum-rgb) / 0.4), rgb(var(--tech-plum-rgb) / 0.4)),
+        linear-gradient(110deg, var(--tech-plum-dark), var(--tech-magenta) 35%, var(--tech-pink) 65%, var(--tech-purple-light));
+    background-size: 100% 100%, 250% 250%;
+    background-position: 0 0, 0% 50%;
+    animation: tech-header-shift 16s ease-in-out infinite;
     border-bottom: 1px solid var(--tech-header-border);
     transition: box-shadow var(--transition-normal);
 }
 
-/* Static digital detail: no animation, assets or interaction layer. */
+@keyframes tech-header-shift {
+    0%, 100% { background-position: 0 0, 0% 50%; }
+    50% { background-position: 0 0, 100% 50%; }
+}
+
+/* Static digital detail cannot capture interaction. */
 .site-header::before {
     content: "";
     position: absolute;
@@ -48,7 +59,7 @@
 }
 
 .site-header.is-scrolled {
-    box-shadow: 0 4px 24px rgb(var(--tech-purple-dark-rgb) / 0.18);
+    box-shadow: 0 4px 24px rgb(var(--tech-plum-rgb) / 0.18);
 }
 
 
@@ -208,7 +219,7 @@
 
 
 .site-header__nav-cta .button--primary {
-    color: var(--tech-purple-dark);
+    color: var(--tech-plum-dark);
     background-color: var(--neutral-0);
 }
 
@@ -304,7 +315,7 @@
 
 .site-header__language[aria-pressed="true"] {
     color:
-        var(--tech-purple-dark);
+        var(--tech-plum-dark);
 
     background-color:
         var(--color-surface-primary);
@@ -436,7 +447,7 @@
             var(--space-4);
 
         background:
-            linear-gradient(135deg, var(--tech-purple-dark), var(--tech-purple));
+            linear-gradient(135deg, var(--tech-plum-dark), var(--tech-magenta-strong));
 
         border:
             1px solid var(--tech-header-border);
@@ -551,6 +562,11 @@
 ========================================================== */
 
 @media (prefers-reduced-motion: reduce) {
+
+    .site-header {
+        animation: none;
+        background-position: 0 0, 50% 50%;
+    }
 
     .site-header,
     .site-header__navigation,
